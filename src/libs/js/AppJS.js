@@ -13,20 +13,80 @@ var AppJS = {
         AppJS.windowScroll();
         AppJS.progressCircle();
         AppJS.timer();
-        AppJS.initSlider()
+        AppJS.initSlider();
+        AppJS.maskedInput();
     },
 
     handlers: function () {
-        $('.buyBox .dot').on('click', function() { AppJS.dotNavigation($(this)); });
-        $('.watchMore').on('click', function() { AppJS.watchMore($(this)); });
-        $('.aboutMore').on('click', function() { AppJS.watchMore($(this)); });
-        $('.showMore').on('click', function() { AppJS.watchMore($(this), 'siblingsBtn'); });
-        $('.openTrainingFilter').on('click', function() { AppJS.openTrainingFilter($(this)); });
-        $('.viewSwitch').on('click', function() { AppJS.switchTrainingsView($(this)); });
-        $('.selectField .viewBox').on('click', function() { AppJS.selectViewBoxClick(this); });
-        $('.selectField li').on('click', function() { AppJS.selectLiClick(this); });
+        $('.buyBox .dot').on(                       'click', function() { AppJS.dotNavigation($(this)); });
+        $('.watchMore, .aboutMore').on(             'click', function() { AppJS.watchMore($(this)); });
+        $('.showMore').on(                          'click', function() { AppJS.watchMore($(this), 'siblingsBtn'); });
+        $('.showQuestion').on(                      'click', function() { AppJS.watchMore($(this), 'siblingsBtn', 'noHideBtn'); });
+        $('.openTrainingFilter').on(                'click', function() { AppJS.openTrainingFilter($(this)); });
+        $('.viewSwitch').on(                        'click', function() { AppJS.switchTrainingsView($(this)); });
+        $('.selectField .viewBox').on(              'click', function() { AppJS.selectViewBoxClick(this); });
+        $('.selectField li').on(                    'click', function() { AppJS.selectLiClick(this); });
+        $('.calendarSlider .row:not(.head) div').on('click', function() { AppJS.pickDay($(this)); });
+        $('.js-closeModal, .overlay').on(           'click', function() { AppJS.closeModal($(this)); });
+        $('.logInModalShow').on(                    'click', function() { AppJS.showModal($('.logInModal')); });
+        $('.registrationModalShow').on(             'click', function() { AppJS.showModal($('.registrationModal')); });
+        $('.resultModalShow').on(                   'click', function() { AppJS.showModal($('.resultModal')); });
+        $('.basketModalShow').on(                   'click', function() { AppJS.showModal($('.basketModal')); AppJS.basketSum(); });
+        $('.js-plus').on(                           'click', function() { AppJS.basketChangeItemNum($(this)); });
+        $('.js-min').on(                            'click', function() { AppJS.basketChangeItemNum($(this)); });
+        $('.removeItem').on(                        'click', function() { $(this).closest('.training').remove(); AppJS.basketSum(); });
+        $('.clearBasket').on(                       'click', function() { $(this).closest('.modal').find('.training').remove(); AppJS.basketSum(); });
+        $('.itemNum').on(                          'change', function() { AppJS.basketSum(); });
+        $('.itemNum').on(                           'keyup', function(e){ AppJS.inputBasketItemNum(e, $(this)); });
+        $('[type="submit"]').on(                    'click', function(e){ ValidForm.submit(e, $(this)); });
+        $('input[data-pattern]').on(                'focus', function() { ValidForm.focusInput($(this)); });
+        $('input[data-pattern]').on(             'focusout', function() { ValidForm.focusOutInput($(this)); });
+        $('[type="checkbox"][required]').on(       'change', function() { $(this).removeClass('error'); });
         $(window).on('scroll', function() { AppJS.windowScroll(); });
         $(window).resize(function() { AppJS.windowResize(); });
+    },
+
+    maskedInput: function () {
+        $('[type="tel"]').mask("+(999) 999-9999");
+    },
+
+    inputBasketItemNum: function (e, input) {
+        var cod = e.which;
+        var value = parseInt(input.val());
+        if (cod < 48 || cod > 57 && cod < 96 || cod > 105) {
+            if (value) {
+                input.val(value);
+            } else {
+                input.val(1);
+            }
+        }
+        input.change();
+    },
+
+    basketChangeItemNum: function ($btn) {
+        var input = $btn.siblings('input');
+        var res = +input.val();
+        if ($btn.hasClass('min') && res > 1) {
+            res--;
+        } else if ($btn.hasClass('plus') && res < 9999) {
+            res++;
+        }
+        if (res < 1) res = 1;
+        input.val(res);
+        input.change();
+    },
+
+    basketSum: function () {
+        var basket = $('.basketModal');
+        var trainings = basket.find('.training');
+        var globalPrice = basket.find('.globalPrice');
+        var sum = 0;
+        trainings.each(function(){
+            var price = +$(this).find('.sumPrice').attr('data-price').replace(' ', '');
+            var num = +$(this).find('.itemNum').val();
+            sum += price * num;
+        });
+        globalPrice.text(sum);
     },
 
     windowResize: function () {
@@ -34,6 +94,7 @@ var AppJS = {
         if ($('body').width() <= 700) {
             $('.trainingPage').add('.viewSwitch').removeClass('list');
         }
+        try { AppJS.calendarSlider.destroy(true, true); } catch(m) {}
     },
 
     windowScroll: function () {
@@ -45,6 +106,16 @@ var AppJS = {
             body.removeClass('rebuildMenu');
         }
         AppJS.fixedPanel(scrollTop);
+    },
+
+    showModal: function (modal) {
+        $('body').scrollTop(0);
+        modal.show();
+    },
+
+    closeModal: function ($clsBtn) {
+        var modal = $clsBtn.closest('.modalBox');
+        modal.hide();
     },
 
     fixedPanel: function (scrollTop) {
@@ -146,6 +217,11 @@ var AppJS = {
         $dot.addClass('active');
     },
 
+    pickDay: function ($day) {
+        $('.calendarSlider .row div').removeClass('active');
+        $day.addClass('active');
+    },
+
     initSlider: function () {
         new Swiper('.firstSliderBox', {
             speed: 1000,
@@ -161,24 +237,36 @@ var AppJS = {
             loop: true
         });
 
-        new Swiper('.calendarSlider', {
+        AppJS.calendarSliderInit();
+    },
+
+    calendarSliderInit: function () {
+        AppJS.calendarSlider = new Swiper('.calendarSlider', {
             slidesPerView: 'auto',
-            speed: 1000,
+            speed: 500,
             prevButton: '.calendarPrev',
             nextButton: '.calendarNext',
             loop: true,
-            // loopedSlides: 4,
+            loopedSlides: 4,
             centeredSlides: true,
-            spaceBetween: -100
+            spaceBetween: -100,
+            simulateTouch: false,
+            onDestroy: function () {
+                setTimeout(function () {
+                    AppJS.calendarSliderInit();
+                }, 500);
+            },
+            onInit: function () {
+                $('.swiper-slide-duplicate .row:not(.head) div').on('click', function() { AppJS.pickDay($(this)); });
+                $('.swiper-slide-duplicate .viewBox').on('click', function() { AppJS.selectViewBoxClick(this); });
+                $('.swiper-slide-duplicate li').on('click', function() { AppJS.selectLiClick(this); });
+            }
         });
     },
-
-
 
     customScroll: function () {
         $('.scrollWrap').mCustomScrollbar({
             theme: 'myScroll',
-            // scrollbarPosition: 'outside',
             scrollInertia: 300
         });
     },
@@ -203,16 +291,18 @@ var AppJS = {
 
     },
 
-    watchMore: function ($watchMoreBtn, typeBtn) {
+    watchMore: function ($watchMoreBtn, typeBtn, isHideBtn) {
         var watchBox = $watchMoreBtn.closest('.content');
         if (typeBtn === 'siblingsBtn') {
-            watchBox = $watchMoreBtn.siblings('.content');
+            watchBox = $watchMoreBtn.closest('.accordionContainer').find('.content');
         }
         var watchBoxHeight = watchBox.outerHeight();
         watchBox.css({height: 'auto'});
         var openHeight = watchBox.outerHeight();
         watchBox.css({height: watchBoxHeight});
-        $watchMoreBtn.fadeOut();
+        // if (isHideBtn != 'noHideBtn') {
+            $watchMoreBtn.fadeOut();
+        // }
         watchBox.addClass('open');
         watchBox.animate({height: openHeight}, 600, function () {
             $(this).css('height', 'auto');
@@ -245,8 +335,7 @@ var AppJS = {
         selectBox.find('.viewBox').text($(li).text());
         select.val(targetValue);
         select.change();
-    }
-
+    },
 };
 
 

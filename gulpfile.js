@@ -54,7 +54,7 @@ gulp.task( "html:build", function() {
 gulp.task( "css:build", function() {
   return gulp.src( path.src.scss )
     .pipe( sass().on("error", sass.logError ) )
-    .pipe( prefixer() )
+    .pipe( prefixer('last 10 version', 'safari 5', 'ie6', 'ie7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4') )
     .pipe( gulp.dest( path.dist.css ) )
     .pipe(connect.reload());
 });

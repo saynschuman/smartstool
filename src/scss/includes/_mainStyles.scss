@@ -1,0 +1,99 @@
+.inputBox{
+	label.title{
+		margin-bottom: 5px;
+		color: #a1a1a1;
+		font-size: 12px;
+		display: block;
+	}
+	input, textarea, .viewBox{
+		display: block;
+		width: 100%;
+		outline: none;
+		box-sizing: border-box;
+		resize: none;
+		font-size: 12px;
+		border: 1px solid #dbdbdb;
+		border-radius: 2px;
+		background-color: #ececec;
+		height: 36px;
+		color: #141e29;
+		margin-bottom: 18px;
+	}
+	input{
+		line-height: 36px;
+		padding: 0 15px;
+		background: #fff
+	}
+	textarea{
+		height: 100px;
+		padding: 15px;
+	}
+	p.error{
+		color: #e68a8a;
+		font-size: 12px;
+		line-height: 1.5;
+	}
+	&.invalid{
+		input, textarea, .viewBox{
+			margin-bottom: 0;
+		}
+	}
+}
+.selectField{
+	position: relative;
+	font-family: 'museo_sans_cyrl500', sans-serif;
+	font-size: 12px;
+	color: #141e29;
+	select{
+		display: none;
+	}
+	.viewBox{
+		position: relative;
+		background-color: #fff;
+		-webkit-user-select: none;
+		line-height: 36px;
+		padding: 0 15px;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 20px;
+			border: 4px solid transparent;
+			border-top: 5px solid #7c7c7c;
+			transition: all .2s;
+			border-bottom: 0;
+		}
+	}
+	ul.dropdownBox{
+		position: absolute;
+		top: 100%;
+		display: none;
+		background-color: #fff;
+		width: 100%;
+		border: 1px solid #dbdbdb;
+		border-top: none;
+		box-sizing: border-box;
+		z-index: 20;
+		max-height: 180px;
+		overflow: auto;
+		li{
+			line-height: 36px;
+			padding: 0 15px;
+			cursor: pointer;
+			-webkit-user-select: none;
+			&:hover{
+				background-color: #e7e7e7;
+			}
+		}
+	}
+	&.active{
+		.viewBox{
+			border-bottom: none;
+			&:after{
+				transform: rotate(180deg)
+			}
+		}
+	}
+}
+

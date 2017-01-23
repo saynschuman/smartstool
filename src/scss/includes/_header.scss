@@ -1,0 +1,209 @@
+header {
+	position: relative;
+	color: $headerLightColor;
+	.workSection {
+		padding: 0 50px;
+		width: 1278px;
+		box-sizing: border-box;
+		margin: 0 auto;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+	}
+	.headerTop {
+		height: 50px;
+		background: #f7f4f0;
+		font-family: 'GothamProRegular', sans-serif;
+		font-size: 13px;
+		.address {
+			position: relative;
+			padding-left: 15px;
+			&:before {
+				position: absolute;
+				content: '';
+				top: -1px;
+				left: 0;
+				width: 10px;
+				height: 16px;
+				background: url("../img/icons/address.png") center center / cover no-repeat;
+			}
+		}
+		.logIn {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding-right: 25px;
+			&:before {
+				position: absolute;
+				content: '';
+				top: 3px;
+				right: 0;
+				width: 19px;
+				height: 10px;
+				background: url("../img/icons/login.png") center center / cover no-repeat;
+			}
+		}
+		.delivery {
+			position: absolute;
+			top: 50%;
+			right: 170px;
+			transform: translateY(-50%);
+		}
+	}
+	.headerCenter {
+		font-family: 'GothamProMedium', sans-serif;
+		background: #fff;
+		height: 94px;
+		font-size: 15px;
+		.telBox {
+			display: flex;
+			flex-direction: row;
+			.tel {
+				margin-right: 85px;
+				.city {
+					font-family: 'GothamProRegular', sans-serif;
+					font-size: 13px;
+				}
+				.num {
+					color: #222222;
+					font-size: 17px;
+				}
+			}
+		}
+		.logo {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 210px;
+			height: 54px;
+			background: url("../img/logo.png") center center / cover no-repeat;
+		}
+		.rightControls {
+			display: flex;
+			flex-direction: row;
+			.callBack {
+				position: relative;
+				padding-left: 22px;
+				&:before {
+					content: '';
+					position: absolute;
+					top: 50%;
+					margin-top: -12px;
+					left: 0;
+					width: 19px;
+					height: 29px;
+					background: url("../img/icons/call.png") center center / cover no-repeat;
+				}
+			}
+			.cart {
+				padding: 0 45px 0 35px;
+				margin-left: 28px;
+				position: relative;
+				.numProductLabel {
+					position: absolute;
+					top: 50%;
+					right: -1px;
+					width: 32px;
+					height: 32px;
+					border-radius: 50%;
+					background: $mainOrange;
+					text-align: center;
+					line-height: 32px;
+					color: #fff;
+					margin-top: -16px;
+					&:before {
+						content: '';
+						position: absolute;
+						top: 50%;
+						margin-top: -8px;
+						border: 8px solid transparent;
+						border-right: 8px solid $mainOrange;
+						left: -14px;
+					}
+				}
+				&:before {
+					content: '';
+					position: absolute;
+					top: 50%;
+					margin-top: -15px;
+					left: 0;
+					width: 27px;
+					height: 31px;
+					background: url("../img/icons/cart.png") center center / cover no-repeat;
+				}
+			}
+		}
+		.sandwich {
+			display: none;
+			height: 50px;
+			min-width: 50px;
+			padding: 0 20px 0 25px;
+			box-sizing: border-box;
+			flex-direction: row;
+			background: $mainGreen;
+			border-radius: 25px;
+			align-items: center;
+			.menuBtn {
+				text-transform: uppercase;
+				color: #fff;
+				font-family: 'GothamProBold', sans-serif;
+				font-size: 14px;
+			}
+			.sandwichLines {
+				margin-left: 12px;
+				position: relative;
+				min-height: 16px;
+				min-width: 16px;
+				div {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 2px;
+					background: #fff;
+					&:nth-child(2) {
+						top: 7px;
+					}
+					&:nth-child(3) {
+						top: 14px;
+					}
+				}
+			}
+		}
+	}
+	.headerMenu {
+		height: 64px;
+		.menu {
+			width: 100%;
+			height: 100%;
+			border: 1px solid #f2ede6;
+			border-top-width: 2px;
+			border-top-left-radius: 22px;
+			border-top-right-radius: 22px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.menuItem {
+				text-transform: uppercase;
+				color: $mainGreen;
+				font-family: 'GothamProMedium', sans-serif;
+				font-size: 15px;
+				width: 100%;
+				height: 100%;
+				padding: 0 52px;
+				text-align: center;
+				box-sizing: border-box;
+				border-right: 1px solid #f2ede6;
+				line-height: 64px;
+				&:last-child {
+					border: none;
+				}
+			}
+		}
+	}
+}
+
