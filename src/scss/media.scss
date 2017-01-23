@@ -116,3 +116,62 @@
 		}
 	}
 }
+
+@media screen and (max-width: 768px) {
+	header {
+		.headerTop {
+			.address{
+				&:after {
+					content: 'Адреса';
+				}
+			}
+			.logIn {
+				display: none;
+			}
+			.delivery {
+			    position: absolute;
+			    left: 50%;
+			    right: 50%;
+			    margin: auto;
+			    width: 140px;
+			    margin-left: -70px;
+			    text-align: center;
+				&:after{
+					content: 'Доставка';
+				}			    
+			}
+		}
+		.headerCenter {
+			.sandwich {
+				padding: 0 0 0 5px;
+				.menuBtn {
+					&:after {
+						content: '';
+					}
+				}				
+			}
+			.rightControls {
+				.callBack {
+					display: none;
+				}
+				.cart {
+					&:after {
+						content: '';
+					}		
+					.numProductLabel {
+						background-color: transparent;
+						color: #000;
+						right: 23px;
+						&:before {
+							display: none;
+						}
+					}			
+				}
+			}
+			.logo {
+				width: 100px;
+				background-size: 100%;
+			}
+		}
+	}
+}

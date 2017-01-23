@@ -20,6 +20,9 @@ header {
 		.address {
 			position: relative;
 			padding-left: 15px;
+			&:after {
+				content: 'Адреса магазинов';
+			}
 			&:before {
 				position: absolute;
 				content: '';
@@ -51,6 +54,9 @@ header {
 			top: 50%;
 			right: 170px;
 			transform: translateY(-50%);
+			&:after{
+				content: 'Доставка и оплата';
+			}
 		}
 	}
 	.headerCenter {
@@ -103,6 +109,9 @@ header {
 				padding: 0 45px 0 35px;
 				margin-left: 28px;
 				position: relative;
+				&:after {
+					content: 'Корзина';
+				}
 				.numProductLabel {
 					position: absolute;
 					top: 50%;
@@ -152,6 +161,9 @@ header {
 				color: #fff;
 				font-family: 'GothamProBold', sans-serif;
 				font-size: 14px;
+				&:after {
+					content: 'Меню';
+				}
 			}
 			.sandwichLines {
 				margin-left: 12px;
