@@ -1,12 +1,12 @@
-# Project Name
-##### Description
+# SmartStool
+##### freelancehunt project
 
 ### Requirenments
 * NodeJS >= 4.x
 
 ### Install node modules
 ```sh
-$ git clone git@github.com:rowen92/project.git
+$ git clone https://github.com/saynschuman/smartstool.git
 $ npm install
 ```
 
