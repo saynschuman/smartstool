@@ -1495,7 +1495,7 @@ main.home {
           bottom: 0;
           left: 0;
           background-color: #b4afab; }
-  main.home section.articles {
+  main.home section {
     width: 1210px;
     display: block;
     margin: 0 auto;
@@ -1547,6 +1547,115 @@ main.home {
           font-size: 13px;
           font-family: GothamProRegular;
           line-height: 1.6; }
+    main.home section.categories .category {
+      border: 2px solid #f8f7f3;
+      border-radius: 22px;
+      margin-bottom: 23px; }
+      main.home section.categories .category .thumbnail img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto; }
+      main.home section.categories .category .title {
+        font-size: 20px;
+        color: #96a100;
+        font-family: 'comfortaa-bold';
+        padding: 0 20px;
+        text-decoration: underline;
+        margin-bottom: 15px; }
+      main.home section.categories .category .excerpt p {
+        font-size: 13px;
+        color: #4d3b2d;
+        font-family: GothamProRegular;
+        padding: 0 20px;
+        margin-bottom: 15px;
+        line-height: 1.7; }
+      main.home section.categories .category .operations {
+        font-family: comfortaa-bold;
+        margin: 0;
+        background-color: #f8f7f3;
+        height: 75px;
+        padding: 28px 20px;
+        border-radius: 0 0 22px 22px;
+        position: relative; }
+        main.home section.categories .category .operations li {
+          display: inline-block; }
+          main.home section.categories .category .operations li:first-child {
+            text-align: left;
+            width: 50%;
+            float: left; }
+          main.home section.categories .category .operations li:last-child {
+            text-align: right;
+            width: 50%;
+            float: right; }
+            main.home section.categories .category .operations li:last-child i {
+              display: none; }
+          main.home section.categories .category .operations li:nth-child(2) {
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%); }
+          main.home section.categories .category .operations li.price {
+            font-size: 19px;
+            color: #4a3d2d;
+            text-transform: uppercase; }
+          main.home section.categories .category .operations li a.buy {
+            font-size: 18px;
+            color: #fff;
+            background-color: #fa8f0b;
+            border-radius: 20px;
+            padding: 10px 25px; }
+          main.home section.categories .category .operations li a.compare {
+            font-size: 15px;
+            color: #4a3d2d;
+            position: relative;
+            z-index: 99999; }
+  main.home .pre-footer-cat {
+    text-align: center;
+    color: #fff;
+    width: 1310px; }
+    main.home .pre-footer-cat .cat-1 {
+      background-image: url(../img/sh_11.png);
+      height: auto;
+      width: 100%;
+      position: relative;
+      height: 200px;
+      padding: 30px 10px;
+      border-radius: 22px;
+      margin: 20px 0; }
+      main.home .pre-footer-cat .cat-1 .title {
+        font-family: 'comfortaa-bold';
+        font-size: 25px;
+        margin-bottom: 14px;
+        text-decoration: underline;
+        line-height: 1.3; }
+      main.home .pre-footer-cat .cat-1 .content {
+        font-size: 17px;
+        font-family: GothamProLight;
+        line-height: 1.5; }
+    main.home .pre-footer-cat .cat-2 {
+      background-image: url(../img/sh_22.png);
+      height: auto;
+      width: 100%;
+      position: relative;
+      height: 200px;
+      padding: 30px 10px;
+      border-radius: 22px;
+      margin: 20px 0; }
+      main.home .pre-footer-cat .cat-2 .title {
+        font-family: 'comfortaa-bold';
+        font-size: 25px;
+        margin-bottom: 14px;
+        text-decoration: underline;
+        line-height: 1.3; }
+      main.home .pre-footer-cat .cat-2 .content {
+        font-size: 17px;
+        font-family: GothamProLight;
+        line-height: 1.5; }
 
 .divider {
   width: 100%;
