@@ -1,6 +1,19 @@
 @import 'includes/_var';
 
 @media screen and (max-width: 1300px){
+	.wrapper {
+	    padding: 0 30px;
+	    width: 100%;
+		display: block;
+		position: relative;
+		margin: 0 auto;
+	}	
+	main.home {
+		section.articles {
+			width: 100%;
+			padding: 0 20px;
+		}	
+	}		
 	header {
 		.workSection {
 			width: 100%;
@@ -118,7 +131,38 @@
 }
 
 @media screen and (max-width: 768px) {
+	.wrapper {
+	    padding: 0 20px;
+	}		
+	main.home {
+		section.articles {
+			width: 100%;
+			padding: 0 8px;
+			article {
+				height: auto;
+				margin-bottom: 20px;
+				.right {
+					width: 100%;
+					float: none;
+					.thumbnail {
+						border-radius: 25px 25px 0 0;
+						&::after {
+							display: none;
+						}
+					}
+				}
+				.left {
+					width: 100%;
+					float: none;
+					border-radius: 0 0 25px 25px;
+				}
+			}
+		}			
+	}
 	header {
+		.workSection {
+    		padding: 0 20px;
+		}
 		.headerTop {
 			.address{
 				&:after {
