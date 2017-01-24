@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@media screen and (max-width: 1300px) {
+  .wrapper {
+    padding: 0 30px;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: 0 auto; }
+  main.home section.articles {
+    width: 100%;
+    padding: 0 20px; }
+  header .workSection {
+    width: 100%; }
+  header .headerCenter .telBox .tel {
+    margin-right: 25px; }
+  header .headerMenu {
+    height: 64px; }
+    header .headerMenu .menu {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #f2ede6;
+      border-top-width: 2px;
+      border-top-left-radius: 22px;
+      border-top-right-radius: 22px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      header .headerMenu .menu .menuItem {
+        padding: 0 15px; } }
+
+@media screen and (max-width: 1050px) {
+  header .workSection {
+    padding: 0 30px; }
+  header .headerTop .logIn {
+    left: 225px;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
+  header .headerCenter .telBox {
+    display: none; }
+  header .headerCenter .logo {
+    position: static;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0); }
+  header .headerCenter .rightControls {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    header .headerCenter .rightControls .callBack {
+      position: relative;
+      padding-left: 22px; }
+      header .headerCenter .rightControls .callBack:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: -12px;
+        left: 0;
+        width: 19px;
+        height: 29px;
+        background: url("../img/icons/call.png") center center/cover no-repeat; }
+    header .headerCenter .rightControls .cart {
+      padding: 0 45px 0 35px;
+      margin-left: 28px;
+      position: relative; }
+      header .headerCenter .rightControls .cart .numProductLabel {
+        position: absolute;
+        top: 50%;
+        right: -1px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #ff8301;
+        text-align: center;
+        line-height: 32px;
+        color: #fff;
+        margin-top: -16px; }
+        header .headerCenter .rightControls .cart .numProductLabel:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          margin-top: -8px;
+          border: 8px solid transparent;
+          border-right: 8px solid #ff8301;
+          left: -14px; }
+      header .headerCenter .rightControls .cart:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        left: 0;
+        width: 27px;
+        height: 31px;
+        background: url("../img/icons/cart.png") center center/cover no-repeat; }
+  header .headerCenter .sandwich {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  header .headerMenu {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 20px; }
+  main.home .years {
+    position: relative;
+    top: 0;
+    text-align: left;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    margin-bottom: 40px; }
+    main.home .years li {
+      display: inline-block;
+      margin: 0 10px; }
+  main.home section.articles {
+    width: 100%;
+    padding: 0 8px; }
+    main.home section.articles article {
+      height: auto;
+      margin-bottom: 20px; }
+      main.home section.articles article .right {
+        width: 100%;
+        float: none; }
+        main.home section.articles article .right .thumbnail {
+          border-radius: 25px 25px 0 0; }
+          main.home section.articles article .right .thumbnail::after {
+            display: none; }
+      main.home section.articles article .left {
+        width: 100%;
+        float: none;
+        border-radius: 0 0 25px 25px; }
+  header .workSection {
+    padding: 0 20px; }
+  header .headerTop .address:after {
+    content: 'Адреса'; }
+  header .headerTop .logIn {
+    display: none; }
+  header .headerTop .delivery {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin: auto;
+    width: 140px;
+    margin-left: -70px;
+    text-align: center; }
+    header .headerTop .delivery:after {
+      content: 'Доставка'; }
+  header .headerCenter .sandwich {
+    padding: 0 0 0 5px; }
+    header .headerCenter .sandwich .menuBtn:after {
+      content: ''; }
+  header .headerCenter .rightControls .callBack {
+    display: none; }
+  header .headerCenter .rightControls .cart:after {
+    content: ''; }
+  header .headerCenter .rightControls .cart .numProductLabel {
+    background-color: transparent;
+    color: #000;
+    right: 23px; }
+    header .headerCenter .rightControls .cart .numProductLabel:before {
+      display: none; }
+  header .headerCenter .logo {
+    width: 100px;
+    background-size: 100%; }
+  footer .left-align {
+    float: none;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px; }
+  footer .right-align {
+    float: none;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px; }
+    footer .right-align ul li div {
+      margin-left: 0; }
+  footer .footer-menu ul li {
+    width: 50%; } }
+
+@media screen and (max-width: 480px) {
+  main.home .years li a {
+    font-size: 15px; }
+  footer .footer-menu ul li a {
+    font-size: 12px; } }

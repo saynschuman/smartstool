@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'comfortaa-bold';
+  src: url("../fonts/comfortaa-bold-webfont.eot");
+  src: url("../fonts/comfortaa-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/comfortaa-bold-webfont.woff2") format("woff2"), url("../fonts/comfortaa-bold-webfont.woff") format("woff"), url("../fonts/comfortaa-bold-webfont.ttf") format("truetype"), url("../fonts/comfortaa-bold-webfont.svg#comfortaabold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'comfortaa-light';
+  src: url("../fonts/comfortaa-light-webfont.eot");
+  src: url("../fonts/comfortaa-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/comfortaa-light-webfont.woff2") format("woff2"), url("../fonts/comfortaa-light-webfont.woff") format("woff"), url("../fonts/comfortaa-light-webfont.ttf") format("truetype"), url("../fonts/comfortaa-light-webfont.svg#comfortaalight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'comfortaa-regular';
+  src: url("../fonts/comfortaa-regular-webfont.eot");
+  src: url("../fonts/comfortaa-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/comfortaa-regular-webfont.woff2") format("woff2"), url("../fonts/comfortaa-regular-webfont.woff") format("woff"), url("../fonts/comfortaa-regular-webfont.ttf") format("truetype"), url("../fonts/comfortaa-regular-webfont.svg#comfortaaregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* font-family: 'GothamProRegular', sans-serif; */
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamProRegular.eot");
+  src: url("../fonts/GothamProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProRegular.woff") format("woff"), url("../fonts/GothamProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: 'GothamProBold', sans-serif; */
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamProBold.eot");
+  src: url("../fonts/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: 'GothamProBlack', sans-serif; */
+@font-face {
+  font-family: "GothamProBlack";
+  src: url("../fonts/GothamProBlack.eot");
+  src: url("../fonts/GothamProBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBlack.woff") format("woff"), url("../fonts/GothamProBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: 'GothamProMedium', sans-serif; */
+@font-face {
+  font-family: "GothamProMedium";
+  src: url("../fonts/GothamProMedium.eot");
+  src: url("../fonts/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: 'GothamProLight', sans-serif; */
+@font-face {
+  font-family: "GothamProLight";
+  src: url("../fonts/GothamProLight.eot");
+  src: url("../fonts/GothamProLight.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProLight.woff") format("woff"), url("../fonts/GothamProLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both; }
