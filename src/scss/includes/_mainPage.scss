@@ -1,5 +1,64 @@
 main.home {
 	padding-bottom: 20px;
+	.years {
+	    position: absolute;
+	    top: 50%;
+	    left: 0;
+	    text-align: center;
+	    width: 100%;
+	    padding: 0;
+	    margin: 0 auto;
+	    transform: translateY(-50%);
+		li {
+			display: inline-block;
+			margin: 0 10px;
+			&.active {
+				a {
+					color: #4d3b2b;
+					font-size: 17px;
+					padding: 10px 15px;
+					border: 2px solid #4d3b2b;
+					font-family: GothamProRegular;
+					border-radius: 20px;
+					&:before {
+						display: none;
+					}
+					&:after {
+						display: none;
+					}
+				}
+			}
+			a {
+				color: #979f00;
+				font-size: 17px;
+				padding: 0;
+				font-family: GothamProRegular;
+				padding-bottom: 5px;
+				position: relative;
+				&:hover {
+					text-decoration: none;
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 1px;
+					bottom: 1px;
+					left: 0;
+					background-color: #dbd9d7;
+				}
+				&:before {
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 1px;
+					bottom: 0;
+					left: 0;
+					background-color: #b4afab;
+				}
+			}
+		}
+	}
 	section.articles {
 		width: 1210px;
 		display: block;
