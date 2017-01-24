@@ -218,4 +218,42 @@
 			}
 		}
 	}
+	footer {
+		.left-align {
+			float: none;
+			width: 100%;
+			text-align: left;
+			margin-bottom: 10px;
+		}
+
+		.right-align {
+			float: none;
+			width: 100%;
+			text-align: left;
+			margin-bottom: 10px;
+		}	
+	.footer-menu {
+		ul {
+			li {
+				width: 50%;
+				a {
+				}
+			}
+		}
+	}			
+	}	
+}
+
+@media screen and (max-width: 480px) {
+	footer {
+	.footer-menu {
+		ul {
+			li {
+				a {
+					font-size: 12px;
+				}
+			}
+		}
+	}			
+	}	
 }
