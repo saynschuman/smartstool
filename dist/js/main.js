@@ -92,8 +92,10 @@ $(document).ready(function() {
 	// menu 
 		$('.sandwich-wrapper').click(function(){
 			$('.mobile-menu').show();
+			$('body').css('overflow', 'hidden');
 		})
 		$('.close').click(function(){
 			$('.mobile-menu').hide();
+			$('body').css('overflow', 'auto');
 		})	
 });	

@@ -1597,7 +1597,9 @@ header {
   bottom: 0;
   right: 0;
   margin: auto;
-  display: none; }
+  display: none;
+  overflow: auto;
+  height: auto; }
   .mobile-menu .close {
     background-image: url(../img/close.png);
     width: 30px;
@@ -1654,6 +1656,20 @@ header {
     .mobile-menu .menu-2 li a {
       font-size: 15px;
       color: #4d3b2b; }
+  .mobile-menu button {
+    background: none;
+    background-color: #4f3d2d;
+    border: none;
+    border-radius: 23px;
+    color: #fff;
+    font-family: GothamProRegular;
+    font-size: 15px;
+    padding: 15px 31px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: block; }
+    .mobile-menu button:focus {
+      outline: none; }
 
 footer {
   padding: 40px 0;
