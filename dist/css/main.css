@@ -1720,6 +1720,29 @@ footer {
 
 main.home {
   padding-bottom: 20px; }
+  main.home .i {
+    font-size: 21px;
+    color: #4e3b2c;
+    font-family: GothamProRegular;
+    margin-bottom: 40px;
+    display: block;
+    margin-top: -10px;
+    padding-left: 35px;
+    position: relative; }
+    main.home .i:before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/i.png);
+      left: 0;
+      top: -1px;
+      background-size: 100%;
+      position: absolute; }
+    main.home .i span {
+      color: #919d00;
+      font-size: 15px;
+      border-bottom: 1px dashed #919d00;
+      cursor: pointer; }
   main.home .years {
     position: absolute;
     top: 50%;
@@ -1891,6 +1914,8 @@ main.home {
             color: #4a3d2d;
             position: relative;
             z-index: 99999; }
+    main.home section.categories .orange-border {
+      border: 2px solid #fa8f0b; }
   main.home .pre-footer-cat {
     text-align: center;
     color: #fff;
@@ -1933,6 +1958,9 @@ main.home {
         font-size: 17px;
         font-family: GothamProLight;
         line-height: 1.5; }
+
+main.compare section.categories .category {
+  cursor: pointer; }
 
 .divider {
   width: 100%;

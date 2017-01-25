@@ -102,4 +102,11 @@ $(document).ready(function() {
 			$('.mobile-menu').hide();
 			$('body').css('overflow', 'auto');
 		})	
+	
+	//compare 
+	$('main.compare section.categories .category').click(function(){
+		$(this).toggleClass('orange-border');
+	})
+
+	
 });	
