@@ -1010,6 +1010,34 @@ hr {
   font-style: normal;
   font-weight: normal; }
 
+/* font-family: 'ProximaNovaBold', sans-serif; */
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/proximanova-bold.otf");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: 'ProximaNovaLight', sans-serif; */
+@font-face {
+  font-family: "ProximaNovaLight";
+  src: url("../fonts/proximanova-light.otf");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: 'ProximaNovaBlack', sans-serif; */
+@font-face {
+  font-family: "ProximaNovaBlack";
+  src: url("../fonts/proximanova-black.otf");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: 'ProximaNovaRegular', sans-serif; */
+@font-face {
+  font-family: "ProximaNovaRegular";
+  src: url("../fonts/proximanova-regular.otf");
+  font-style: normal;
+  font-weight: normal; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1365,7 +1393,7 @@ header {
       width: 100%;
       height: 100%;
       border: 1px solid #f2ede6;
-      border-top-width: 2px;
+      border-top: 2px solid #f2ede6;
       border-top-left-radius: 22px;
       border-top-right-radius: 22px;
       display: -webkit-box;
@@ -1379,7 +1407,43 @@ header {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      position: relative; }
+      header .headerMenu .menu .subMenu {
+        position: absolute;
+        width: 100%;
+        top: 62px;
+        height: auto;
+        opacity: 0;
+        border: 1px solid #f2ede6;
+        height: auto;
+        z-index: 99999;
+        background-color: #fff; }
+        header .headerMenu .menu .subMenu .left {
+          border-right: 1px solid #f2ede6;
+          width: 58.5%;
+          height: 273px;
+          padding: 30px 5px;
+          font-family: 'ProximaNovaRegular', sans-serif; }
+          header .headerMenu .menu .subMenu .left ul li ul li {
+            margin-bottom: 19px;
+            padding: 0 7px; }
+          header .headerMenu .menu .subMenu .left a {
+            display: block;
+            padding: 5px 0; }
+          header .headerMenu .menu .subMenu .left .item-1 {
+            font-size: 17px;
+            color: #9b9f04;
+            padding-bottom: 0; }
+            header .headerMenu .menu .subMenu .left .item-1:hover {
+              color: #f48c1e; }
+          header .headerMenu .menu .subMenu .left .item-2 {
+            font-size: 12px;
+            color: #765b46;
+            text-decoration: none; }
+        header .headerMenu .menu .subMenu .right {
+          width: 40%;
+          height: auto; }
       header .headerMenu .menu .menuItem {
         text-transform: uppercase;
         color: #a0aa27;
@@ -1392,9 +1456,60 @@ header {
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
         border-right: 1px solid #f2ede6;
-        line-height: 64px; }
-        header .headerMenu .menu .menuItem:last-child {
-          border: none; }
+        line-height: 64px;
+        cursor: pointer;
+        -webkit-transition: .3s;
+        transition: .3s;
+        position: relative; }
+        header .headerMenu .menu .menuItem[name="smart-5"] {
+          border-right: none !important; }
+          header .headerMenu .menu .menuItem[name="smart-5"]::before {
+            left: 0;
+            right: auto;
+            margin: 0 !important;
+            height: 2px !important;
+            width: 0%;
+            -webkit-transition: .3s;
+            transition: .3s; }
+          header .headerMenu .menu .menuItem[name="smart-5"]:hover::before {
+            width: 92%; }
+        header .headerMenu .menu .menuItem:first-child::before {
+          right: 0 !important;
+          left: auto !important;
+          margin: 0 !important;
+          height: 2px !important;
+          width: 0%;
+          -webkit-transition: .3s;
+          transition: .3s; }
+        header .headerMenu .menu .menuItem:first-child:hover::before {
+          width: 92%; }
+        header .headerMenu .menu .menuItem::before {
+          content: '';
+          position: absolute;
+          top: -1px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          height: 3px;
+          width: 0%;
+          background-color: #f58e1e;
+          -webkit-transition: .3s;
+          transition: .3s; }
+        header .headerMenu .menu .menuItem:hover {
+          color: #f58e1e;
+          -webkit-transition: .3s;
+          transition: .3s; }
+          header .headerMenu .menu .menuItem:hover::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 3px;
+            width: 100%;
+            background-color: #f58e1e;
+            -webkit-transition: .3s;
+            transition: .3s; }
 
 footer {
   padding: 40px 0;
