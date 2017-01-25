@@ -87,6 +87,9 @@
 			}
 		}
 		.headerCenter {
+			.sandwich-wrapper {
+				display: block;
+			}			
 			.telBox {
 				display: none;
 			}
@@ -161,6 +164,42 @@
 
 
 @media screen and (max-width: 768px) {
+.mobile-menu {
+	padding: 20px 3px 0 0;
+	.close {
+		right: 20px;
+		top: 20px;
+		width: 20px;
+		height: 20px;
+	}
+	.menu-1 {
+		li {
+			&.logIn {
+				display: block;
+			}
+			&.cart {
+				display: block;			
+			}			
+			height: 40px;
+			padding-left: 0px;
+			a {
+				font-size: 15px;
+				color: #664b33;
+				font-family: GothamProRegular;
+			}
+		}
+	}
+	.menu-2 {
+		li {
+			height: 40px;
+			padding-left: 15px;
+			a {
+				font-size: 13px;
+				color: #4d3b2b;
+			}
+		}
+	}
+}	
 .mobNoPad {
 	padding: 0;
 }	

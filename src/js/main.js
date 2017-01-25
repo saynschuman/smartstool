@@ -89,5 +89,11 @@ $(document).ready(function() {
 	    $('.menuItem[name="smart-5"').removeClass('active'); 
 	  }
 	);	
-
+	// menu 
+		$('.sandwich-wrapper').click(function(){
+			$('.mobile-menu').show();
+		})
+		$('.close').click(function(){
+			$('.mobile-menu').hide();
+		})	
 });	
