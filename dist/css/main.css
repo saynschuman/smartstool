@@ -1424,10 +1424,11 @@ header {
         left: -.01%; }
         header .headerMenu .menu .subMenu .left {
           border-right: 1px solid #f2ede6;
-          width: 58.5%;
+          width: 58.4%;
           height: 273px;
           padding: 30px 5px;
-          font-family: 'ProximaNovaRegular', sans-serif; }
+          font-family: 'ProximaNovaRegular', sans-serif;
+          float: left; }
           header .headerMenu .menu .subMenu .left ul li ul li {
             margin-bottom: 19px;
             padding: 0 7px; }
@@ -1446,7 +1447,31 @@ header {
             text-decoration: none; }
         header .headerMenu .menu .subMenu .right {
           width: 40%;
-          height: auto; }
+          height: auto;
+          float: right;
+          padding: 10px; }
+          header .headerMenu .menu .subMenu .right .r-left {
+            width: 50%;
+            float: left; }
+            header .headerMenu .menu .subMenu .right .r-left img {
+              display: block;
+              margin: 0 auto;
+              max-width: 100%; }
+          header .headerMenu .menu .subMenu .right .r-right {
+            width: 50%;
+            float: right;
+            padding-top: 20px; }
+            header .headerMenu .menu .subMenu .right .r-right p {
+              font-family: 'ProximaNovaRegular', sans-serif;
+              font-size: 12px;
+              color: #654933;
+              line-height: 1.9;
+              padding-left: 5px; }
+            header .headerMenu .menu .subMenu .right .r-right .price {
+              font-size: 19px;
+              color: #4a3d2d;
+              font-family: 'comfortaa-bold';
+              margin-top: 20px; }
       header .headerMenu .menu .menuItem {
         text-transform: uppercase;
         color: #a0aa27;
@@ -1713,7 +1738,9 @@ main.home {
         display: block;
         max-width: 100%;
         height: auto;
-        margin: 0 auto; }
+        margin: 0 auto;
+        width: 280px;
+        padding: 0px; }
       main.home section.categories .category .title {
         font-size: 20px;
         color: #96a100;
