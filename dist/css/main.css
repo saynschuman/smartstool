@@ -1411,14 +1411,17 @@ header {
       position: relative; }
       header .headerMenu .menu .subMenu {
         position: absolute;
-        width: 100%;
+        width: 100.1%;
         top: 60px;
         height: auto;
         display: none;
         border: 1px solid #f2ede6;
         height: auto;
         z-index: 99999;
-        background-color: #fff; }
+        background-color: #fff;
+        -webkit-box-shadow: 0px 40px 100px -10px rgba(0, 0, 0, 0.2);
+                box-shadow: 0px 40px 100px -10px rgba(0, 0, 0, 0.2);
+        left: -.01%; }
         header .headerMenu .menu .subMenu .left {
           border-right: 1px solid #f2ede6;
           width: 58.5%;
