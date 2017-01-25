@@ -98,4 +98,8 @@ $(document).ready(function() {
 			$('.mobile-menu').hide();
 			$('body').css('overflow', 'auto');
 		})	
+		$('.mobile-menu button').click(function(){
+			$('.mobile-menu').hide();
+			$('body').css('overflow', 'auto');
+		})	
 });	
