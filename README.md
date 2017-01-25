@@ -1,28 +1,6 @@
 # SmartStool
 ##### freelancehunt project
 
-### Requirenments
-* NodeJS >= 4.x
-
-### Install node modules
-```sh
-$ git clone https://github.com/saynschuman/smartstool.git
-$ npm install
-```
-
-### Install bower components
-```sh
-$ bower install
-```
-
-### Start server
-```sh
-$ npm start
-```
-
-### Start client
-In browser:
-[http://localhost:HOST](http://localhost:HOST)
-
-### License
-MIT
+Статьи - https://saynschuman.github.io/dist/index.html
+Категории - https://saynschuman.github.io/dist/category.html
+Новости - https://saynschuman.github.io/dist/news.html
