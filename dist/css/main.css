@@ -1720,6 +1720,44 @@ footer {
 
 main.home {
   padding-bottom: 20px; }
+  main.home .cart-ok {
+    background-image: url(../img/cart_ok.png);
+    width: 170px;
+    height: 170px;
+    background-size: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 46px; }
+  main.home .text-ok p {
+    font-size: 21px;
+    color: #4d3b2b;
+    line-height: 1.6;
+    text-align: center;
+    font-family: GothamProRegular; }
+  main.home .back-ok {
+    font-size: 15px;
+    color: #979f00;
+    font-family: GothamProMedium;
+    text-decoration: none;
+    border: 1px solid #efebe4;
+    border-radius: 23px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 254px;
+    padding: 16px 0;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    main.home .back-ok span {
+      font-family: ProximaNovaRegular; }
+    main.home .back-ok:hover {
+      background: #979f00;
+      color: #fff;
+      -webkit-transition: .3s;
+      transition: .3s; }
   main.home .i {
     font-size: 21px;
     color: #4e3b2c;

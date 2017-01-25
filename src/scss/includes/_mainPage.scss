@@ -1,4 +1,47 @@
 main.home {
+	.cart-ok {
+		background-image: url(../img/cart_ok.png);
+		width: 170px;
+		height: 170px;
+		background-size: 100%;
+		display: block;
+		margin: 0 auto;
+		margin-top: 50px;
+		margin-bottom: 46px;
+	}
+	.text-ok {
+		p {
+			font-size: 21px;
+			color: #4d3b2b;
+			line-height: 1.6;
+			text-align: center;
+			font-family: GothamProRegular;
+		}
+	}
+	.back-ok {
+		font-size: 15px;
+		color: #979f00;
+		font-family: GothamProMedium;
+		text-decoration: none;
+		border: 1px solid #efebe4;
+		border-radius: 23px;
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	    width: 254px;
+    	padding: 16px 0;
+    	margin-top: 40px;
+    	margin-bottom: 100px;
+    	transition: .3s;
+    	span {
+    		font-family: ProximaNovaRegular;
+    	}
+    	&:hover {
+    		background: #979f00;
+    		color: #fff;
+    		transition: .3s;
+    	}
+	}
 	padding-bottom: 20px;
 	.i {
 		font-size: 21px;
