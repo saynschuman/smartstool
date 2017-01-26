@@ -1,6 +1,21 @@
 @import 'includes/_var';
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1300px){	
+main.home section.about {
+	width: 100%;
+}	
+	.wrapper-reasons {
+		width: 100%;
+		padding: 0 25px;
+		float: none;
+	}	
+	main.opt {
+		form {
+			.opt-wrapper {
+				width: 100%;
+			}
+		}
+	}
 	main.home section.categories .category .operations li:last-child {
 		.compare span {
 			display: none;
@@ -30,6 +45,9 @@
 		section {
 			width: 100%;
 			padding: 0 20px;
+			&.about {
+				padding: 0;
+			}
 			&.articles {
 			
 			}
@@ -67,7 +85,87 @@
 	}
 }
 
-@media screen and (max-width: 1050px){		
+@media screen and (max-width: 1050px){
+main.dil section.about {
+	border-radius: 0; 
+}
+main.dil section.about .right {
+	padding: 40px 20px 0px;
+}	
+main.dil .wrapper {
+	padding: 0;
+	h1 {
+		padding-left: 20px;
+	}
+}
+main.dil form .opt-wrapper,
+main.dil .opt-wrapper {
+	width: 100%;
+}
+main.dil section.reasons .right li:before {
+    content: '';
+    position: absolute;
+    left: -47px;
+    top: 0;
+}
+main.dil section.reasons .left li:before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 0;
+}	
+main.dil section.reasons .title {
+	position: absolute;
+    width: 155px;
+    left: 50%;
+    right: 0;
+    transform: translateX(-107px);
+    text-align: center;
+    font-family: 'comfortaa-regular';
+    font-size: 21px;
+    color: #4d3b2b;
+    line-height: 1.5;
+    margin-top: 0;
+}	
+main.dil section.reasons .left,	
+main.dil section.reasons .right {
+	width: 254px;
+}
+main.dil section.reasons {
+width: 92%;
+    display: block;
+    margin-right: 0px;
+    padding: 44px 0;
+    float: right;	
+}	
+	main.dil section.about .right .excerpt {
+		height: auto;
+		overflow: hidden;
+		padding-bottom: 30px;
+	}
+	main.dil section.about .left {
+		width: 100%;
+		float: none;
+		.thumbnail {
+			height: 500px;
+			border-radius: 0;
+			
+			&:after {
+				display: none;
+			}
+		}
+	}
+	main.dil section.about .right {
+		width: 100%;
+		float: none;
+	}
+	main.opt form .opt-wrapper .of {
+		width: 100%;
+		font-size: 17px;
+		font-family: 'comfortaa-bold';
+		text-align: left;
+		padding: 13px 0;	
+	}
 	main.home .pre-footer-cat .cat-1 .title,
 	main.home .pre-footer-cat .cat-2 .title {
 		font-size: 19px;
@@ -164,6 +262,95 @@
 
 
 @media screen and (max-width: 768px) {
+main.dil form {
+    background-color: #f9f7f4;
+    padding: 25px 0;
+}	
+main.dil form .opt-wrapper h2 {
+	font-size: 23px;
+}	
+main.dil form .opt-wrapper label {
+    display: block;
+    margin-bottom: 10px;
+}	
+main.dil form .opt-wrapper {
+	padding: 0 20px;
+	.mob-no-padding {
+		padding: 0;
+	}
+}	
+main.dil .opt-wrapper {
+	padding: 0;
+}
+.wrapper-reasons {
+    margin-bottom: 15px;
+}	
+main.dil section.reasons {
+    width: 100%;
+    display: block;
+    margin-right: 0px;
+    padding: 50px 0;
+    float: none;
+}	
+main.dil section.reasons .title {
+	position: relative;
+	margin-bottom: 40px;
+	transform: translateX(-50%);
+}	
+main.dil section.reasons .left, 
+main.dil section.reasons .right {
+	width: 100%;
+	padding-left: 57px;
+}
+main.dil section.reasons .left li:before,
+main.dil section.reasons .right li:before {
+	left: -55px;
+}
+	main.opt form .opt-wrapper input[type="submit"]	{
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	footer {
+	    padding: 30px 0;
+	}	
+	main.home {
+	    padding-bottom: 0px;
+	}	
+	main.opt form {
+	    padding: 40px 0;
+	}	
+	main.opt form .opt-wrapper h2 {
+	    margin-bottom: 30px;
+	}	
+	main.opt form .opt-wrapper h2	{
+		font-size: 23px;
+	}
+	main.home h1	{
+		font-size: 30px;
+		padding: 30px 0;
+	}
+	main.opt form .opt-wrapper .of {
+		width: 100%;
+		font-size: 17px;
+		text-align: left;
+		padding: 0;
+		display: block;	
+	}	
+	main.opt form .opt-wrapper label {
+	    line-height: 1.3;
+	    padding: 0 15px;
+	    margin-bottom: 5px;
+	    display: block;	
+	    padding: 0;
+	}	
+	main.opt form .opt-wrapper .mob-no-padding {
+		padding: 0;
+	}
+	main.opt form .opt-wrapper .of {
+		text-align: center;
+		line-height: 1.3;
+	}
 .mobile-menu {
 	padding: 20px 3px 0 0;
 	.close {
@@ -205,6 +392,7 @@
 }	
 main.home .pre-footer-cat {
 	padding: 0;
+	padding-bottom: 30px;
 }
 main.home .pre-footer-cat .cat-1,
 main.home .pre-footer-cat .cat-2 {
