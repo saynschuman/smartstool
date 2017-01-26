@@ -1,5 +1,15 @@
 @charset "UTF-8";
 @media screen and (max-width: 1300px) {
+  main.homepage section.mainscreen .mouse {
+    background-image: none;
+    bottom: 7px; }
+    main.homepage section.mainscreen .mouse i {
+      display: block;
+      font-size: 23px;
+      color: #000; }
+  main.homepage .wrapper {
+    width: 100%;
+    padding: 0px 50px; }
   main.home section.about {
     width: 100%; }
   .wrapper-reasons {
@@ -52,6 +62,24 @@
               align-items: center; }
       header .headerMenu .menu .menuItem {
         padding: 0 15px; } }
+
+@media screen and (max-width: 1200px) {
+  main.homepage section.mainscreen .right {
+    padding: 10px 0; }
+  main.homepage section.mainscreen .right .no-padding {
+    padding: 0 15px; }
+    main.homepage section.mainscreen .right .no-padding:first-child {
+      padding: 0; }
+  main.homepage section.mainscreen .right .content {
+    width: 90%; }
+  main.homepage section.mainscreen .right .inf-1 {
+    margin-bottom: 30px; }
+  main.homepage section.mainscreen .right .inf-3 {
+    width: 100%; }
+  main.homepage section.mainscreen .mask {
+    display: block; }
+  main.homepage section.mainscreen {
+    height: 695px; } }
 
 @media screen and (max-width: 1050px) {
   main.dil section.about {
@@ -204,7 +232,37 @@
   header .headerMenu {
     display: none; } }
 
+@media screen and (max-width: 991px) {
+  main.homepage section.mainscreen .right .no-padding {
+    padding: 0px; }
+    main.homepage section.mainscreen .right .no-padding:first-child {
+      padding: 0; } }
+
 @media screen and (max-width: 768px) {
+  main.homepage section.mainscreen .mouse {
+    display: none; }
+  main.homepage section.mainscreen .right .inf-2 p {
+    font-size: 15px;
+    margin-bottom: 20px; }
+  main.homepage section.mainscreen .right .no-padding {
+    margin-bottom: 20px; }
+    main.homepage section.mainscreen .right .no-padding:last-child {
+      margin-bottom: 0; }
+  main.homepage section.mainscreen .right .title {
+    font-size: 46px; }
+  main.homepage section.mainscreen h1 {
+    font-size: 23px; }
+  main.homepage .wrapper {
+    width: 100%;
+    padding: 0px 20px; }
+  main.homepage section.mainscreen .right .content {
+    width: 100%; }
+  main.homepage section.mainscreen .right .title {
+    float: left;
+    margin-right: 20px; }
+  main.homepage section.mainscreen {
+    height: auto;
+    padding-bottom: 20px; }
   main.home .i {
     font-size: 14px;
     line-height: 1.3; }
