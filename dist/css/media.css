@@ -2,7 +2,7 @@
 @media screen and (max-width: 1300px) {
   main.homepage section.mainscreen .mouse {
     background-image: none;
-    bottom: 7px; }
+    bottom: 0px; }
     main.homepage section.mainscreen .mouse i {
       display: block;
       font-size: 23px;
@@ -79,9 +79,13 @@
   main.homepage section.mainscreen .mask {
     display: block; }
   main.homepage section.mainscreen {
-    height: 695px; } }
+    height: auto;
+    float: left;
+    padding-bottom: 40px; } }
 
 @media screen and (max-width: 1050px) {
+  .header-divider {
+    top: 143px; }
   main.dil section.about {
     border-radius: 0; }
   main.dil section.about .right {
@@ -260,9 +264,6 @@
   main.homepage section.mainscreen .right .title {
     float: left;
     margin-right: 20px; }
-  main.homepage section.mainscreen {
-    height: auto;
-    padding-bottom: 20px; }
   main.home .i {
     font-size: 14px;
     line-height: 1.3; }
@@ -465,6 +466,11 @@
       margin-left: 0; }
   footer .footer-menu ul li {
     width: 50%; } }
+
+@media screen and (max-width: 767px) {
+  main.homepage section.mainscreen {
+    height: auto;
+    padding-bottom: 20px; } }
 
 @media screen and (max-width: 480px) {
   main.home .years li a {

@@ -1496,9 +1496,20 @@ header {
         -webkit-transition: .3s;
         transition: .3s;
         position: relative;
+        z-index: 999999;
         background: -webkit-gradient(linear, left bottom, left top, from(#f5f2ef), to(transparent));
         background: -webkit-linear-gradient(bottom, #f5f2ef, transparent);
         background: linear-gradient(to top, #f5f2ef, transparent); }
+        header .headerMenu .menu .menuItem::after {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 100%;
+          height: 15px;
+          background-color: #fff;
+          z-index: 999999;
+          display: none; }
         header .headerMenu .menu .menuItem[name="smart-5"] {
           border-right: none !important; }
           header .headerMenu .menu .menuItem[name="smart-5"]::before {
@@ -1549,6 +1560,8 @@ header {
             background-color: #f58e1e;
             -webkit-transition: .3s;
             transition: .3s; }
+          header .headerMenu .menu .menuItem:hover::after {
+            display: block; }
       header .headerMenu .menu .active {
         color: #f58e1e;
         background: transparent; }
@@ -1670,6 +1683,14 @@ header {
     display: block; }
     .mobile-menu button:focus {
       outline: none; }
+
+.header-divider {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #f2ede6;
+  z-index: 9;
+  top: 207px; }
 
 footer {
   padding: 40px 0;

@@ -305,7 +305,19 @@ header {
 				cursor: pointer;
 				transition: .3s;
 				position: relative;
+				z-index: 999999;
 				background: linear-gradient(to top, #f5f2ef, transparent);
+				&::after {
+					    content: '';
+					    position: absolute;
+					    bottom: -2px;
+					    left: 0;
+					    width: 100%;
+					    height: 15px;
+					    background-color: #fff;
+					    z-index: 999999;
+					    display: none;
+					}				
 				&[name="smart-5"] {
 					border-right: none !important;	
 					&::before {
@@ -363,6 +375,9 @@ header {
 						width: 100%;
 						background-color: $hoverItem;
 						transition: .3s;
+					}
+					&::after {
+						display: block;
 					}
 				}
 			}
@@ -511,4 +526,11 @@ header {
     	}
 	}
 }
-
+.header-divider {
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	background-color: #f2ede6;
+	z-index: 9;
+	top: 207px;
+}
