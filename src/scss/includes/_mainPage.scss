@@ -349,6 +349,8 @@ main.compare section.categories .category {
     background-repeat-y: no-repeat;
 }
 
+// opt & dil
+
 main.opt form {
   background-color: #f9f7f4;
   padding: 55px 0 60px; }
@@ -534,8 +536,9 @@ main.dil section.reasons {
   display: block;
   margin: 0 auto; }
 
-section.work {
-  padding-bottom: 15px; }
+main.home section.work {
+  padding-bottom: 15px; 
+width: 100%;}
   section.work h2 {
     color: #4d3b2b;
     font-size: 27px;
@@ -632,3 +635,5 @@ main.dil .opt-wrapper {
         height: 17px;
         width: 18px;
         top: 4px; }
+
+// homepage

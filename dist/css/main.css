@@ -2222,8 +2222,9 @@ main.dil section.reasons .right li:before {
   display: block;
   margin: 0 auto; }
 
-section.work {
-  padding-bottom: 15px; }
+main.home section.work {
+  padding-bottom: 15px;
+  width: 100%; }
 
 section.work h2 {
   color: #4d3b2b;
