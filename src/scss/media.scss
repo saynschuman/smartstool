@@ -1,6 +1,9 @@
 @import 'includes/_var';
 
 @media screen and (max-width: 1300px){	
+main.homepage section.video .video-wrapper {
+	width: 100%;	
+}
 main.homepage section.chairs {
 	width: 100%;
 }
@@ -105,6 +108,9 @@ main.home section.about {
 }
 
 @media screen and (max-width: 1200px) {
+main.homepage section.video {
+	float: left;
+}
 main.homepage section.chairs .right .price {
 	right: -20px;
 }
@@ -370,7 +376,22 @@ width: 92%;
 			padding: 0;
 		}
 	}
-	
+	.video .vid {
+		padding: 0;
+	}
+	.video .text {
+		padding: 0 20px;
+	}
+	main.homepage section.video .video-wrapper {
+		padding: 45px 0 20px;
+	}
+	main.homepage section.video video {
+		border-radius: 0;
+		height: auto;
+	}
+	main.homepage section.video .video-js {
+		border-radius: 0;
+	}
 }		
 
 @media screen and (max-width: 768px) {

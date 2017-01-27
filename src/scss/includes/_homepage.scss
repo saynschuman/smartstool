@@ -95,16 +95,7 @@ main.homepage {
 		display: block;
 		margin: 0 auto;
 		position: relative;
-		// &:after {
-		// 	content: '';
-		// 	position: absolute;
-		// 	background-image: url(../img/shape-chairs.png); 
-		// 	width: 100%;
-		// 	height: 90px;
-		// 	background-size: cover;
-		// 	bottom: 0;
-		// 	left: 0;
-		// }
+		z-index: 2;
 		.inf {
 			margin-top: 50px;
 			margin-bottom: 50px;
@@ -221,6 +212,52 @@ main.homepage {
 				font-family: 'comfortaa-bold';
 				text-align: right;
 			}
+		}
+	}
+	section.video {
+		width: 100%;
+		background-color: #f8f7f3; 
+		position: relative;
+		z-index: 1;
+		margin-top: -20px;
+		&:after {
+			content: '';
+			position: absolute;
+			background-image: url(../img/shape-chairs.png); 
+			width: 100%;
+			height: 90px;
+			background-size: cover;
+			top: -90px;
+			left: 0;
+		}
+		.video-wrapper {
+			width: 1200px;
+			padding: 45px 15px 20px;
+			display: block;
+			margin: 0 auto;
+		}	
+		h2 {
+			font-size: 33px;
+			color: #4d3b2b;
+			font-family: 'GothamProRegular', sans-serif; 
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		video {
+			border-radius: 30px;
+		}
+		.video-js {
+			width: 100%;
+			height: 280px;
+			border-radius: 23px;
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 15px;
+			color: #4d3b2b;
+			font-family: 'GothamProRegular', sans-serif; 
+			line-height: 1.6;
+			margin-bottom: 20px;
 		}
 	}
 }
