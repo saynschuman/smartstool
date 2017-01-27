@@ -108,6 +108,20 @@ main.home section.about {
 }
 
 @media screen and (max-width: 1200px) {
+main.homepage section.video .tablet-discounts .title {
+    transform: translateX(-50%);
+    left: 50%;	
+}	
+main.homepage section.video .tablet-discounts {
+	display: block;
+}
+main.homepage section.video .news-block {
+	width: 50%;
+	margin: 20px;
+}	
+main.homepage section.video .news-block .discounts {
+	display: none;
+}	
 main.homepage section.video {
 	float: left;
 }
@@ -370,6 +384,10 @@ width: 92%;
 }
 
 @media screen and (max-width: 991px) {
+main.homepage section.video .tablet-discounts .title {
+    transform: translateX(0);
+    left: 0;	
+}		
 	main.homepage section.mainscreen .right .no-padding {
 		padding: 0px;
 		&:first-child {
@@ -395,6 +413,65 @@ width: 92%;
 }		
 
 @media screen and (max-width: 768px) {
+main.homepage section.video .tablet-discounts .descr {
+    text-align: left;
+    line-height: 1.5;
+    position: relative;
+    right: 0;
+    top: 0;
+    padding: 0;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(0);
+    width: 80%;
+    display: block;
+    margin: 0 auto;	
+   	padding: 26px 0;
+}
+main.homepage section.video .news-block .news img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 170px;	
+}
+main.homepage section.video .news-block .news .date {
+	padding-top: 10px;
+}
+main.homepage section.video .tablet-discounts .descr span {
+	margin-top: 62px;
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: right;
+    top: 0;	
+}
+main.homepage section.video .tablet-discounts .title span {
+	width: 100%;
+	font-size: 25px;
+}
+main.homepage section.video .news-block	 {
+    width: 100%;
+    margin: 0;
+    float: none;
+    border-radius: 0;
+    padding-bottom: 8px;
+    margin-bottom: -20px;
+}
+main.homepage section.video .tablet-discounts {
+    padding: 0;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    right: 0;	
+    margin-top: -40px;
+}
+main.homepage section.video .tablet-discounts .title {
+	width: 100%;
+	left: 0;
+	background-image: url(../img/mobile-discounts-background.png); 
+	height: 140px;
+}
+    
 main.homepage section.chairs .left .back-description {
     bottom: 40px;
 }	
