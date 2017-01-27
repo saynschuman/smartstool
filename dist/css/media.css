@@ -315,6 +315,10 @@
     display: none; } }
 
 @media screen and (max-width: 991px) {
+  main.homepage section.for-all {
+    padding-top: 20px;
+    float: left;
+    width: 100%; }
   main.homepage section.furniture .col {
     text-align: center; }
     main.homepage section.furniture .col img {
@@ -348,6 +352,18 @@
     border-radius: 0; } }
 
 @media screen and (max-width: 768px) {
+  main.homepage section.for-all h2 {
+    margin-top: 40px; }
+  .mob_no {
+    display: none; }
+  main.homepage section.furniture .pre-footer-cat .cat-1,
+  main.homepage section.furniture .pre-footer-cat .cat-2 {
+    height: auto;
+    padding: 30px 10px;
+    border-radius: 0;
+    margin: 0; }
+  main.homepage section.furniture .wrapper.pre-footer-cat {
+    padding: 0; }
   main.homepage section.furniture h2 {
     font-size: 30px; }
   main.homepage section.video .tablet-discounts .descr {

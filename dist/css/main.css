@@ -2755,7 +2755,8 @@ main.homepage section.furniture {
     padding: 50px;
     display: block;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    padding-bottom: 0; }
   main.homepage section.furniture h2 {
     font-size: 60px;
     color: #4d3b2b;
@@ -2782,3 +2783,74 @@ main.homepage section.furniture {
     line-height: 1.3;
     position: absolute;
     top: 27%; }
+  main.homepage section.furniture .pre-footer-cat {
+    text-align: center;
+    color: #fff;
+    width: 1310px; }
+    main.homepage section.furniture .pre-footer-cat .cat-1 {
+      background-image: url(../img/sh_11.png);
+      height: auto;
+      width: 100%;
+      position: relative;
+      height: 200px;
+      padding: 30px 10px;
+      border-radius: 22px;
+      margin: 20px 0; }
+      main.homepage section.furniture .pre-footer-cat .cat-1 .title {
+        font-family: 'comfortaa-bold';
+        font-size: 25px;
+        margin-bottom: 14px;
+        text-decoration: underline;
+        line-height: 1.3;
+        margin: 0px 0 20px;
+        color: #fff; }
+      main.homepage section.furniture .pre-footer-cat .cat-1 .content {
+        font-size: 17px;
+        font-family: GothamProLight;
+        line-height: 1.5; }
+    main.homepage section.furniture .pre-footer-cat .cat-2 {
+      background-image: url(../img/sh_22.png);
+      height: auto;
+      width: 100%;
+      position: relative;
+      height: 200px;
+      padding: 30px 10px;
+      border-radius: 22px;
+      margin: 20px 0; }
+      main.homepage section.furniture .pre-footer-cat .cat-2 .title {
+        font-family: 'comfortaa-bold';
+        font-size: 25px;
+        margin-bottom: 14px;
+        text-decoration: underline;
+        line-height: 1.3;
+        margin: 0px 0 20px;
+        color: #fff; }
+      main.homepage section.furniture .pre-footer-cat .cat-2 .content {
+        font-size: 17px;
+        font-family: GothamProLight;
+        line-height: 1.5; }
+
+main.homepage section.for-all h2 {
+  color: #4d3b2b;
+  font-family: 'comfortaa-bold';
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  display: block; }
+
+main.homepage section.for-all .no-padding {
+  padding: 0; }
+
+main.homepage section.for-all img {
+  width: 100%; }
+
+main.homepage section.for-all .tit {
+  color: #4d3b2b;
+  font-size: 20px;
+  font-family: 'GothamProRegular', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase; }
+
+main.homepage section.furniture .wrapper.pre-footer-cat {
+  padding-top: 0; }
