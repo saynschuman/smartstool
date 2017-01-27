@@ -1190,6 +1190,14 @@ h1 {
   font-family: 'comfortaa-bold';
   padding: 50px 0; }
 
+.left_align {
+  float: left;
+  width: 50%; }
+
+.right_align {
+  float: right;
+  width: 50%; }
+
 header {
   position: relative;
   color: #664b33; }
@@ -1422,11 +1430,20 @@ header {
         height: auto;
         z-index: 99999;
         background-color: #fff;
-        -webkit-box-shadow: 0px 40px 100px -10px rgba(0, 0, 0, 0.2);
-                box-shadow: 0px 40px 100px -10px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0px 50px 100px -10px rgba(0, 0, 0, 0.2);
+                box-shadow: 0px 50px 100px -10px rgba(0, 0, 0, 0.2);
         left: -.01%;
         border-bottom-left-radius: 22px;
         border-bottom-right-radius: 22px; }
+        header .headerMenu .menu .subMenu::after {
+          content: '';
+          position: absolute;
+          top: -1px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #fff;
+          z-index: 999999; }
         header .headerMenu .menu .subMenu .left {
           border-right: 1px solid #f2ede6;
           width: 58.4%;
@@ -1503,10 +1520,10 @@ header {
         header .headerMenu .menu .menuItem::after {
           content: '';
           position: absolute;
-          bottom: -2px;
+          bottom: -1px;
           left: 0;
           width: 100%;
-          height: 15px;
+          height: 1px;
           background-color: #fff;
           z-index: 999999;
           display: none; }
@@ -1612,7 +1629,8 @@ header {
   margin: auto;
   display: none;
   overflow: auto;
-  height: auto; }
+  height: auto;
+  z-index: 9; }
   .mobile-menu .close {
     background-image: url(../img/close.png);
     width: 30px;
@@ -2161,9 +2179,9 @@ main.dil section.reasons .title {
   width: 180px;
   left: 50%;
   right: 0;
-  -webkit-transform: translateX(-107px);
-  -ms-transform: translateX(-107px);
-  transform: translateX(-107px);
+  -webkit-transform: translateX(-130px);
+  -ms-transform: translateX(-130px);
+  transform: translateX(-130px);
   text-align: center;
   font-family: 'comfortaa-regular';
   font-size: 21px;
@@ -2436,3 +2454,74 @@ main.homepage section.mainscreen {
     opacity: .7;
     z-index: 1;
     display: none; }
+
+main.homepage section.chairs {
+  width: 1280px;
+  padding: 50px;
+  display: block;
+  margin: 0 auto;
+  position: relative; }
+  main.homepage section.chairs .inf {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    font-size: 13px;
+    color: #4d3b2b;
+    font-family: GothamProRegular, sans-serif;
+    line-height: 1.8; }
+  main.homepage section.chairs .left {
+    float: left;
+    width: 50%;
+    border-right: 1px solid #f8f7f3;
+    position: relative; }
+    main.homepage section.chairs .left .left_align .inf {
+      text-align: left; }
+    main.homepage section.chairs .left .right_align .inf {
+      padding-right: 50px;
+      text-align: right; }
+  main.homepage section.chairs .right {
+    float: right;
+    width: 50%;
+    position: relative; }
+    main.homepage section.chairs .right h2.title {
+      padding-left: 50px; }
+    main.homepage section.chairs .right .left_align .inf {
+      text-align: left;
+      padding-left: 50px; }
+    main.homepage section.chairs .right .right_align .inf {
+      text-align: right; }
+    main.homepage section.chairs .right .price {
+      right: -50px; }
+  main.homepage section.chairs h2.title {
+    font-size: 37px;
+    color: #ff8301;
+    font-family: 'comfortaa-bold';
+    width: 100%;
+    max-width: 175px; }
+  main.homepage section.chairs .price {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    background-color: #f8f7f3;
+    padding: 20px 50px; }
+    main.homepage section.chairs .price:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      border: 45px solid transparent;
+      border-left: 32px solid #fff; }
+    main.homepage section.chairs .price span:first-child {
+      font-size: 17px;
+      display: block;
+      color: #4d4036;
+      font-family: "GothamProMedium";
+      margin-bottom: 7px;
+      text-align: right; }
+    main.homepage section.chairs .price span:last-child {
+      font-size: 27px;
+      display: block;
+      color: #4d4036;
+      font-family: 'comfortaa-bold';
+      text-align: right; }

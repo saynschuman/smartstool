@@ -89,4 +89,107 @@ main.homepage {
 			display: none;
 		}
 	}
+	section.chairs {
+		width: 1280px;
+		padding: 50px;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		// &:after {
+		// 	content: '';
+		// 	position: absolute;
+		// 	background-image: url(../img/shape-chairs.png); 
+		// 	width: 100%;
+		// 	height: 90px;
+		// 	background-size: cover;
+		// 	bottom: 0;
+		// 	left: 0;
+		// }
+		.inf {
+			margin-top: 50px;
+			margin-bottom: 50px;
+			display: block;
+			font-size: 13px;
+			color: #4d3b2b;
+			font-family: GothamProRegular, sans-serif;
+			line-height: 1.8;
+		}
+		.left {
+			float: left;
+			width: 50%;
+			border-right: 1px solid #f8f7f3;
+			position: relative;
+			.left_align {
+				.inf {
+					text-align: left;
+				}	
+			}
+			.right_align {
+				.inf {
+					padding-right: 50px;
+					text-align: right;
+				}	
+			}			
+		}
+		.right {
+			float: right;
+			width: 50%;
+			position: relative;
+			h2.title {
+				padding-left: 50px;
+			}			
+			.left_align {
+				.inf {
+					text-align: left;
+					padding-left: 50px;
+				}	
+			}
+			.right_align {
+				.inf {
+					text-align: right;
+				}	
+			}	
+			.price {
+				right: -50px;
+			}
+		}
+		h2.title {
+			font-size: 37px;
+			color: #ff8301;
+			font-family: 'comfortaa-bold';
+			width: 100%;
+			max-width: 175px;
+		}
+		.price {
+			position: absolute;
+			right: 0;
+			top: -25px;
+			background-color: #f8f7f3;
+			padding: 20px 50px;
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+			    border: 45px solid transparent;
+				border-left: 32px solid #fff;
+			}
+			span:first-child {
+				font-size: 17px;
+				display: block;
+				color: #4d4036;
+				font-family: "GothamProMedium";
+				margin-bottom: 7px;
+				text-align: right;
+			}
+			span:last-child {
+				font-size: 27px;
+				display: block;
+				color: #4d4036;
+				font-family: 'comfortaa-bold';
+				text-align: right;
+			}
+		}
+	}
 }

@@ -112,9 +112,9 @@
     width: 155px;
     left: 50%;
     right: 0;
-    -webkit-transform: translateX(-107px);
-        -ms-transform: translateX(-107px);
-            transform: translateX(-107px);
+    -webkit-transform: translateX(-130px);
+        -ms-transform: translateX(-130px);
+            transform: translateX(-130px);
     text-align: center;
     font-family: 'comfortaa-regular';
     font-size: 21px;
