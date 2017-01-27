@@ -315,6 +315,8 @@
     display: none; } }
 
 @media screen and (max-width: 991px) {
+  .mob_no_2 {
+    display: none; }
   main.homepage section.for-all {
     padding-top: 20px;
     float: left;
