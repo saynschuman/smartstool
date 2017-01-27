@@ -68,6 +68,8 @@
         padding: 0 15px; } }
 
 @media screen and (max-width: 1200px) {
+  main.homepage section.chairs .right .price {
+    right: -20px; }
   main.homepage section.chairs .left .back-description {
     display: block;
     font-size: 13px;
