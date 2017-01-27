@@ -419,10 +419,8 @@ main.homepage section.reviews .review {
     border: 2px solid #edede7;
     border-radius: 25px;
     padding: 25px;
-    min-height: auto;
     margin-bottom: 20px;
     overflow: hidden;
-    height: auto;
 }	
 main.homepage section.reviews a.leave {
     float: left;
@@ -501,6 +499,12 @@ main.homepage section.video .tablet-discounts .title {
 }		
 
 @media screen and (max-width: 768px) {
+main.homepage section.reviews .review {
+    min-height: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: auto;
+}		
 main.homepage section.reviews .wrapper {
 	padding: 0 20px;
 }	
