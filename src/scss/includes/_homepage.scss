@@ -119,6 +119,23 @@ main.homepage {
 			width: 50%;
 			border-right: 1px solid #f8f7f3;
 			position: relative;
+			img {
+				position: absolute;
+				width: 255px;
+				height: auto;
+				left: 50%;
+				bottom: -50px;
+				transform: translateX(-100px);
+				&.mobile {
+					display: none;
+				}
+				&.desktop {
+					display: block;
+				}				
+			}
+			.back-description {
+				display: none;
+			}
 			.left_align {
 				.inf {
 					text-align: left;
@@ -135,6 +152,20 @@ main.homepage {
 			float: right;
 			width: 50%;
 			position: relative;
+			img {
+				position: absolute;
+				width: 300px;
+				height: auto;
+				left: 50%;
+				bottom: 0;
+				transform: translateX(-100px);
+				&.mobile {
+					display: none;
+				}
+				&.desktop {
+					display: block;
+				}
+			}
 			h2.title {
 				padding-left: 50px;
 			}			
@@ -163,7 +194,7 @@ main.homepage {
 		.price {
 			position: absolute;
 			right: 0;
-			top: -25px;
+			top: -10px;
 			background-color: #f8f7f3;
 			padding: 20px 50px;
 			&:before {

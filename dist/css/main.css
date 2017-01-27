@@ -2474,6 +2474,21 @@ main.homepage section.chairs {
     width: 50%;
     border-right: 1px solid #f8f7f3;
     position: relative; }
+    main.homepage section.chairs .left img {
+      position: absolute;
+      width: 255px;
+      height: auto;
+      left: 50%;
+      bottom: -50px;
+      -webkit-transform: translateX(-100px);
+          -ms-transform: translateX(-100px);
+              transform: translateX(-100px); }
+      main.homepage section.chairs .left img.mobile {
+        display: none; }
+      main.homepage section.chairs .left img.desktop {
+        display: block; }
+    main.homepage section.chairs .left .back-description {
+      display: none; }
     main.homepage section.chairs .left .left_align .inf {
       text-align: left; }
     main.homepage section.chairs .left .right_align .inf {
@@ -2483,6 +2498,19 @@ main.homepage section.chairs {
     float: right;
     width: 50%;
     position: relative; }
+    main.homepage section.chairs .right img {
+      position: absolute;
+      width: 300px;
+      height: auto;
+      left: 50%;
+      bottom: 0;
+      -webkit-transform: translateX(-100px);
+          -ms-transform: translateX(-100px);
+              transform: translateX(-100px); }
+      main.homepage section.chairs .right img.mobile {
+        display: none; }
+      main.homepage section.chairs .right img.desktop {
+        display: block; }
     main.homepage section.chairs .right h2.title {
       padding-left: 50px; }
     main.homepage section.chairs .right .left_align .inf {
@@ -2501,7 +2529,7 @@ main.homepage section.chairs {
   main.homepage section.chairs .price {
     position: absolute;
     right: 0;
-    top: -25px;
+    top: -10px;
     background-color: #f8f7f3;
     padding: 20px 50px; }
     main.homepage section.chairs .price:before {

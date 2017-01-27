@@ -1,6 +1,12 @@
 @import 'includes/_var';
 
 @media screen and (max-width: 1300px){	
+main.homepage section.chairs {
+	width: 100%;
+}
+main.homepage section.chairs .price {
+	z-index: 9;
+}
 main.homepage section.mainscreen .mouse {
 	background-image:none; 
 	bottom: 0px;
@@ -99,6 +105,30 @@ main.home section.about {
 }
 
 @media screen and (max-width: 1200px) {
+main.homepage section.chairs {
+	padding: 40px 20px;
+}	
+main.homepage section.chairs h2.title {
+	font-size: 33px;
+}	
+main.homepage section.chairs {
+	float: left;
+}	
+main.homepage section.chairs .left img.mobile,
+main.homepage section.chairs .right img.mobile {
+	display: block;
+	position: relative;
+	width: 200px;
+	top: 30px;
+	transform: translateX(-50%);
+}
+main.homepage section.chairs .inf {
+	display: none;
+}
+main.homepage section.chairs .left img.desktop,
+main.homepage section.chairs .right img.desktop {
+	display: none;
+}
 	main.homepage section.mainscreen .right {
 		padding: 10px 0;
 	}	
@@ -316,6 +346,75 @@ width: 92%;
 }		
 
 @media screen and (max-width: 768px) {
+main.homepage section.chairs .left .back-description {
+	display: block;
+	font-size: 13px;
+	color: #4d3b2b;
+	font-family: 'GothamProRegular', sans-serif;
+	line-height: 1.8;
+	box-shadow: 0px 20px 100px -10px rgba(0, 0, 0, 0.2);
+	position: absolute;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    bottom: 40px;
+    width: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    &:before {
+	    content: '';
+	    position: absolute;
+	    top: -18px;
+	    width: 30px;
+	    height: 19px;
+	    background-image: url(../img/white-corner.png);
+	    left: 69px;
+    }
+}	
+main.homepage section.chairs .price {
+    padding: 15px 20px 15px 40px ;
+    &:before {
+	    border: 26px solid transparent;
+	    border-left: 25px solid #fff;    	
+    }
+}	
+main.homepage section.chairs .price span:first-child {
+	display: none;
+}	
+main.homepage section.chairs .price span:last-child {
+	font-size: 23px;
+}	
+main.homepage section.chairs h2.title {
+	font-size: 30px;
+}	
+main.homepage section.chairs .right h2.title {
+	padding-left: 0;
+}	
+main.homepage section.chairs .price {
+	top: 0;
+}	
+main.homepage section.chairs .right .price {
+	right: -20px;
+}
+main.homepage section.chairs .left {
+	width: 100%;
+	float: none;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #f2ede6;
+	border-right: none;
+	.price {
+		right: -20px;
+		top: 6px;
+	}
+}	
+main.homepage section.chairs .right {
+	width: 100%;
+	float: none;
+	padding-top: 20px;
+	.price {
+		top: 25px;
+	}
+}
 main.homepage section.mainscreen .mouse {
 	display: none;
 }	
