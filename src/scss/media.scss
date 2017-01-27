@@ -1,6 +1,11 @@
 @import 'includes/_var';
 
 @media screen and (max-width: 1300px){	
+main.homepage section.furniture .wrapper {
+	width: 100%;
+	padding: 40px 10px;
+	float: left;
+}	
 main.homepage section.video .video-wrapper {
 	width: 100%;	
 }
@@ -108,6 +113,15 @@ main.home section.about {
 }
 
 @media screen and (max-width: 1200px) {
+main.homepage section.furniture:after {
+	display: none;
+}	
+main.homepage section.furniture h2 {
+	margin-top: 0;
+}	
+main.homepage section.furniture h2 {
+	font-size: 50px;	
+}	
 main.homepage section.video .tablet-discounts .title {
     transform: translateX(-50%);
     left: 50%;	
@@ -384,6 +398,21 @@ width: 92%;
 }
 
 @media screen and (max-width: 991px) {
+main.homepage section.furniture .col {
+	text-align: center;
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}	
+main.homepage section.furniture .last {
+	display: none;
+}		
+main.homepage section.furniture .col {
+    height: auto;
+    position: relative;
+    margin-bottom: 27px;
+}	
 main.homepage section.video .tablet-discounts .title {
     transform: translateX(0);
     left: 0;	
@@ -413,6 +442,9 @@ main.homepage section.video .tablet-discounts .title {
 }		
 
 @media screen and (max-width: 768px) {
+main.homepage section.furniture h2 {
+	font-size: 30px;
+}		
 main.homepage section.video .tablet-discounts .descr {
     text-align: left;
     line-height: 1.5;
@@ -455,7 +487,6 @@ main.homepage section.video .news-block	 {
     float: none;
     border-radius: 0;
     padding-bottom: 8px;
-    margin-bottom: -20px;
 }
 main.homepage section.video .tablet-discounts {
     padding: 0;
