@@ -105,6 +105,31 @@ main.home section.about {
 }
 
 @media screen and (max-width: 1200px) {
+main.homepage section.chairs .left .back-description {
+	display: block;
+	font-size: 13px;
+	color: #4d3b2b;
+	font-family: 'GothamProRegular', sans-serif;
+	line-height: 1.8;
+	box-shadow: 0px 20px 100px -10px rgba(0, 0, 0, 0.2);
+	position: absolute;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    bottom: -10px;
+    width: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    &:before {
+	    content: '';
+	    position: absolute;
+	    top: -18px;
+	    width: 30px;
+	    height: 19px;
+	    background-image: url(../img/white-corner.png);
+	    left: 69px;
+    }
+}		
 main.homepage section.chairs {
 	padding: 40px 20px;
 }	
@@ -347,29 +372,7 @@ width: 92%;
 
 @media screen and (max-width: 768px) {
 main.homepage section.chairs .left .back-description {
-	display: block;
-	font-size: 13px;
-	color: #4d3b2b;
-	font-family: 'GothamProRegular', sans-serif;
-	line-height: 1.8;
-	box-shadow: 0px 20px 100px -10px rgba(0, 0, 0, 0.2);
-	position: absolute;
-    background-color: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
     bottom: 40px;
-    width: 280px;
-    left: 50%;
-    transform: translateX(-50%);
-    &:before {
-	    content: '';
-	    position: absolute;
-	    top: -18px;
-	    width: 30px;
-	    height: 19px;
-	    background-image: url(../img/white-corner.png);
-	    left: 69px;
-    }
 }	
 main.homepage section.chairs .price {
     padding: 15px 20px 15px 40px ;
