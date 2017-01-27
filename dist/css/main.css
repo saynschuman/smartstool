@@ -2852,5 +2852,221 @@ main.homepage section.for-all .tit {
   margin-bottom: 20px;
   text-transform: uppercase; }
 
+main.homepage section.reviews {
+  float: left;
+  width: 100%; }
+  main.homepage section.reviews .wrapper {
+    width: 1280px;
+    padding: 0 50px; }
+  main.homepage section.reviews h2 {
+    margin: 30px 0;
+    display: block;
+    text-align: center; }
+  main.homepage section.reviews .review {
+    color: #4d3b2b;
+    border: 2px solid #edede7;
+    border-radius: 25px;
+    padding: 25px;
+    min-height: 570px;
+    margin-bottom: 20px;
+    overflow: hidden; }
+    main.homepage section.reviews .review:hover {
+      -webkit-box-shadow: 0px 20px 100px -10px rgba(0, 0, 0, 0.2);
+              box-shadow: 0px 20px 100px -10px rgba(0, 0, 0, 0.2); }
+    main.homepage section.reviews .review img {
+      display: block;
+      margin: 0 auto;
+      max-height: 100%;
+      height: 220px;
+      width: auto;
+      margin-bottom: 24px; }
+    main.homepage section.reviews .review .title {
+      font-size: 21px;
+      font-family: 'comfortaa-regular';
+      margin-bottom: 15px; }
+    main.homepage section.reviews .review .content {
+      font-size: 15px;
+      font-family: 'GothamProRegular', sans-serif;
+      line-height: 1.7;
+      position: relative; }
+      main.homepage section.reviews .review .content:after {
+        content: '';
+        position: absolute;
+        height: 32px;
+        width: 100%;
+        left: 0;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.8)));
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%); }
+    main.homepage section.reviews .review .more {
+      font-size: 15px;
+      color: #979f00;
+      font-family: 'GothamProMedium', sans-serif;
+      margin-top: 20px; }
+  main.homepage section.reviews .read {
+    font-size: 20px;
+    color: #979f00;
+    font-family: 'comfortaa-bold';
+    text-align: center;
+    bottom: 20px;
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  main.homepage section.reviews a.leave {
+    float: right;
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #ff8201;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 30px;
+    font-family: 'comfortaa-bold';
+    -webkit-transition: .3s;
+    transition: .3s; }
+    main.homepage section.reviews a.leave:hover {
+      background-color: #979f00;
+      -webkit-transition: .3s;
+      transition: .3s;
+      text-decoration: none; }
+
+main.homepage .about-wrapper {
+  width: 100%;
+  float: left;
+  margin-top: 25px; }
+
+main.homepage section.about {
+  background-color: #faf7f4;
+  width: 1280px;
+  display: block;
+  margin: 0 auto; }
+  main.homepage section.about .left {
+    width: 50%;
+    float: left; }
+    main.homepage section.about .left .thumbnail {
+      height: 422px;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative; }
+      main.homepage section.about .left .thumbnail:after {
+        content: '';
+        position: absolute;
+        background-image: url(../img/shape.png);
+        right: -2px;
+        top: 0;
+        width: 28px;
+        height: 100%; }
+  main.homepage section.about .right {
+    width: 50%;
+    float: right;
+    padding: 40px 30px 0px; }
+    main.homepage section.about .right h2 {
+      font-size: 35px;
+      color: #ff8201;
+      font-family: 'comfortaa-bold';
+      line-height: 1.4;
+      margin-bottom: 30px; }
+    main.homepage section.about .right .excerpt {
+      overflow: auto;
+      height: auto; }
+      main.homepage section.about .right .excerpt p {
+        font-size: 15px;
+        font-family: GothamProRegular;
+        line-height: 1.9; }
+    main.homepage section.about .right a.whant {
+      float: left;
+      text-align: center;
+      padding: 15px 30px;
+      background-color: #ff8201;
+      border-radius: 24px;
+      color: #fff;
+      font-size: 17px;
+      margin-top: 30px;
+      font-family: 'comfortaa-bold';
+      -webkit-transition: .3s;
+      transition: .3s; }
+      main.homepage section.about .right a.whant:hover {
+        background-color: #979f00;
+        -webkit-transition: .3s;
+        transition: .3s;
+        text-decoration: none; }
+      main.homepage section.about .right a.whant:after {
+        content: 'Хотите стать партнером?'; }
+
+main.homepage section.social {
+  margin-top: 30px; }
+  main.homepage section.social .wrapper {
+    width: 1200px;
+    padding: 0 15px;
+    display: block;
+    margin: 0 auto; }
+  main.homepage section.social .soc {
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 10px 100px -10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 10px 100px -10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; }
+    main.homepage section.social .soc img {
+      width: 100%; }
+    main.homepage section.social .soc .top {
+      padding: 27px 20px; }
+      main.homepage section.social .soc .top .left-align {
+        float: left;
+        width: 50%;
+        font-size: 15px;
+        color: #4d3c2c;
+        font-family: 'GothamProMedium', sans-serif; }
+      main.homepage section.social .soc .top .right-align {
+        float: right;
+        width: 50%;
+        text-align: right; }
+        main.homepage section.social .soc .top .right-align a {
+          font-family: 'comfortaa-bold';
+          font-size: 15px;
+          color: #4d3c2c;
+          background-color: #ebe6e2;
+          border-radius: 23px;
+          padding: 10px 20px; }
+  main.homepage section.social .inst .title {
+    padding-left: 40px;
+    position: relative; }
+    main.homepage section.social .inst .title:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -7px;
+      background-image: url(../img/inst-ic.png);
+      width: 30px;
+      height: 28px;
+      background-size: 100%; }
+  main.homepage section.social .vk .title {
+    padding-left: 40px;
+    position: relative; }
+    main.homepage section.social .vk .title:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -2px;
+      background-image: url(../img/vk-ic.png);
+      width: 30px;
+      height: 18px;
+      background-size: 100%; }
+  main.homepage section.social .youtube .title {
+    padding-left: 40px;
+    position: relative; }
+    main.homepage section.social .youtube .title:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -6px;
+      background-image: url(../img/youtube-ic.png);
+      width: 30px;
+      height: 26px;
+      background-size: 100%; }
+
 main.homepage section.furniture .wrapper.pre-footer-cat {
   padding-top: 0; }

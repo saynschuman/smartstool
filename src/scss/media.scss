@@ -1,6 +1,13 @@
 @import 'includes/_var';
 
 @media screen and (max-width: 1300px){	
+main.homepage section.social .wrapper {
+	width: 100%;
+}	
+main.homepage  section.reviews .wrapper,
+main.homepage section.about	{
+	width: 100%;
+}
 main.homepage section.furniture .wrapper {
 	width: 100%;
 	padding: 40px 10px;
@@ -220,6 +227,15 @@ main.homepage section.chairs .right img.desktop {
 }
 
 @media screen and (max-width: 1050px){
+main.homepage section.about .right {
+    width: 50%;
+    float: right;
+    padding: 30px 30px 0px;
+}	
+main.homepage section.about .right h2 {
+	font-size: 30px;
+	margin-bottom: 11px;
+}	
 .header-divider {
 	top: 143px;
 }
@@ -398,6 +414,41 @@ width: 92%;
 }
 
 @media screen and (max-width: 991px) {
+main.homepage section.reviews .review {
+    color: #4d3b2b;
+    border: 2px solid #edede7;
+    border-radius: 25px;
+    padding: 25px;
+    min-height: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: auto;
+}	
+main.homepage section.reviews a.leave {
+    float: left;
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #ff8201;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 0;
+    font-family: 'comfortaa-bold';
+    -webkit-transition: .3s;
+    transition: .3s;
+    display: block;
+    margin: 0 auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 230px;
+}	
+main.homepage section.reviews .read {
+    width: 100%;
+    position: relative;
+    margin-top: 29px;
+    display: block;
+    float: left;
+}	
 .mob_no_2 {
 	display: none;
 }	
@@ -450,9 +501,48 @@ main.homepage section.video .tablet-discounts .title {
 }		
 
 @media screen and (max-width: 768px) {
-main.homepage section.for-all h2 {
-	margin-top: 40px;
+main.homepage section.reviews .wrapper {
+	padding: 0 20px;
 }	
+main.homepage section.about .right a.whant {
+    float: left;
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #ff8201;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 20px;
+    font-family: 'comfortaa-bold';
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+    width: 250px;
+}	
+main.homepage section.about .right a.whant:after {
+	content: 'Стать партнером';
+}	
+main.homepage section.about .left {
+    width: 100%;
+    float: none;
+}
+main.homepage section.about .right {
+    width: 100%;
+    float: none;
+}	
+main.homepage section.about .left .thumbnail:after {
+	display: none;
+}
+main.homepage section.for-all h2 {
+	margin-top: 10px;
+	font-size: 25px;
+}	
+main.homepage section.reviews .review .title {
+	font-size: 19px;
+	line-height: 1.4;
+}
 .mob_no {
 	display: none;
 }
