@@ -12,6 +12,7 @@ main.homepage {
 		background-size: cover;
 		background-position: center center; 
 		position: relative;
+		z-index: 9999999;
 		h1 {
 			font-size: 35px;
 			color: #4d3b2b;

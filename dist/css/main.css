@@ -1474,7 +1474,10 @@ header {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
-      position: relative; }
+      position: relative;
+      background: -webkit-gradient(linear, left bottom, left top, from(#f5f2ef), to(transparent));
+      background: -webkit-linear-gradient(bottom, #f5f2ef, transparent);
+      background: linear-gradient(to top, #f5f2ef, transparent); }
       header .headerMenu .menu .subMenu {
         position: absolute;
         width: 100.1%;
@@ -1620,7 +1623,7 @@ header {
           color: #f58e1e;
           -webkit-transition: .3s;
           transition: .3s;
-          background: transparent; }
+          background: #fff; }
           header .headerMenu .menu .menuItem:hover::before {
             content: '';
             position: absolute;
@@ -1636,7 +1639,7 @@ header {
             display: block; }
       header .headerMenu .menu .active {
         color: #f58e1e;
-        background: transparent; }
+        background: #fff; }
         header .headerMenu .menu .active[name="smart-5"] {
           border-right: none !important;
           color: #f58e1e; }
@@ -2556,7 +2559,8 @@ main.homepage section.mainscreen {
   width: 100%;
   background-size: cover;
   background-position: center center;
-  position: relative; }
+  position: relative;
+  z-index: 9999999; }
   main.homepage section.mainscreen h1 {
     font-size: 35px;
     color: #4d3b2b;

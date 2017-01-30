@@ -274,6 +274,7 @@ header {
 			justify-content: space-between;
 			align-items: center;
 			position: relative;
+			background: linear-gradient(to top, #f5f2ef, transparent);
 			.subMenu {
 			    position: absolute;
 			    width: 100.1%;
@@ -444,7 +445,7 @@ header {
 				&:hover {
 					color: $hoverItem;
 					transition: .3s;
-					background: transparent;
+					background: #fff;
 					&::before {
 						content: '';
 						position: absolute;
@@ -463,7 +464,7 @@ header {
 			}
 			.active {
 				color: $hoverItem;
-				background: transparent;
+				background: #fff;
 				&[name="smart-5"] {
 					border-right: none !important;	
 					color: $hoverItem;
