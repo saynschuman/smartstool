@@ -17,8 +17,16 @@ header {
 		background: #f7f4f0;
 		font-family: 'GothamProRegular', sans-serif;
 		font-size: 13px;
+		a {
+			color: #4d3b2b;
+			text-decoration: none;
+			&:hover {
+				color: $hoverColor;
+			}		
+		}
 		.address {
 			position: relative;
+			padding: 17px 0;
 			padding-left: 15px;
 			&:after {
 				content: 'Адреса магазинов';
@@ -26,11 +34,16 @@ header {
 			&:before {
 				position: absolute;
 				content: '';
-				top: -1px;
+				top: 16px;
 				left: 0;
 				width: 10px;
 				height: 16px;
 				background: url("../img/icons/address.png") center center / cover no-repeat;
+			}
+			&:hover {
+				&:before {
+					background: url("../img/icons/adress-hover.png") center center / cover no-repeat;	
+				}
 			}
 		}
 		.logIn {
@@ -38,15 +51,23 @@ header {
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+			padding: 17px 0;
 			padding-right: 25px;
 			&:before {
 				position: absolute;
 				content: '';
-				top: 3px;
+				top: 19px;
 				right: 0;
 				width: 19px;
 				height: 10px;
 				background: url("../img/icons/login.png") center center / cover no-repeat;
+			}
+			&:hover {
+				color: $hoverColor;
+				cursor: pointer;
+				&:before {
+					background: url("../img/icons/login-hover.png") center center / cover no-repeat;					
+				}
 			}
 		}
 		.delivery {
@@ -54,8 +75,35 @@ header {
 			top: 50%;
 			right: 170px;
 			transform: translateY(-50%);
+			padding: 17px 0;
 			&:after{
 				content: 'Доставка и оплата';
+			}
+			&:hover {
+			&:before {
+					content: '';
+					position: absolute;
+					bottom: -1px;
+					left: 0;
+					height: 3px;
+					width: 100%;
+					background-color: #f07d28; 
+				}				
+			}
+		}
+		.about {
+			padding: 17px 0;
+			&:hover {
+				position: relative;
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: -1px;
+					left: 0;
+					height: 3px;
+					width: 100%;
+					background-color: #f07d28; 
+				}
 			}
 		}
 	}
@@ -64,6 +112,13 @@ header {
 		background: #fff;
 		height: 94px;
 		font-size: 15px;
+		a {
+			color: #4d3b2b;
+			text-decoration: none;
+			&:hover {
+				color: $hoverColor;
+			}
+		}
 		.telBox {
 			display: flex;
 			flex-direction: row;
@@ -104,6 +159,11 @@ header {
 					height: 29px;
 					background: url("../img/icons/call.png") center center / cover no-repeat;
 				}
+				&:hover {
+					&:before {
+						background: url("../img/icons/call-hover.png") center center / cover no-repeat;		
+					}
+				}
 			}
 			.cart {
 				padding: 0 45px 0 35px;
@@ -143,6 +203,11 @@ header {
 					width: 27px;
 					height: 31px;
 					background: url("../img/icons/cart.png") center center / cover no-repeat;
+				}
+				&:hover {
+					&:before {
+						background: url("../img/icons/cart-hover.png") center center / cover no-repeat;
+					}
 				}
 			}
 		}
@@ -449,7 +514,7 @@ header {
 	height: auto;
 	z-index: 9;
 	.close {
-		background-image: url(../img/close.png);
+		background-image: url(../img/close_.png);
 		width: 30px;
 		height: 30px;
 		background-size: 100%;
@@ -458,6 +523,9 @@ header {
 		top: 50px;
 		z-index: 999999;
 		cursor: pointer;
+		&:hover {
+			background-image: url(../img/close_hover.png);
+		}
 	}
 	.menu-1 {
 		li {
@@ -544,4 +612,101 @@ header {
 	background-color: #f2ede6;
 	z-index: 9;
 	top: 207px;
+}
+
+#header-form {
+	opacity: 0;
+	transition: .2s;
+	position: absolute;
+	width: 280px;
+	font-size: 15px;
+	color: #4d3b2b;
+	font-family: 'GothamProMedium', sans-serif;
+	left: 50%;
+	top: 50px;
+	transform: translateX(-50%);
+	background-color: #fff;
+	z-index: 0;
+	padding: 25px;
+	padding-top: 10px;
+	border-radius: 0 0 30px 30px;
+	box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.2);
+	&:after {
+		content: '';
+		position: absolute;
+		top: -3px;
+		left: 0;
+		height: 3px;
+		width: 100%;
+		background-color: #f07d28; 
+	}	
+	.forget {
+		color: #919d00;
+		font-family: 'GothamProRegular', sans-serif;
+		font-size: 15px;
+		right: 25px;
+		position: absolute;
+		margin-top: -25px;
+		text-decoration: none;
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			bottom: -1px;
+			left: 0;
+			height: 1px;
+			background: #e7e9d4;
+		}
+		&:hover {
+			color: $hoverColor;
+		}
+	}
+	label {
+		cursor: pointer;
+	}
+	label,
+	input {
+		display: block;
+		margin: 12px 0;
+		&:focus {
+			outline: none;
+		}
+	}
+	input {
+		border: 1px solid #e9e1d9;
+		border-radius: 5px;
+		height: 44px;
+		width: 100%;
+		&[type="password"] {
+			padding: 0 3px;
+		}
+		&[type="email"] {
+			padding: 0 3px;
+		}
+		&[type="submit"] {
+			font-family: 'comfortaa-bold';
+			color: #fff;
+			background-color: #979f00;
+			border-radius: 40px;
+			max-width: 138px;
+			font-size: 19px;
+			display: block;
+			margin: 0 auto;
+			margin-top: 20px;
+			height: 55px;
+			transition: .2s;
+			&:hover {
+				background-color: $hoverColor;
+				transition: .3s;
+			}
+
+		}
+	}
+}
+.bl {
+	opacity: 1 !important;
+	z-index: 9999999 !important; 
+}
+.nbl {
+	opacity: 0 !important;
 }

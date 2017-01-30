@@ -24,18 +24,37 @@ footer {
 			    height: 30px;
 				width: 33px;
 				background-image: url(../img/social-sprite.png);
-				margin-left: 30px;
+				margin-left: 30px; 
 				&.vk {
 					background-position: 0 0;
+					&:hover {
+						background-image: url(../img/social-sprite-hover.png);
+						background-position: 0 2px;
+					}
 				}
 				&.instagram {
 					background-position: 151px 0;
+					&:hover {
+						background-image: url(../img/social-sprite-hover.png);
+						background-position: 151px 1px;
+						height: 29px;
+					}					
 				}
 				&.faceb00k {
 					background-position: 90px 0;
+					&:hover {
+						background-image: url(../img/social-sprite-hover.png);
+						background-position: 90px 1px;
+						height: 29px;
+					}					
 				}
 				&.youtube {
 					background-position: 33px 0;
+					&:hover {
+						background-image: url(../img/social-sprite-hover.png);
+						background-position: 33px 1px;
+						height: 29px;
+					}					
 				}													
 			}
 		}

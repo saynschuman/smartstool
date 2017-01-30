@@ -7,6 +7,7 @@
     <!--[if !IE]>-->
       <link rel="stylesheet" href="libs/css/font-awesome.min.css">
       <link rel="stylesheet" href="libs/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="libs/css/animate.css">
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="css/media.css">
     <!--<![endif]-->    
@@ -20,10 +21,10 @@
     <header>
         <div class="headerTop">
             <div class="workSection">
-                <div class="address"></div>
+                <a href=""><div class="address"></div></a>
                 <div class="logIn">Вход для дилеров</div>
-                <div class="delivery"></div>
-                <div class="about">О компании</div>
+                <a href=""><div class="delivery"></div></a>
+                <a href=""><div class="about">О компании</div></a>
             </div>
         </div>
         <div class="headerCenter clearfix">
@@ -31,20 +32,20 @@
                 <div class="telBox">
                     <div class="tel">
                         <div class="city">Москва</div>
-                        <div class="num">+7 495 200-30-05</div>
+                        <a href="skype:+74952003005"><div class="num">+7 495 200-30-05</div></a>
                     </div>
                     <div class="tel">
                         <div class="city">Петербург</div>
-                        <div class="num">+7 812 356-22-09</div>
+                        <a href="skype:+78123562209"><div class="num">+7 812 356-22-09</div></a>
                     </div>
                 </div>
                 <div class="logo"></div>
                 <div class="rightControls">
-                    <div class="callBack">Обратный звонок</div>
-                    <div class="cart">
+                    <a href=""><div class="callBack">Обратный звонок</div></a>
+                    <a href=""><div class="cart">
                         <span></span>
                         <div class="numProductLabel">5</div>
-                    </div>
+                    </div></a>
                 </div>
                 <div class="sandwich-wrapper">
                     <div class="sandwich">
@@ -294,7 +295,7 @@
                 </nav>
             </div>
         </div>
-    </header>
+    </header>    
     <div class="header-divider"></div>
 <main class="home">
 	<div class="wrapper">
@@ -445,6 +446,17 @@
 	    </div>
 	    <button>Полная версия сайта</button>
     </div>
+
+    <!-- popup-form -->
+
+        <form autofocus action="" class="animated" id="header-form"> 
+            <label for="header-email">Электронная почта</label>
+            <input type="email" id="header-email">
+            <label for="header-passw">Пароль</label>
+            <a class="forget" href="">Забыли пароль?</a>
+            <input type="password" id="header-passw">
+            <input type="submit" value="Войти">
+        </form>    
 
     <script src="libs/js/jquery-3.1.1.min.js"></script>
     <script src="libs/js/masonry.min.js"></script>

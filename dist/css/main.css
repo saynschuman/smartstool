@@ -1232,19 +1232,27 @@ header {
     background: #f7f4f0;
     font-family: 'GothamProRegular', sans-serif;
     font-size: 13px; }
+    header .headerTop a {
+      color: #4d3b2b;
+      text-decoration: none; }
+      header .headerTop a:hover {
+        color: #f07d28; }
     header .headerTop .address {
       position: relative;
+      padding: 17px 0;
       padding-left: 15px; }
       header .headerTop .address:after {
         content: 'Адреса магазинов'; }
       header .headerTop .address:before {
         position: absolute;
         content: '';
-        top: -1px;
+        top: 16px;
         left: 0;
         width: 10px;
         height: 16px;
         background: url("../img/icons/address.png") center center/cover no-repeat; }
+      header .headerTop .address:hover:before {
+        background: url("../img/icons/adress-hover.png") center center/cover no-repeat; }
     header .headerTop .logIn {
       position: absolute;
       top: 50%;
@@ -1252,29 +1260,61 @@ header {
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
+      padding: 17px 0;
       padding-right: 25px; }
       header .headerTop .logIn:before {
         position: absolute;
         content: '';
-        top: 3px;
+        top: 19px;
         right: 0;
         width: 19px;
         height: 10px;
         background: url("../img/icons/login.png") center center/cover no-repeat; }
+      header .headerTop .logIn:hover {
+        color: #f07d28;
+        cursor: pointer; }
+        header .headerTop .logIn:hover:before {
+          background: url("../img/icons/login-hover.png") center center/cover no-repeat; }
     header .headerTop .delivery {
       position: absolute;
       top: 50%;
       right: 170px;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
-              transform: translateY(-50%); }
+              transform: translateY(-50%);
+      padding: 17px 0; }
       header .headerTop .delivery:after {
         content: 'Доставка и оплата'; }
+      header .headerTop .delivery:hover:before {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #f07d28; }
+    header .headerTop .about {
+      padding: 17px 0; }
+      header .headerTop .about:hover {
+        position: relative; }
+        header .headerTop .about:hover:after {
+          content: '';
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          height: 3px;
+          width: 100%;
+          background-color: #f07d28; }
   header .headerCenter {
     font-family: 'GothamProMedium', sans-serif;
     background: #fff;
     height: 94px;
     font-size: 15px; }
+    header .headerCenter a {
+      color: #4d3b2b;
+      text-decoration: none; }
+      header .headerCenter a:hover {
+        color: #f07d28; }
     header .headerCenter .telBox {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1325,6 +1365,8 @@ header {
           width: 19px;
           height: 29px;
           background: url("../img/icons/call.png") center center/cover no-repeat; }
+        header .headerCenter .rightControls .callBack:hover:before {
+          background: url("../img/icons/call-hover.png") center center/cover no-repeat; }
       header .headerCenter .rightControls .cart {
         padding: 0 45px 0 35px;
         margin-left: 28px;
@@ -1360,6 +1402,8 @@ header {
           width: 27px;
           height: 31px;
           background: url("../img/icons/cart.png") center center/cover no-repeat; }
+        header .headerCenter .rightControls .cart:hover:before {
+          background: url("../img/icons/cart-hover.png") center center/cover no-repeat; }
     header .headerCenter .sandwich-wrapper {
       cursor: pointer;
       display: none; }
@@ -1638,7 +1682,7 @@ header {
   height: auto;
   z-index: 9; }
   .mobile-menu .close {
-    background-image: url(../img/close.png);
+    background-image: url(../img/close_.png);
     width: 30px;
     height: 30px;
     background-size: 100%;
@@ -1647,6 +1691,8 @@ header {
     top: 50px;
     z-index: 999999;
     cursor: pointer; }
+    .mobile-menu .close:hover {
+      background-image: url(../img/close_hover.png); }
   .mobile-menu .menu-1 li {
     height: 40px; }
     .mobile-menu .menu-1 li a {
@@ -1716,6 +1762,96 @@ header {
   z-index: 9;
   top: 207px; }
 
+#header-form {
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+  position: absolute;
+  width: 280px;
+  font-size: 15px;
+  color: #4d3b2b;
+  font-family: 'GothamProMedium', sans-serif;
+  left: 50%;
+  top: 50px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fff;
+  z-index: 0;
+  padding: 25px;
+  padding-top: 10px;
+  border-radius: 0 0 30px 30px;
+  -webkit-box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.2); }
+  #header-form:after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #f07d28; }
+  #header-form .forget {
+    color: #919d00;
+    font-family: 'GothamProRegular', sans-serif;
+    font-size: 15px;
+    right: 25px;
+    position: absolute;
+    margin-top: -25px;
+    text-decoration: none; }
+    #header-form .forget:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      bottom: -1px;
+      left: 0;
+      height: 1px;
+      background: #e7e9d4; }
+    #header-form .forget:hover {
+      color: #f07d28; }
+  #header-form label {
+    cursor: pointer; }
+  #header-form label,
+  #header-form input {
+    display: block;
+    margin: 12px 0; }
+    #header-form label:focus,
+    #header-form input:focus {
+      outline: none; }
+  #header-form input {
+    border: 1px solid #e9e1d9;
+    border-radius: 5px;
+    height: 44px;
+    width: 100%; }
+    #header-form input[type="password"] {
+      padding: 0 3px; }
+    #header-form input[type="email"] {
+      padding: 0 3px; }
+    #header-form input[type="submit"] {
+      font-family: 'comfortaa-bold';
+      color: #fff;
+      background-color: #979f00;
+      border-radius: 40px;
+      max-width: 138px;
+      font-size: 19px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      height: 55px;
+      -webkit-transition: .2s;
+      transition: .2s; }
+      #header-form input[type="submit"]:hover {
+        background-color: #f07d28;
+        -webkit-transition: .3s;
+        transition: .3s; }
+
+.bl {
+  opacity: 1 !important;
+  z-index: 9999999 !important; }
+
+.nbl {
+  opacity: 0 !important; }
+
 footer {
   padding: 40px 0;
   font-family: GothamProMedium; }
@@ -1742,12 +1878,27 @@ footer {
         margin-left: 30px; }
         footer ul li div.vk {
           background-position: 0 0; }
+          footer ul li div.vk:hover {
+            background-image: url(../img/social-sprite-hover.png);
+            background-position: 0 2px; }
         footer ul li div.instagram {
           background-position: 151px 0; }
+          footer ul li div.instagram:hover {
+            background-image: url(../img/social-sprite-hover.png);
+            background-position: 151px 1px;
+            height: 29px; }
         footer ul li div.faceb00k {
           background-position: 90px 0; }
+          footer ul li div.faceb00k:hover {
+            background-image: url(../img/social-sprite-hover.png);
+            background-position: 90px 1px;
+            height: 29px; }
         footer ul li div.youtube {
           background-position: 33px 0; }
+          footer ul li div.youtube:hover {
+            background-image: url(../img/social-sprite-hover.png);
+            background-position: 33px 1px;
+            height: 29px; }
   footer .footer-menu {
     margin-top: 20px; }
     footer .footer-menu ul {
@@ -2701,6 +2852,8 @@ main.homepage section.video {
         text-decoration: underline;
         -webkit-text-decoration-color: #cfd389;
                 text-decoration-color: #cfd389; }
+        main.homepage section.video .news-block .news .descr:hover {
+          color: #f07d28; }
     main.homepage section.video .news-block .discounts {
       padding: 0; }
       main.homepage section.video .news-block .discounts .title {
@@ -2764,6 +2917,8 @@ main.homepage section.video {
         line-height: 1.5;
         margin-bottom: 22px;
         text-decoration: underline; }
+        main.homepage section.video .news-block .articles .inf:hover {
+          color: #f07d28; }
 
 main.homepage section.furniture {
   position: relative; }
@@ -2802,8 +2957,13 @@ main.homepage section.furniture {
   main.homepage section.furniture .col {
     height: 280px;
     position: relative; }
+  main.homepage section.furniture .last a {
+    color: #979f00; }
+    main.homepage section.furniture .last a:hover {
+      color: #f07d28; }
+      main.homepage section.furniture .last a:hover .title-1:after, main.homepage section.furniture .last a:hover .title-2:after {
+        background-image: url(../img/hover-curl.png); }
   main.homepage section.furniture .last .title-1 {
-    color: #979f00;
     font-size: 20px;
     text-align: center;
     line-height: 1.3;
@@ -2822,9 +2982,8 @@ main.homepage section.furniture {
       left: 0;
       height: 3px;
       width: 100%;
-      background-image: url(../img/curl_underline.png); }
+      background-image: url(../img/curl-link.png); }
   main.homepage section.furniture .last .title-2 {
-    color: #979f00;
     font-size: 20px;
     text-align: center;
     line-height: 1.3;
@@ -2843,7 +3002,7 @@ main.homepage section.furniture {
       left: 0;
       height: 3px;
       width: 100%;
-      background-image: url(../img/curl_underline.png); }
+      background-image: url(../img/curl-link.png); }
   main.homepage section.furniture .pre-footer-cat {
     text-align: center;
     color: #fff;
@@ -2934,6 +3093,8 @@ main.homepage section.for-all .owl-nav {
       -webkit-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
               transform: rotate(180deg); }
+    main.homepage section.for-all .owl-nav .owl-prev:hover:after {
+      background-image: url(../img/arrow-hover.png); }
   main.homepage section.for-all .owl-nav .owl-next {
     position: absolute;
     right: 10px; }
@@ -2945,6 +3106,8 @@ main.homepage section.for-all .owl-nav {
       background-image: url(../img/slider-nav.png);
       width: 13px;
       height: 21px; }
+    main.homepage section.for-all .owl-nav .owl-next:hover:after {
+      background-image: url(../img/arrow-hover.png); }
 
 main.homepage section.reviews {
   float: left;
@@ -3019,7 +3182,11 @@ main.homepage section.reviews {
       left: 0;
       height: 3px;
       width: 100%;
-      background-image: url(../img/curl_underline.png); }
+      background-image: url(../img/curl-link.png); }
+    main.homepage section.reviews .read:hover {
+      color: #f07d28; }
+      main.homepage section.reviews .read:hover:after {
+        background-image: url(../img/hover-curl.png); }
   main.homepage section.reviews a.leave {
     float: right;
     text-align: center;

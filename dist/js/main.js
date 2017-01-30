@@ -107,8 +107,27 @@ $(document).ready(function() {
 	$('main.compare section.categories .category').click(function(){
 		$(this).toggleClass('orange-border');
 	})
+	
+	$('header .headerTop .logIn').click(function() {
+			$('#header-form').toggleClass('bl');
+	  }
+	);
 
-	// swiper 
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $('#header-form');
+		var div_2 = $('header .headerTop .logIn');
+		if ($('#header-form').hasClass('bl')) {
+			if (!div.is(e.target) // если клик был не по нашему блоку
+			    && div.has(e.target).length === 0 
+			    && !div_2.is(e.target)) { // и не по ссылке открытия
+				$('#header-form').removeClass('bl');
+			}
+		}
+	});
+
+
+
+	// owl-carousel
 
   $('.owl-carousel').owlCarousel({
 	    loop:true,
