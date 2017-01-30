@@ -515,6 +515,9 @@ main.homepage section.video .tablet-discounts .title {
 }		
 
 @media screen and (max-width: 768px) {
+#header-form {
+	display: none;
+}		
 main.homepage section.furniture .pre-footer-cat .cat-1 {
 	font-size: 15px;
 }	
