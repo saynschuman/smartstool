@@ -2745,6 +2745,12 @@ main.homepage section.video {
     margin-bottom: 30px; }
   main.homepage section.video video {
     border-radius: 30px; }
+  main.homepage section.video button {
+    display: none; }
+  main.homepage section.video .vjs-poster {
+    background-size: cover; }
+  main.homepage section.video .vjs-afterglow-skin .vjs-poster {
+    opacity: 1; }
   main.homepage section.video .video-js {
     width: 100%;
     height: 280px;

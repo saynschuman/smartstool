@@ -246,6 +246,15 @@ main.homepage {
 		video {
 			border-radius: 30px;
 		}
+		button {
+			display: none;
+		}
+		.vjs-poster {
+			background-size: cover;
+		}
+		.vjs-afterglow-skin .vjs-poster {
+			opacity: 1;
+		}
 		.video-js {
 			width: 100%;
 			height: 280px;
