@@ -310,6 +310,7 @@ main.homepage {
 					display: block;
 					width: 100%;
 					position: absolute;
+					text-decoration: underline;
 				}
 			}
 		}
@@ -329,6 +330,16 @@ main.homepage {
 					margin-bottom: 20px;
 					span {
 						color: #ff8300;
+						position: relative;
+						&:after {
+							content: '';
+							position: absolute;
+							bottom: 2px;
+							height: 1px;
+							width: 100%;
+							background-color: #ffdab2;
+							left: 0;
+						}						
 					}
 				}
 				img {
@@ -409,6 +420,16 @@ main.homepage {
 					margin-bottom: 20px;
 					span {
 						color: #ff8300;
+						position: relative;
+						&:after {
+							content: '';
+							position: absolute;
+							bottom: 2px;
+							height: 1px;
+							width: 100%;
+							background-color: #ffdab2;
+							left: 0;
+						}
 					}
 				}
 				.inf {
@@ -468,13 +489,47 @@ main.homepage {
 			position: relative;
 		}
 		.last {
-			.title {
+			.title-1 {
 			    color: #979f00;
 			    font-size: 20px;
 			    text-align: center;
 			    line-height: 1.3;
 			    position: absolute;
-			    top: 27%;			
+			    top: 38%;		
+			    font-family: 'comfortaa-bold';	
+			    left: 50%;
+			    transform: translateX(-50%);
+			    width: 200px;
+				&:after {
+					position: absolute;
+					content: '';
+					bottom: 0;
+					left: 0;
+					height: 3px;
+					width: 100%;
+					background-image: url(../img/curl_underline.png); 
+				}			    
+			}
+			.title-2 {
+			    color: #979f00;
+			    font-size: 20px;
+			    text-align: center;
+			    line-height: 1.3;
+			    position: absolute;
+			    top: 47%;
+			    font-family: 'comfortaa-bold';	
+				left: 50%;
+				transform: translateX(-50%);
+				width: 136px;
+				&:after {
+					position: absolute;
+					content: '';
+					bottom: 0;
+					left: 0;
+					height: 3px;
+					width: 100%;
+					background-image: url(../img/curl_underline.png); 
+				}				
 			}
 		}
 		.pre-footer-cat {
@@ -662,11 +717,17 @@ main.homepage {
 			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
-			text-decoration: underline;
-		    text-decoration-style: wavy;
-		    text-decoration-color: #cfd389;
-		    -moz-text-decoration-style: wavy;
-    		-moz-text-decoration-color: #cfd389;
+		    width: 250px;
+    		padding-bottom: 2px;
+			&:after {
+				position: absolute;
+				content: '';
+				bottom: 0;
+				left: 0;
+				height: 3px;
+				width: 100%;
+				background-image: url(../img/curl_underline.png); 
+			}
 		}
 		a.leave {
 		    float: right;

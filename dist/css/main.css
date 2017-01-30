@@ -2651,7 +2651,8 @@ main.homepage section.video {
         margin-top: 20px;
         display: block;
         width: 100%;
-        position: absolute; }
+        position: absolute;
+        text-decoration: underline; }
   main.homepage section.video .news-block {
     background-color: #fff;
     border-radius: 23px;
@@ -2667,7 +2668,16 @@ main.homepage section.video {
         color: #4d3b2b;
         margin-bottom: 20px; }
         main.homepage section.video .news-block .news .title span {
-          color: #ff8300; }
+          color: #ff8300;
+          position: relative; }
+          main.homepage section.video .news-block .news .title span:after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            height: 1px;
+            width: 100%;
+            background-color: #ffdab2;
+            left: 0; }
       main.homepage section.video .news-block .news img {
         float: left;
         margin-right: 25px;
@@ -2737,7 +2747,16 @@ main.homepage section.video {
         color: #4d3b2b;
         margin-bottom: 20px; }
         main.homepage section.video .news-block .articles .title span {
-          color: #ff8300; }
+          color: #ff8300;
+          position: relative; }
+          main.homepage section.video .news-block .articles .title span:after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            height: 1px;
+            width: 100%;
+            background-color: #ffdab2;
+            left: 0; }
       main.homepage section.video .news-block .articles .inf {
         color: #979f00;
         font-size: 15px;
@@ -2787,13 +2806,48 @@ main.homepage section.furniture {
   main.homepage section.furniture .col {
     height: 280px;
     position: relative; }
-  main.homepage section.furniture .last .title {
+  main.homepage section.furniture .last .title-1 {
     color: #979f00;
     font-size: 20px;
     text-align: center;
     line-height: 1.3;
     position: absolute;
-    top: 27%; }
+    top: 38%;
+    font-family: 'comfortaa-bold';
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 200px; }
+    main.homepage section.furniture .last .title-1:after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-image: url(../img/curl_underline.png); }
+  main.homepage section.furniture .last .title-2 {
+    color: #979f00;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.3;
+    position: absolute;
+    top: 47%;
+    font-family: 'comfortaa-bold';
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 136px; }
+    main.homepage section.furniture .last .title-2:after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-image: url(../img/curl_underline.png); }
   main.homepage section.furniture .pre-footer-cat {
     text-align: center;
     color: #fff;
@@ -2960,13 +3014,16 @@ main.homepage section.reviews {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    text-decoration: underline;
-    -webkit-text-decoration-style: wavy;
-            text-decoration-style: wavy;
-    -webkit-text-decoration-color: #cfd389;
-            text-decoration-color: #cfd389;
-    -moz-text-decoration-style: wavy;
-    -moz-text-decoration-color: #cfd389; }
+    width: 250px;
+    padding-bottom: 2px; }
+    main.homepage section.reviews .read:after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-image: url(../img/curl_underline.png); }
   main.homepage section.reviews a.leave {
     float: right;
     text-align: center;
