@@ -1844,6 +1844,10 @@ header {
         background-color: #f07d28;
         -webkit-transition: .3s;
         transition: .3s; }
+      #header-form input[type="submit"]:focus {
+        background-color: #f07d28;
+        -webkit-transition: .3s;
+        transition: .3s; }
 
 .bl {
   opacity: 1 !important;

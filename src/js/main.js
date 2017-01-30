@@ -110,6 +110,8 @@ $(document).ready(function() {
 	
 	$('header .headerTop .logIn').click(function() {
 			$('#header-form').toggleClass('bl');
+			$('#header-email').focus();
+
 	  }
 	);
 
@@ -125,7 +127,13 @@ $(document).ready(function() {
 		}
 	});
 
-
+	$(document).keyup(function(e) {
+	     if (e.keyCode == 27) { // escape key maps to keycode `27`
+		     if ($('#header-form').hasClass('bl')) {
+					$('#header-form').removeClass('bl');
+			 }
+	    }
+	});	
 
 	// owl-carousel
 

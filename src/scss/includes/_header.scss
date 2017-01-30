@@ -699,6 +699,10 @@ header {
 				background-color: $hoverColor;
 				transition: .3s;
 			}
+			&:focus {
+				background-color: $hoverColor;
+				transition: .3s;
+			}
 
 		}
 	}
