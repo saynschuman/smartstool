@@ -167,6 +167,11 @@
     padding-bottom: 40px; } }
 
 @media screen and (max-width: 1050px) {
+  footer .footer-menu ul li {
+    display: block;
+    padding-right: 0; }
+    footer .footer-menu ul li a {
+      font-size: 13px; }
   main.homepage section.about .right {
     width: 50%;
     float: right;
@@ -327,6 +332,12 @@
     display: none; } }
 
 @media screen and (max-width: 991px) {
+  main.homepage section.furniture .pre-footer-cat .cat-1 {
+    margin-bottom: 0; }
+  main.homepage section.furniture .pre-footer-cat .cat-1,
+  main.homepage section.furniture .pre-footer-cat .cat-2 {
+    height: auto;
+    min-height: auto; }
   main.homepage section.reviews .review {
     color: #4d3b2b;
     border: 2px solid #edede7;
@@ -398,6 +409,13 @@
     border-radius: 0; } }
 
 @media screen and (max-width: 768px) {
+  main.homepage section.furniture .pre-footer-cat .cat-1 {
+    font-size: 15px; }
+  main.homepage section.furniture .pre-footer-cat .cat-2 {
+    font-size: 15px; }
+  main.homepage section.furniture .pre-footer-cat .cat-1 .title,
+  main.homepage section.furniture .pre-footer-cat .cat-2 .title {
+    font-size: 23px; }
   main.homepage section.social .vk .title:before {
     content: '';
     position: absolute;
@@ -789,7 +807,12 @@
       display: none; }
   header .headerCenter .logo {
     width: 100px;
-    background-size: 100%; }
+    background-size: 100%; } }
+
+@media screen and (max-width: 767px) {
+  main.homepage section.mainscreen {
+    height: auto;
+    padding-bottom: 20px; }
   footer .left-align {
     float: none;
     width: 100%;
@@ -803,12 +826,9 @@
     footer .right-align ul li div {
       margin-left: 0; }
   footer .footer-menu ul li {
+    padding: 5px 0;
+    display: block;
     width: 50%; } }
-
-@media screen and (max-width: 767px) {
-  main.homepage section.mainscreen {
-    height: auto;
-    padding-bottom: 20px; } }
 
 @media screen and (max-width: 480px) {
   main.home .years li a {

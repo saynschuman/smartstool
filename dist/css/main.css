@@ -2050,7 +2050,8 @@ main.compare section.categories .category {
   height: 20px;
   background-image: url(../img/curl.png);
   background-repeat-x: repeat;
-  background-repeat-y: no-repeat; }
+  background-repeat-y: no-repeat;
+  float: left; }
 
 main.opt form {
   background-color: #f9f7f4;
@@ -2680,11 +2681,16 @@ main.homepage section.video {
           display: block;
           font-size: 45px;
           margin-bottom: 2px; }
+      main.homepage section.video .news-block .news a {
+        text-decoration: none; }
       main.homepage section.video .news-block .news .descr {
         color: #979f00;
         font-size: 15px;
         font-family: 'GothamProMedium', sans-serif;
-        line-height: 1.5; }
+        line-height: 1.5;
+        text-decoration: underline;
+        -webkit-text-decoration-color: #cfd389;
+                text-decoration-color: #cfd389; }
     main.homepage section.video .news-block .discounts {
       padding: 0; }
       main.homepage section.video .news-block .discounts .title {
@@ -2737,7 +2743,12 @@ main.homepage section.video {
         font-size: 15px;
         font-family: 'GothamProMedium', sans-serif;
         line-height: 1.5;
-        margin-bottom: 22px; }
+        margin-bottom: 22px;
+        text-decoration: underline;
+        -webkit-text-decoration-style: wavy;
+                text-decoration-style: wavy;
+        -webkit-text-decoration-color: #000;
+                text-decoration-color: #000; }
 
 main.homepage section.furniture {
   position: relative; }
@@ -2792,7 +2803,8 @@ main.homepage section.furniture {
       height: auto;
       width: 100%;
       position: relative;
-      height: 200px;
+      height: auto;
+      min-height: 200px;
       padding: 30px 10px;
       border-radius: 22px;
       margin: 20px 0; }
@@ -2813,7 +2825,8 @@ main.homepage section.furniture {
       height: auto;
       width: 100%;
       position: relative;
-      height: 200px;
+      height: auto;
+      min-height: 200px;
       padding: 30px 10px;
       border-radius: 22px;
       margin: 20px 0; }
@@ -2946,7 +2959,14 @@ main.homepage section.reviews {
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
-            transform: translateX(-50%); }
+            transform: translateX(-50%);
+    text-decoration: underline;
+    -webkit-text-decoration-style: wavy;
+            text-decoration-style: wavy;
+    -webkit-text-decoration-color: #cfd389;
+            text-decoration-color: #cfd389;
+    -moz-text-decoration-style: wavy;
+    -moz-text-decoration-color: #cfd389; }
   main.homepage section.reviews a.leave {
     float: right;
     text-align: center;

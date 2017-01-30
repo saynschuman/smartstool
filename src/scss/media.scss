@@ -227,6 +227,14 @@ main.homepage section.chairs .right img.desktop {
 }
 
 @media screen and (max-width: 1050px){
+footer .footer-menu ul li {
+    display: block;
+    padding-right: 0;
+    a {
+    	font-size: 13px;
+    }
+}
+
 main.homepage section.about .right {
     width: 50%;
     float: right;
@@ -414,6 +422,14 @@ width: 92%;
 }
 
 @media screen and (max-width: 991px) {
+main.homepage section.furniture .pre-footer-cat .cat-1 {
+	margin-bottom: 0;
+}	
+main.homepage section.furniture .pre-footer-cat .cat-1,
+main.homepage section.furniture .pre-footer-cat .cat-2 {
+	height: auto;
+	min-height: auto; 
+}
 main.homepage section.reviews .review {
     color: #4d3b2b;
     border: 2px solid #edede7;
@@ -499,6 +515,16 @@ main.homepage section.video .tablet-discounts .title {
 }		
 
 @media screen and (max-width: 768px) {
+main.homepage section.furniture .pre-footer-cat .cat-1 {
+	font-size: 15px;
+}	
+main.homepage section.furniture .pre-footer-cat .cat-2 {
+	font-size: 15px;
+}
+main.homepage section.furniture .pre-footer-cat .cat-1 .title,
+main.homepage section.furniture .pre-footer-cat .cat-2 .title {
+	font-size: 23px;
+}
 main.homepage section.social .vk .title:before {
     content: '';
     position: absolute;
@@ -1017,6 +1043,15 @@ main.home section.categories .category .operations li:nth-child(2) {
 			}
 		}
 	}
+
+	
+}
+
+@media screen and (max-width: 767px) {
+	main.homepage section.mainscreen {
+		height: auto;
+		padding-bottom: 20px;
+	}	
 	footer {
 		.left-align {
 			float: none;
@@ -1037,23 +1072,18 @@ main.home section.categories .category .operations li:nth-child(2) {
 					}
 				}
 			}
-		}	
-	.footer-menu {
+		}				
+	}	
+	footer .footer-menu {
 		ul {
 			li {
+				padding: 5px 0;
+				display: block;
 				width: 50%;
 				a {
 				}
 			}
 		}
-	}			
-	}	
-}
-
-@media screen and (max-width: 767px) {
-	main.homepage section.mainscreen {
-		height: auto;
-		padding-bottom: 20px;
 	}	
 }	
 

@@ -347,11 +347,16 @@ main.homepage {
 						margin-bottom: 2px;
 					}
 				}
+				a {
+					text-decoration: none;
+				}
 				.descr {
 					color: #979f00;
 					font-size: 15px;
 					font-family: 'GothamProMedium', sans-serif;
 					line-height: 1.5;
+				    text-decoration: underline;
+				    text-decoration-color: #cfd389;
 				}
 			}
 			.discounts {
@@ -412,6 +417,9 @@ main.homepage {
 					font-family: 'GothamProMedium', sans-serif;
 					line-height: 1.5;
 					margin-bottom: 22px;					
+					text-decoration: underline;
+				    text-decoration-style: wavy;
+				    text-decoration-color: #000;					
 				}
 			}
 		}
@@ -478,7 +486,8 @@ main.homepage {
 				height: auto;
 				width: 100%;
 				position: relative;
-				height: 200px;
+				height: auto;
+				min-height: 200px;
 				padding: 30px 10px;
 				border-radius: 22px;
 				margin: 20px 0;
@@ -503,7 +512,8 @@ main.homepage {
 				height: auto;
 				width: 100%;
 				position: relative;
-				height: 200px;
+				height: auto;
+				min-height: 200px;
 				padding: 30px 10px;
 				border-radius: 22px;
 				margin: 20px 0;
@@ -652,6 +662,11 @@ main.homepage {
 			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
+			text-decoration: underline;
+		    text-decoration-style: wavy;
+		    text-decoration-color: #cfd389;
+		    -moz-text-decoration-style: wavy;
+    		-moz-text-decoration-color: #cfd389;
 		}
 		a.leave {
 		    float: right;
