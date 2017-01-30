@@ -2763,11 +2763,7 @@ main.homepage section.video {
         font-family: 'GothamProMedium', sans-serif;
         line-height: 1.5;
         margin-bottom: 22px;
-        text-decoration: underline;
-        -webkit-text-decoration-style: wavy;
-                text-decoration-style: wavy;
-        -webkit-text-decoration-color: #000;
-                text-decoration-color: #000; }
+        text-decoration: underline; }
 
 main.homepage section.furniture {
   position: relative; }
@@ -3107,7 +3103,8 @@ main.homepage section.about {
         content: 'Хотите стать партнером?'; }
 
 main.homepage section.social {
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 20px; }
   main.homepage section.social .wrapper {
     width: 1200px;
     padding: 0 15px;
