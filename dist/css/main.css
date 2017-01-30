@@ -2852,6 +2852,37 @@ main.homepage section.for-all .tit {
   margin-bottom: 20px;
   text-transform: uppercase; }
 
+main.homepage section.for-all .owl-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: transparent; }
+  main.homepage section.for-all .owl-nav .owl-prev {
+    position: absolute;
+    left: 20px; }
+    main.homepage section.for-all .owl-nav .owl-prev:after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      background-image: url(../img/slider-nav.png);
+      width: 13px;
+      height: 21px;
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+  main.homepage section.for-all .owl-nav .owl-next {
+    position: absolute;
+    right: 10px; }
+    main.homepage section.for-all .owl-nav .owl-next:after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      background-image: url(../img/slider-nav.png);
+      width: 13px;
+      height: 21px; }
+
 main.homepage section.reviews {
   float: left;
   width: 100%; }

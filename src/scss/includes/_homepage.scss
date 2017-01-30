@@ -547,6 +547,39 @@ main.homepage {
 			margin-bottom: 20px;
 			text-transform: uppercase;
 		}
+		.owl-nav {
+		    position: absolute;
+    		top: 0;
+    		width: 100%;
+    		color: transparent;
+    		.owl-prev {
+    		    position: absolute;
+    			left: 20px;	
+    			&:after {
+    				position: absolute;
+    				left: 0;
+    				top: 0;
+    				content: '';
+    				background-image: url(../img/slider-nav.png);
+				    width: 13px;
+				    height: 21px;
+				    transform: rotate(180deg);
+    			}    			
+    		}
+    		.owl-next {
+    		    position: absolute;
+    			right: 10px;
+    			&:after {
+    				position: absolute;
+    				left: 0;
+    				top: 0;
+    				content: '';
+    				background-image: url(../img/slider-nav.png);
+				    width: 13px;
+				    height: 21px;
+    			}
+    		}
+		}
 	}
 	section.reviews {
 		.wrapper {

@@ -398,6 +398,49 @@
     border-radius: 0; } }
 
 @media screen and (max-width: 768px) {
+  main.homepage section.social .vk .title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0px;
+    background-image: url(../img/vk-ic.png);
+    width: 22px;
+    height: 13px;
+    background-size: 100%; }
+  main.homepage section.social .youtube .title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -4px;
+    background-image: url(../img/youtube-ic.png);
+    width: 23px;
+    height: 21px;
+    background-size: 100%; }
+  main.homepage section.social .soc .top {
+    padding: 27px 13px; }
+  main.homepage section.social .vk .title {
+    padding-left: 30px; }
+  main.homepage section.social .youtube .title {
+    padding-left: 32px;
+    position: relative; }
+  main.homepage section.social .inst .title {
+    padding-left: 24px; }
+  main.homepage section.social .facebook .title {
+    padding-left: 30px; }
+  main.homepage section.social .inst .title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -4px;
+    background-image: url(../img/inst-ic.png);
+    width: 21px;
+    height: 20px;
+    background-size: 100%; }
+  main.homepage section.social .soc .top .left-align,
+  main.homepage section.social .soc .top .right-align a {
+    font-size: 13px; }
+  main.homepage section.social .soc .top .right-align a {
+    padding: 9px 10px; }
   main.homepage section.reviews .review {
     min-height: auto;
     margin-bottom: 20px;
@@ -455,12 +498,13 @@
     text-align: left;
     line-height: 1.5;
     position: relative;
-    right: 0;
+    right: auto;
+    left: 0;
     top: 0;
     padding: 0;
-    -webkit-transform: translateX(50%);
-    -ms-transform: translateX(50%);
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
     width: 80%;
     display: block;
     margin: 0 auto;
@@ -473,12 +517,13 @@
   main.homepage section.video .news-block .news .date {
     padding-top: 10px; }
   main.homepage section.video .tablet-discounts .descr span {
-    margin-top: 62px;
+    margin-top: 53px;
     display: block;
     width: 100%;
     position: absolute;
     text-align: right;
-    top: 0; }
+    top: 0;
+    left: 0; }
   main.homepage section.video .tablet-discounts .title span {
     width: 100%;
     font-size: 25px; }
@@ -495,6 +540,8 @@
     width: 100%;
     right: 0;
     margin-top: -40px; }
+  main.homepage section.video .tablet-discounts img {
+    width: 80px; }
   main.homepage section.video .tablet-discounts .title {
     width: 100%;
     left: 0;
