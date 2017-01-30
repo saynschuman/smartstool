@@ -12,7 +12,7 @@ main.homepage {
 		background-size: cover;
 		background-position: center center; 
 		position: relative;
-		z-index: 9999999;
+		overflow: hidden;	
 		h1 {
 			font-size: 35px;
 			color: #4d3b2b;
@@ -97,6 +97,13 @@ main.homepage {
 		margin: 0 auto;
 		position: relative;
 		z-index: 2;
+		.desktop-man {
+			position: absolute;
+			left: 25%;
+			transform: translateX(-31%);
+			z-index: 99;
+			background-color: transparent;
+		}
 		.inf {
 			margin-top: 50px;
 			margin-bottom: 50px;
@@ -111,6 +118,14 @@ main.homepage {
 			width: 50%;
 			border-right: 1px solid #f8f7f3;
 			position: relative;
+			overflow: hidden;
+			z-index: 1;
+			background-color: #fff;	
+			
+			.price {
+				z-index: 0;
+				position: absolute;
+			}
 			img {
 				position: absolute;
 				width: 255px;
@@ -123,6 +138,7 @@ main.homepage {
 				}
 				&.desktop {
 					display: block;
+					z-index: 9;
 				}				
 			}
 			.back-description {
@@ -134,6 +150,7 @@ main.homepage {
 				}	
 			}
 			.right_align {
+
 				.inf {
 					padding-right: 50px;
 					text-align: right;
@@ -143,7 +160,9 @@ main.homepage {
 		.right {
 			float: right;
 			width: 50%;
-			position: relative;
+			position: relative;	
+			background-color: transparent;
+			z-index: 0;			
 			img {
 				position: absolute;
 				width: 300px;
@@ -160,6 +179,7 @@ main.homepage {
 			}
 			h2.title {
 				padding-left: 50px;
+				background-color: #fff;
 			}			
 			.left_align {
 				.inf {
@@ -224,13 +244,13 @@ main.homepage {
 		&:after {
 			content: '';
 			position: absolute;
-			background-image: url(../img/shape-chairs.png); 
+			background-image: url(../img/shape-transparent.png); 
 			width: 100%;
 			height: 90px;
 			background-size: cover;
 			top: -90px;
 			left: 0;
-		}
+		}		
 		.video-wrapper {
 			width: 1200px;
 			padding: 45px 15px 20px;
@@ -261,6 +281,7 @@ main.homepage {
 			height: 280px;
 			border-radius: 23px;
 			margin-bottom: 20px;
+			box-shadow: 0 14px 30px -10px rgba(0,0,0,.5);			
 		}
 		p {
 			font-size: 15px;
@@ -955,4 +976,12 @@ main.homepage {
 }
 main.homepage section.furniture .wrapper.pre-footer-cat {
 	padding-top: 0;
+}
+main {
+	z-index: 9999999;
+	position: relative;
+	background-color: #fff; 
+}
+.ov_h {
+	overflow: inherit !important;
 }

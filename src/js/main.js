@@ -161,5 +161,15 @@ $(document).ready(function() {
   // scroll 
 
   smoothScroll.init();
+
+  //wow 
+
+	new WOW().init();
 	
+	wow_2 = new WOW({
+		boxClass:     'wow_2',      // default
+		animateClass: 'ov_h', // default
+    })
+	
+	wow_2.init();
 });	

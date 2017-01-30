@@ -79,6 +79,11 @@
         padding: 0 15px; } }
 
 @media screen and (max-width: 1200px) {
+  main.homepage section.chairs .desktop-man {
+    display: none; }
+  main.homepage section.chairs .left {
+    overflow: inherit;
+    background-color: transparent; }
   main.homepage section.furniture:after {
     display: none; }
   main.homepage section.furniture h2 {

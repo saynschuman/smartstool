@@ -1234,7 +1234,7 @@ header {
     font-family: 'GothamProRegular', sans-serif;
     font-size: 13px;
     top: 0;
-    z-index: 9999999;
+    z-index: 999999999;
     position: fixed;
     width: 100%; }
     header .headerTop a {
@@ -1486,7 +1486,7 @@ header {
         display: none;
         border: 1px solid #f2ede6;
         height: auto;
-        z-index: 99999;
+        z-index: 99999999;
         background-color: #fff;
         -webkit-box-shadow: 0px 50px 100px -10px rgba(0, 0, 0, 0.2);
                 box-shadow: 0px 50px 100px -10px rgba(0, 0, 0, 0.2);
@@ -1688,7 +1688,7 @@ header {
   display: none;
   overflow: auto;
   height: auto;
-  z-index: 99999999; }
+  z-index: 999999999; }
   .mobile-menu .close {
     background-image: url(../img/close_.png);
     width: 30px;
@@ -1859,7 +1859,7 @@ header {
 
 .bl {
   opacity: 1 !important;
-  z-index: 9999999 !important; }
+  z-index: 999999999 !important; }
 
 .nbl {
   opacity: 0 !important; }
@@ -2560,7 +2560,7 @@ main.homepage section.mainscreen {
   background-size: cover;
   background-position: center center;
   position: relative;
-  z-index: 9999999; }
+  overflow: hidden; }
   main.homepage section.mainscreen h1 {
     font-size: 35px;
     color: #4d3b2b;
@@ -2633,6 +2633,14 @@ main.homepage section.chairs {
   margin: 0 auto;
   position: relative;
   z-index: 2; }
+  main.homepage section.chairs .desktop-man {
+    position: absolute;
+    left: 25%;
+    -webkit-transform: translateX(-31%);
+        -ms-transform: translateX(-31%);
+            transform: translateX(-31%);
+    z-index: 99;
+    background-color: transparent; }
   main.homepage section.chairs .inf {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -2645,7 +2653,13 @@ main.homepage section.chairs {
     float: left;
     width: 50%;
     border-right: 1px solid #f8f7f3;
-    position: relative; }
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #fff; }
+    main.homepage section.chairs .left .price {
+      z-index: 0;
+      position: absolute; }
     main.homepage section.chairs .left img {
       position: absolute;
       width: 255px;
@@ -2658,7 +2672,8 @@ main.homepage section.chairs {
       main.homepage section.chairs .left img.mobile {
         display: none; }
       main.homepage section.chairs .left img.desktop {
-        display: block; }
+        display: block;
+        z-index: 9; }
     main.homepage section.chairs .left .back-description {
       display: none; }
     main.homepage section.chairs .left .left_align .inf {
@@ -2669,7 +2684,9 @@ main.homepage section.chairs {
   main.homepage section.chairs .right {
     float: right;
     width: 50%;
-    position: relative; }
+    position: relative;
+    background-color: transparent;
+    z-index: 0; }
     main.homepage section.chairs .right img {
       position: absolute;
       width: 300px;
@@ -2684,7 +2701,8 @@ main.homepage section.chairs {
       main.homepage section.chairs .right img.desktop {
         display: block; }
     main.homepage section.chairs .right h2.title {
-      padding-left: 50px; }
+      padding-left: 50px;
+      background-color: #fff; }
     main.homepage section.chairs .right .left_align .inf {
       text-align: left;
       padding-left: 50px; }
@@ -2735,7 +2753,7 @@ main.homepage section.video {
   main.homepage section.video:after {
     content: '';
     position: absolute;
-    background-image: url(../img/shape-chairs.png);
+    background-image: url(../img/shape-transparent.png);
     width: 100%;
     height: 90px;
     background-size: cover;
@@ -2764,7 +2782,9 @@ main.homepage section.video {
     width: 100%;
     height: 280px;
     border-radius: 23px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 14px 30px -10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 14px 30px -10px rgba(0, 0, 0, 0.5); }
   main.homepage section.video p {
     font-size: 15px;
     color: #4d3b2b;
@@ -3361,3 +3381,11 @@ main.homepage section.social {
 
 main.homepage section.furniture .wrapper.pre-footer-cat {
   padding-top: 0; }
+
+main {
+  z-index: 9999999;
+  position: relative;
+  background-color: #fff; }
+
+.ov_h {
+  overflow: inherit !important; }

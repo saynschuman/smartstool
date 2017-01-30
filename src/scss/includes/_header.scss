@@ -19,7 +19,7 @@ header {
 		font-family: 'GothamProRegular', sans-serif;
 		font-size: 13px;
 	    top: 0;
-	    z-index: 9999999;
+	    z-index: 999999999;
 	    position: fixed;
 	    width: 100%;		
 		a {
@@ -283,7 +283,7 @@ header {
 			    display: none;
 			    border: 1px solid #f2ede6;
 			    height: auto;
-			    z-index: 99999;
+			    z-index: 99999999;
 			    background-color: #fff;
 			    box-shadow: 0px 50px 100px -10px rgba(0, 0, 0, 0.2);
 			    left: -.01%;
@@ -518,7 +518,7 @@ header {
 	display: none;
 	overflow: auto;
 	height: auto;
-	z-index: 99999999;
+	z-index: 999999999;
 	.close {
 		background-image: url(../img/close_.png);
 		width: 30px;
@@ -715,7 +715,7 @@ header {
 }
 .bl {
 	opacity: 1 !important;
-	z-index: 9999999 !important; 
+	z-index: 999999999 !important; 
 }
 .nbl {
 	opacity: 0 !important;
