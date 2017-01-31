@@ -1657,7 +1657,8 @@ header {
           z-index: 999999;
           display: none; }
         header .headerMenu .menu .menuItem[name="smart-5"] {
-          border-radius: 0 20px 0 0; }
+          border-radius: 0 20px 0 0;
+          border-right: none; }
           header .headerMenu .menu .menuItem[name="smart-5"]::before {
             display: none; }
           header .headerMenu .menu .menuItem[name="smart-5"]:hover {
