@@ -1204,6 +1204,71 @@ h1 {
 .mob {
   display: none; }
 
+.ripplelink {
+  display: block;
+  float: left;
+  width: 49.6%;
+  margin: 0.2%;
+  height: 10em;
+  line-height: 10em;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  z-index: 0; }
+
+.ripplelink:hover {
+  z-index: 1000;
+  cursor: pointer; }
+
+.ink {
+  display: block;
+  position: absolute;
+  background: rgba(100, 255, 10, 0.5);
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0); }
+
+.animate {
+  -webkit-animation: ripple 0.65s linear;
+          animation: ripple 0.65s linear; }
+
+@-webkit-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5); } }
+
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5); } }
+
+.cyan {
+  background: #00bcd4; }
+
+.lightgreen {
+  background: #8bc34a; }
+
+.amber {
+  background: #ffc107; }
+
+.orange {
+  background: #ff9800; }
+
+.green {
+  background: green; }
+
+.opacity {
+  opacity: 1 !important;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
 header {
   position: relative;
   color: #664b33;
@@ -3099,8 +3164,37 @@ main.homepage section.for-all h2 {
   margin-bottom: 30px;
   display: block; }
 
+main.homepage section.for-all .wr {
+  position: relative;
+  cursor: pointer; }
+  main.homepage section.for-all .wr .under {
+    text-align: center;
+    font-size: 19px;
+    color: #4d3b2b;
+    font-family: 'GothamProRegular', sans-serif;
+    line-height: 1.7;
+    background-image: url(../img/under_backg.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    opacity: 0;
+    -webkit-transition: .4s;
+    transition: .4s; }
+    main.homepage section.for-all .wr .under .text {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 100%; }
+
 main.homepage section.for-all .no-padding {
-  padding: 0; }
+  padding: 0;
+  position: relative; }
 
 main.homepage section.for-all img {
   width: 100%; }

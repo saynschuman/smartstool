@@ -644,8 +644,36 @@ main.homepage {
 			margin-bottom: 30px;
 			display: block;
 		}
+		.wr {
+			position: relative;
+			cursor: pointer;
+			.under {
+				text-align: center;
+				font-size: 19px;
+				color: #4d3b2b;
+				font-family: 'GothamProRegular', sans-serif;
+				line-height: 1.7;
+				background-image: url(../img/under_backg.jpg); 
+				height: 100%;
+				width: 100%;
+				background-size: cover;
+				position: absolute; 
+				left: 0;
+				top: 0;
+				display: block;
+				opacity: 0;
+				transition: .4s;
+				.text {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 100%;
+				}
+			}			
+		}
 		.no-padding {
 			padding: 0;
+			position: relative;
 		}
 		img {
 			width: 100%;
