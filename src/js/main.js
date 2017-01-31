@@ -48,9 +48,15 @@ $(document).ready(function() {
 	  function() {
 	  	$(this).css('display', 'block');  
 	  	$('.menuItem[name="smart-1"').addClass('active');
+	  	$('.menuItem[name="smart-1"').css({
+	  		'border-top': '3px solid #ff8301'
+	  	});
 	  }, function() {
 	    $(this).css('display', 'none');  
 	    $('.menuItem[name="smart-1"').removeClass('active');
+	    $('.menuItem[name="smart-1"').css({
+	  		'border-top': 'none'
+	  	});	    
 	  }
 	);	
 	$('.subMenu[name="smart-2"]').hover(
@@ -84,9 +90,16 @@ $(document).ready(function() {
 	  function() {
 	  	$(this).css('display', 'block'); 
 	  	$('.menuItem[name="smart-5"').addClass('active');
+	  	$('.menuItem[name="smart-5"').css({
+	  		'border-top': '3px solid #ff8301'
+	  	});	  	
 	  }, function() {
 	    $(this).css('display', 'none'); 
 	    $('.menuItem[name="smart-5"').removeClass('active'); 
+	  	$('.menuItem[name="smart-5"').css({
+	  		'border-top': 'none',
+	  		'border-right': 'none'
+	  	});	    
 	  }
 	);	
 	// menu 

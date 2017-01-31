@@ -1542,7 +1542,13 @@ header {
       position: relative;
       background: -webkit-gradient(linear, left bottom, left top, from(#f5f2ef), to(transparent));
       background: -webkit-linear-gradient(bottom, #f5f2ef, transparent);
-      background: linear-gradient(to top, #f5f2ef, transparent); }
+      background: linear-gradient(to top, #f5f2ef, transparent);
+      -webkit-transition: .4s;
+      transition: .4s; }
+      header .headerMenu .menu:hover {
+        border-top: 2px solid #fff !important;
+        -webkit-transition: .4s;
+        transition: .4s; }
       header .headerMenu .menu .subMenu {
         position: absolute;
         width: 100.1%;
@@ -1651,27 +1657,22 @@ header {
           z-index: 999999;
           display: none; }
         header .headerMenu .menu .menuItem[name="smart-5"] {
-          border-right: none !important; }
+          border-radius: 0 20px 0 0; }
           header .headerMenu .menu .menuItem[name="smart-5"]::before {
-            left: 0;
-            right: auto;
-            margin: 0 !important;
-            height: 2px !important;
-            width: 0%;
-            -webkit-transition: .3s;
-            transition: .3s; }
-          header .headerMenu .menu .menuItem[name="smart-5"]:hover::before {
-            width: 92%; }
-        header .headerMenu .menu .menuItem:first-child::before {
-          right: 0 !important;
-          left: auto !important;
-          margin: 0 !important;
-          height: 2px !important;
-          width: 0%;
-          -webkit-transition: .3s;
-          transition: .3s; }
-        header .headerMenu .menu .menuItem:first-child:hover::before {
-          width: 92%; }
+            display: none; }
+          header .headerMenu .menu .menuItem[name="smart-5"]:hover {
+            border-right: none;
+            border-top: 3px solid #ff8301 !important; }
+            header .headerMenu .menu .menuItem[name="smart-5"]:hover::before {
+              display: none; }
+        header .headerMenu .menu .menuItem:first-child {
+          border-radius: 20px 0 0 0; }
+          header .headerMenu .menu .menuItem:first-child::before {
+            display: none; }
+          header .headerMenu .menu .menuItem:first-child:hover {
+            border-top: 3px solid #ff8301 !important; }
+            header .headerMenu .menu .menuItem:first-child:hover::before {
+              width: 0; }
         header .headerMenu .menu .menuItem::before {
           content: '';
           position: absolute;
