@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @media screen and (max-width: 1300px) {
+  main.text .wrapper {
+    width: 100%;
+    padding: 0 50px; }
   main.homepage section.social .wrapper {
     width: 100%; }
   main.homepage section.reviews .wrapper,
@@ -172,6 +175,9 @@
     padding-bottom: 40px; } }
 
 @media screen and (max-width: 1050px) {
+  main.text .wrapper {
+    width: 100%;
+    padding: 0 20px; }
   footer .footer-menu ul li {
     display: block;
     padding-right: 0; }
@@ -337,6 +343,38 @@
     display: none; } }
 
 @media screen and (max-width: 991px) {
+  main.text .left ul li {
+    line-height: 1.5;
+    margin-bottom: 7px; }
+    main.text .left ul li:before {
+      content: '';
+      height: 10px;
+      width: 10px;
+      border-radius: 100%;
+      background-color: #f07d28;
+      position: absolute;
+      left: 0;
+      top: 6px; }
+  main.text .breadcrumb {
+    padding-top: 30px; }
+  main.text .right h2 {
+    margin-top: 30px;
+    margin-bottom: 25px; }
+  main.text .mobile-img {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px; }
+  main.text .left .img-responsive {
+    display: none; }
+  main.text .right {
+    padding-left: 0; }
+  main.text .left {
+    padding-right: 0; }
+  main.text .right .article {
+    width: 48%;
+    float: right; }
+    main.text .right .article:nth-child(odd) {
+      float: left; }
   main.homepage section.furniture .pre-footer-cat .cat-1 {
     margin-bottom: 0; }
   main.homepage section.furniture .pre-footer-cat .cat-1,
@@ -817,6 +855,16 @@
     background-size: 100%; } }
 
 @media screen and (max-width: 767px) {
+  main.text h1 {
+    font-size: 30px;
+    padding: 20px 0; }
+  main.text .left h2 {
+    font-size: 23px; }
+  main.text .right .article {
+    width: 100%;
+    float: none; }
+    main.text .right .article:nth-child(odd) {
+      float: none; }
   main.homepage section.mainscreen {
     height: auto;
     padding-bottom: 20px; }
