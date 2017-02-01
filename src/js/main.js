@@ -171,6 +171,7 @@ $(document).ready(function() {
 	    }
 	})
 
+
   // scroll 
 
   smoothScroll.init();
@@ -253,6 +254,7 @@ $( 'main.homepage section.for-all .under' ).hover(
             $.smoothScroll();
         }
     } catch (err) {};
+    
 // cart 
 
 	$('main.cart table tr td .q a').click(function(){

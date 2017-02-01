@@ -12,6 +12,7 @@
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="css/media.css">
       <link rel="stylesheet" href="libs/css/jquery.jscrollpane.css">
+      <script src="libs/js/jquery-3.1.1.min.js"></script>
     <!--<![endif]-->    
     <!--[if lt IE 14]>
       <script src="libs/js/html5shiv.min.js"></script>
@@ -644,6 +645,32 @@
 <div class="divider"></div>
 
 </main>
+<script>
+	
+$(document).ready(function() {	
+  $('.owl-carousel').owlCarousel({
+	    loop:true,
+	    margin:0,
+	    responsiveClass:true,
+	    responsive:{
+	        0:{
+	            items:1,
+	            nav:true
+	        },
+	        768:{
+	            items:2,
+	            nav:false
+	        },
+	        1200:{
+	            items:3,
+	            nav:true,
+	            loop:false
+	        }
+	    }
+	})
+});	
+
+</script>
     <footer>
 	    <div class="wrapper">
 		    <div class="clearfix">
@@ -725,7 +752,6 @@
             <input tabindex="3" type="submit" value="Войти">
         </form>    
 
-    <script src="libs/js/jquery-3.1.1.min.js"></script>
     <script src="libs/js/masonry.min.js"></script>
     <script type="text/javascript" src="libs/js/owl.carousel.min.js"></script>
     <script src="libs/js/afterglow.min.js"></script>

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @media screen and (max-width: 1300px) {
+  main.about .wrapper {
+    width: 100%; }
   main.cart .wrapper {
     padding: 0 50px; }
   main.cart form .cart-wrapper {
@@ -86,6 +88,17 @@
         padding: 0 15px; } }
 
 @media screen and (max-width: 1200px) {
+  main.about section.text .left {
+    float: none;
+    width: 100%;
+    height: 415px;
+    display: none; }
+  main.about section.text .right {
+    width: 100%;
+    float: right;
+    padding-left: 0; }
+  main.about section.team .team-list.center {
+    left: 0; }
   main.home section.comparation {
     overflow: auto; }
   main.compare .comparation .table-header,
@@ -196,6 +209,10 @@
     padding-bottom: 40px; } }
 
 @media screen and (max-width: 1050px) {
+  main.about section.smart .right {
+    padding-left: 0; }
+  main.about .wrapper {
+    padding: 30px; }
   main.compare .delete {
     right: 30px; }
   main.cart .promo form {
@@ -916,6 +933,37 @@
     background-size: 100%; } }
 
 @media screen and (max-width: 767px) {
+  main.about section.smart .right .mission {
+    margin-top: -10px; }
+  main.about section.smart p {
+    font-size: 15px;
+    margin-bottom: 15px; }
+  main.about section.team h2 {
+    line-height: 1.4; }
+  main.about section.smart p:last-child {
+    margin-bottom: 0; }
+  main.about section.team {
+    padding-top: 0; }
+  main.about section.smart .right .mission {
+    font-size: 23px; }
+  main.about section.team h2 {
+    font-size: 23px; }
+  main.about section.smart .left img {
+    display: block;
+    margin: 0 auto; }
+  main.about .wrapper {
+    padding: 20px; }
+  main.about section.smart {
+    background-image: none; }
+  main.about section.smart .right {
+    float: none;
+    width: 100%; }
+    main.about section.smart .right h1 {
+      padding-bottom: 23px; }
+  main.about section.smart .left {
+    float: none;
+    width: 100%;
+    height: 415px; }
   main.cart form .cart-wrapper .of span {
     color: #f07d28;
     display: inline-block; }
