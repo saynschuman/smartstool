@@ -130,6 +130,9 @@ main.home section.about {
 }
 
 @media screen and (max-width: 1200px) {
+.from_the_shop ul li:last-child:before {
+	top: -4px;
+}		
 main.cart table tr td.name {
 	padding-right: 20px;
 }
@@ -471,6 +474,13 @@ width: 92%;
 }
 
 @media screen and (max-width: 991px) {
+.from_the_shop ul li {
+	padding-left: 30px;
+}	
+.from_the_shop	{
+	padding: 10px 5px;
+	font-size: 15px;
+}
 main.cart form .cart-wrapper .of span {
 	display: block;
 }	

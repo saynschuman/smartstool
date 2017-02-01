@@ -3934,3 +3934,52 @@ main.cart .jq-selectbox__select-text {
 main.cart .sel_2 {
   margin-bottom: 20px;
   display: block; }
+
+.from_the_shop {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #4d3b2b;
+  font-size: 17px;
+  font-family: GothamProRegular;
+  padding: 0;
+  line-height: 1.3;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px 0;
+  float: left;
+  width: 100%;
+  position: relative; }
+  .from_the_shop:before {
+    content: '';
+    position: absolute;
+    top: -29px;
+    left: 26%;
+    border: 13px solid transparent;
+    border-bottom: 17px solid #fff; }
+  .from_the_shop ul li {
+    padding-left: 50px;
+    position: relative;
+    margin: 20px 0; }
+    .from_the_shop ul li a {
+      color: #a6ad26;
+      -webkit-transition: .3s;
+      transition: .3s; }
+      .from_the_shop ul li a:hover {
+        text-decoration: none;
+        color: #f07d28;
+        -webkit-transition: .3s;
+        transition: .3s; }
+    .from_the_shop ul li:before {
+      content: '';
+      position: absolute;
+      height: 20px;
+      width: 15px;
+      background-image: url(../img/sprite_delivery.png);
+      background-position: -5px 0;
+      top: 0;
+      left: 0; }
+    .from_the_shop ul li:last-child:before {
+      background-position: -5px 20px;
+      width: 17px; }
+    .from_the_shop ul li:nth-child(2):before {
+      background-position: -5px -45px; }
