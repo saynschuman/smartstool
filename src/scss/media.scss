@@ -130,6 +130,18 @@ main.home section.about {
 }
 
 @media screen and (max-width: 1200px) {
+main.home section.comparation {
+	overflow: auto;
+}	
+main.compare .comparation .table-header,
+main.compare .comparation .table-real {
+	min-width: 1180px;
+}
+main.compare .delete {
+	left: auto;
+	right: 50px;
+	transform: translateX(0%);
+}	
 .from_the_shop ul li:last-child:before {
 	top: -4px;
 }		
@@ -253,6 +265,9 @@ main.homepage section.chairs .right img.desktop {
 }
 
 @media screen and (max-width: 1050px){	
+main.compare .delete {
+	right: 30px;
+}		
 main.cart .promo form {
 	padding: 15px 0;
 }		
@@ -626,6 +641,9 @@ main.homepage section.video .tablet-discounts .title {
 }		
 
 @media screen and (max-width: 768px) {
+main.compare .delete {
+	display: none;
+}	
 main.cart .promo form ul li input[type="submit"] {
 	padding: 0 15px;
 }

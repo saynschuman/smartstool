@@ -1489,7 +1489,7 @@ header {
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
               flex-direction: row;
-      background: #a0aa27;
+      background: #919d00;
       border-radius: 25px;
       -webkit-box-align: center;
       -webkit-align-items: center;
@@ -1627,7 +1627,7 @@ header {
               margin-top: 20px; }
       header .headerMenu .menu .menuItem {
         text-transform: uppercase;
-        color: #a0aa27;
+        color: #919d00;
         font-family: 'GothamProMedium', sans-serif;
         font-size: 15px;
         width: 100%;
@@ -2175,7 +2175,13 @@ main.home {
         font-family: 'comfortaa-bold';
         padding: 0 20px;
         text-decoration: underline;
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        -webkit-transition: .3s;
+        transition: .3s; }
+        main.home section.categories .category .title:hover {
+          color: #f07d28;
+          -webkit-transition: .3s;
+          transition: .3s; }
       main.home section.categories .category .excerpt p {
         font-size: 13px;
         color: #4d3b2d;
@@ -2221,7 +2227,14 @@ main.home {
             color: #fff;
             background-color: #fa8f0b;
             border-radius: 20px;
-            padding: 10px 25px; }
+            padding: 10px 25px;
+            -webkit-transition: .3s;
+            transition: .3s; }
+            main.home section.categories .category .operations li a.buy:hover {
+              background-color: #919d00;
+              text-decoration: none;
+              -webkit-transition: .3s;
+              transition: .3s; }
           main.home section.categories .category .operations li a.compare {
             font-size: 15px;
             color: #4a3d2d;
@@ -2271,6 +2284,138 @@ main.home {
         font-size: 17px;
         font-family: GothamProLight;
         line-height: 1.5; }
+
+main.compare .delete {
+  background-color: #919d00;
+  color: #fff;
+  width: 233px;
+  height: 41px;
+  border-radius: 23px;
+  font-family: 'comfortaa-bold';
+  font-size: 18px;
+  padding-top: 10px;
+  padding-left: 40px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s; }
+  main.compare .delete:before {
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 13px;
+    left: 17px;
+    background-image: url(../img/delete.png);
+    top: 12px; }
+  main.compare .delete:hover {
+    background-color: #f07d28;
+    -webkit-transition: .3s;
+    transition: .3s; }
+
+main.compare .comparation .table-header {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: -3px;
+  text-align: left;
+  border: 2px solid #f8f7f3;
+  border-bottom: none;
+  border-radius: 30px 30px 0 0;
+  position: relative; }
+  main.compare .comparation .table-header ul li {
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    height: 262px; }
+    main.compare .comparation .table-header ul li img {
+      display: block;
+      margin: 0 auto;
+      width: 222px;
+      height: auto; }
+    main.compare .comparation .table-header ul li:first-child {
+      width: 19%;
+      vertical-align: top;
+      border-right: 2px solid #f8f7f3;
+      font-size: 14px;
+      color: #4d3b2d;
+      font-family: 'GothamProRegular', sans-serif; }
+    main.compare .comparation .table-header ul li:nth-child(2) {
+      width: 39%;
+      border-right: 2px solid #f8f7f3; }
+    main.compare .comparation .table-header ul li:last-child {
+      width: 39%; }
+  main.compare .comparation .table-header.bottom {
+    border-radius: 0 0 30px 30px;
+    height: 75px;
+    background-color: #f8f7f3;
+    margin-bottom: 40px; }
+    main.compare .comparation .table-header.bottom ul li {
+      padding: 0;
+      height: 75px; }
+      main.compare .comparation .table-header.bottom ul li ul li {
+        width: auto !important; }
+        main.compare .comparation .table-header.bottom ul li ul li:last-child {
+          float: right; }
+        main.compare .comparation .table-header.bottom ul li ul li:nth-child(2) {
+          text-align: center;
+          width: 100% !important;
+          position: absolute;
+          left: 0;
+          top: 33%;
+          border-right: none; }
+        main.compare .comparation .table-header.bottom ul li ul li.price {
+          font-size: 19px;
+          color: #4a3d2d;
+          text-transform: uppercase;
+          padding-top: 26px;
+          padding-left: 20px;
+          font-family: 'comfortaa-bold'; }
+        main.compare .comparation .table-header.bottom ul li ul li a.buy {
+          font-size: 18px;
+          color: #fff;
+          background-color: #fa8f0b;
+          border-radius: 20px;
+          padding: 10px 25px;
+          -webkit-transition: .3s;
+          transition: .3s;
+          font-family: 'comfortaa-bold'; }
+          main.compare .comparation .table-header.bottom ul li ul li a.buy:hover {
+            background-color: #919d00;
+            text-decoration: none;
+            -webkit-transition: .3s;
+            transition: .3s; }
+        main.compare .comparation .table-header.bottom ul li ul li a.compare {
+          font-size: 15px;
+          color: #4a3d2d;
+          padding-top: 26px;
+          padding-right: 20px;
+          font-family: 'ProximaNovaRegular', sans-serif;
+          display: block; }
+
+main.compare .comparation .table-real {
+  width: 100%;
+  max-width: 100%;
+  border: 2px solid #f8f7f3;
+  font-size: 14px;
+  color: #4d3b2d;
+  font-family: 'GothamProRegular', sans-serif;
+  line-height: 1.6; }
+  main.compare .comparation .table-real tr {
+    border-bottom: 2px solid #f8f7f3; }
+    main.compare .comparation .table-real tr td {
+      padding: 20px;
+      vertical-align: top; }
+      main.compare .comparation .table-real tr td:first-child {
+        border-right: 2px solid #f8f7f3;
+        width: 19%;
+        font-family: 'GothamProMedium', sans-serif; }
+      main.compare .comparation .table-real tr td:nth-child(2) {
+        width: 39.3%;
+        border-right: 2px solid #f8f7f3; }
 
 main.compare section.categories .category {
   cursor: pointer; }
