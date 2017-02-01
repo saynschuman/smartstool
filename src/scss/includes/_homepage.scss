@@ -945,6 +945,13 @@ main.homepage {
 						background-color: #ebe6e2;
 						border-radius: 23px;
 						padding: 10px 20px; 
+						transition: .3s;
+						&:hover {
+							text-decoration: none;
+							background-color: $hoverColor;
+							transition: .3s;
+							color: #fff;
+						}
 					}
 				}
 			}

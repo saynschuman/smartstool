@@ -117,9 +117,9 @@ $(document).ready(function() {
 		})	
 	
 	//compare 
-	$('main.compare section.categories .category').click(function(){
-		$(this).toggleClass('orange-border');
-	})
+	// $('main.compare section.categories .category').click(function(){
+	// 	$(this).toggleClass('orange-border');
+	// })
 	
 	$('header .headerTop .logIn').click(function() {
 			$('#header-form').toggleClass('bl');
@@ -221,8 +221,38 @@ $( 'main.homepage section.for-all .under' ).hover(
 
 // styler
 
-	$('input, select').styler();
+	
 
+ var _dropdown;
+ var settings = {
+ 	autoReinitialise: true
+ };
+
+ $('input').styler();
+ $('select').styler({
+	 selectSearch: true,
+	 onFormStyled: function(){
+		 _dropdown = $('.jq-selectbox__dropdown');
+		 _dropdown.find('ul').wrap('<div class="scroll-pane" />');
+	 },
+	 onSelectOpened: function(){
+		 var _ul = $(this).find('.jq-selectbox__dropdown ul');
+		 var height = _ul.height();
+		 var _srollPane = _dropdown.find('.scroll-pane');
+		 _srollPane.height(height);
+		 _ul.css('max-height', 'none');
+		 _srollPane.jScrollPane(settings);
+ 	}
+ });
+
+
+    // Chrome Smooth Scroll
+    try {
+        $.browserSelector();
+        if ($("html").hasClass("chrome")) {
+            $.smoothScroll();
+        }
+    } catch (err) {};
 // cart 
 
 	$('main.cart table tr td .q a').click(function(){
@@ -237,5 +267,8 @@ $( 'main.homepage section.for-all .under' ).hover(
 		var plus = parseInt($(this).prev().html());
 		$(this).prev().html(plus+1);
 	})
+
+ 
+
 
 });	
