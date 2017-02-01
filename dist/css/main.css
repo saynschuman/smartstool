@@ -3804,6 +3804,9 @@ main.cart form .cart-wrapper label {
 main.cart form .cart-wrapper label span {
   color: #dc3238; }
 
+main.cart form .cart-wrapper label b {
+  font-family: 'GothamProBold', sans-serif; }
+
 main.cart form .cart-wrapper input {
   width: 100%;
   max-width: 300px;
