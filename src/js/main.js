@@ -219,4 +219,23 @@ $( 'main.homepage section.for-all .under' ).hover(
   }
 );	
 
+// styler
+
+	$('input, select').styler();
+
+// cart 
+
+	$('main.cart table tr td .q a').click(function(){
+		event.preventDefault();
+		var minus = parseInt($(this).next().html());
+		if ((Math.sign(minus) == 1 && (minus != 1))) {
+			$(this).next().html(minus-1);
+		}
+	})
+	$('main.cart table tr td .q a').click(function(){
+		event.preventDefault();
+		var plus = parseInt($(this).prev().html());
+		$(this).prev().html(plus+1);
+	})
+
 });	

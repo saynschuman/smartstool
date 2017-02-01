@@ -1,0 +1,167 @@
+<main class="cart">
+	<div class="wrapper">
+		<h1>Корзина</h1>
+		<a href="" class="back-ok">
+			<span>←</span> Вернуться в каталог
+		</a>		
+	</div>
+	<div class="wrapper">
+		<table>
+			<tr>
+				<th class="width-10">фото</th>
+				<th class="width-50">наименовани товара</th>
+				<th class="width-10">модель</th>
+				<th class="width-8">кол-во</th>
+				<th class="width-10">цена</th>
+				<th class="width-10">итого</th>
+				<th class="width-2"></th>
+				
+			</tr>
+			<tr>
+				<td class="width-10 thumb"><img src="img/good-1.jpg" alt=""></td>
+				<td class="width-50 name">
+					<a href="">Smartstool Balance (подвижное основание, 140 см - 190 см)</a>
+					<span>Цвет: Зеленый</span></td>
+				<td class="width-10 model">Balance</td>
+				<td class="width-8">
+					<div class="q">
+							<a href=""><div class="img minus"></div></a>
+							<span>1</span>	
+							<a href=""><div class="img plus"></div></a>
+					</div>	
+				</td>
+				<td class="width-10 price">29 350.00</td>
+				<td class="width-10">290 350.00</td>				
+				<td class="width-2"><div class="close"></div></td>				
+			</tr>
+			<tr>
+				<td class="width-10 thumb"><img src="img/good-2.jpg" alt=""></td>
+				<td class="width-50 name">
+					<a href="">Smartstool Balance (подвижное основание, 140 см - 190 см)</a>
+					<span>Цвет: Черный</span></td>
+				<td class="width-10 model">Balance</td>
+				<td class="width-8">
+					<div class="q">
+							<a href=""><div class="img minus"></div></a>
+							<span>2</span>	
+							<a href=""><div class="img plus"></div></a>
+					</div>	
+				</td>
+				<td class="width-10 price">29 350.00</td>
+				<td class="width-10">290 350.00</td>				
+				<td class="width-2"><div class="close"></div></td>			
+			</tr>			
+		</table>
+		<div class="promo clearfix">
+		<form id="promo">
+			<ul>
+				<li>Промо-код на скидку</li>
+				<li><input type="text"></li>
+				<li><input type="submit" value="Применить"></li>
+			</ul>
+		</form>
+		<table>
+			<tr>
+				<td>Сумма</td>
+				<td>35 000.50 Р</td>
+			</tr>
+			<tr>
+				<td>Скидка</td>
+				<td>469.00 Р</td>
+			</tr>
+			<tr>
+				<td>Итого со скидкой</td>
+				<td>34 500.89 Р</td>
+			</tr>
+		</table>
+		</div>
+	</div>	
+	<div class="wrapper">
+		<h1>Оформление заказа</h1>
+	</div>
+	<form class="form-horizontal" action="">
+		<div class="cart-wrapper clearfix">
+			<h2>Информация о доставке и оплате</h2>
+		    <label class="col-sm-3" for="region"><span>*</span> Регион</label>
+		    <div class="mob-no-padding col-sm-9">
+		      <select name="region" id="region" data-smart-positioning="false">
+		      	<option value="">Ленинаградская область</option>
+		      	<option value="">Московская область</option>
+		      	<option value="">Саратовская область</option>
+		      </select>
+		    </div>
+			<label class="col-sm-3" for="city"><span>*</span> Город</label>
+			<div class="mob-no-padding col-sm-9">
+				<input type="text" name="city" id="city"></input>
+			</div>
+			<label class="col-sm-3" for="way-of-delivery">* Способ доставки</label>
+			<div class="mob-no-padding col-sm-9 sel_2">
+			<div class="form-group">
+				<input type="radio" id="to-doors" name="delivery"> 
+				<label for="to-doors">Доставка до дверей (Санкт-Петербург - Архангельск) — 350 рублей</label>
+			</div>
+			<div class="form-group">
+				<input type="radio" checked id="to-point-delivery" name="delivery"> 
+				<label for="to-point-delivery">Доставка до пункта выдачи (Санкт-Петербург - Архангельск) — 290 рублей</label>
+			</div>
+			<div class="form-group">
+				<input type="radio" id="from-the-shop" name="delivery"> 
+				<label for="from-the-shop">Самовывоз из магазина в Санкт-Петербурге</label>
+			</div>
+			</div>
+			<label class="col-sm-3" for="adress"><span>*</span> Адрес</label>
+			<div class="mob-no-padding col-sm-9">
+				<input required type="text" id="adress">
+			</div>
+			<label class="col-sm-3" for="comment">Комментарий</label>
+			<div class="mob-no-padding col-sm-9">
+				<input type="text" id="comment">
+			</div>
+			<label class="col-sm-3" for="model">Время доставки</label>
+			<div class="mob-no-padding col-sm-9">
+		      <select name="region" id="region" data-smart-positioning="false">
+		      	<option value="">Весь день с 9 до 19</option>
+		      	<option value="">Весь день с 9 до 19</option>
+		      	<option value="">Весь день с 9 до 19</option>
+		      </select>
+		     </div>
+			<label class="col-sm-3" for="tel"><span>*</span> Способ оплаты</label>
+			<div class="mob-no-padding col-sm-9 sel_2">
+			<div class="form-group">
+				<input type="radio" id="card" name="pay"> 
+				<label for="card">Visa, MasterCard</label>
+			</div>
+			<div class="form-group">
+				<input type="radio" id="nal" name="pay"> 
+				<label for="nal">Наличными при получении</label>
+			</div>
+			<div class="form-group">
+				<input checked type="radio" id="beznal" name="pay"> 
+				<label for="beznal">Безналичный расчет</label>
+			</div>
+			</div>
+			<h2>Информация о покупателе</h2>
+ 				<label class="col-sm-3" for="name"><span>*</span> Имя</label>
+			    <div class="mob-no-padding col-sm-9">
+			      <input required type="text" id="name">
+			    </div>
+				<label class="col-sm-3" for="surname"><span>*</span> Фамилия</label>
+				<div class="mob-no-padding col-sm-9">
+					<input required type="text" id="surname">
+				</div>
+				<label class="col-sm-3" for="tel"><span>*</span> Телефон</label>
+				<div class="mob-no-padding col-sm-9">
+					<input required class="col-sm-2" type="tel" id="tel">
+				</div>
+				<label class="col-sm-3" for="email"><span>*</span> Электронная почта</label>
+				<div class="mob-no-padding col-sm-9">
+					<input required type="email" id="email">
+				</div>			
+			<label class="col-sm-3" for="note"></label>
+			<div class="mob-no-padding col-sm-9 clearfix">
+				<input class="col-md-6 col-sm-12" type="submit" value="Перейти к оплате">
+				<span class="of col-md-6 col-sm-12">Стоимость с учетом доставки 15 000 рублей</span>
+			</div>			
+		</div>	
+	</form>		
+</main>

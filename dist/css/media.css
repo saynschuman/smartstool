@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @media screen and (max-width: 1300px) {
+  main.cart form .cart-wrapper {
+    width: 100%; }
   main.text .wrapper {
     width: 100%;
     padding: 0 50px; }
