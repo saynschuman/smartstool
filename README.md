@@ -12,3 +12,4 @@
 ##### Cart_ok - https://saynschuman.github.io/dist/cart_ok.html
 ##### Сравнение - https://saynschuman.github.io/dist/compare.html
 ##### Сравнение_2 - https://saynschuman.github.io/dist/compare_2.html
+##### Смарт Компания - https://saynschuman.github.io/dist/about.html

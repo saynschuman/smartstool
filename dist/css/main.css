@@ -2759,6 +2759,35 @@ main.dil .opt-wrapper ul li:before {
   width: 18px;
   top: 4px; }
 
+main.about h1 {
+  text-align: center; }
+
+main.about .wrapper {
+  padding: 0 50px;
+  width: 1278px; }
+
+main.about section {
+  background-image: url(../img/about-main-screen.jpg);
+  max-width: 1280px;
+  display: block;
+  margin: 0 auto;
+  color: #4d3b2b;
+  font-size: 17px;
+  line-height: 1.5;
+  font-family: 'GothamProRegular', sans-serif;
+  min-height: 800px; }
+  main.about section p {
+    margin-bottom: 25px; }
+  main.about section .left {
+    width: 30%;
+    float: left; }
+  main.about section .right {
+    width: 70%;
+    float: right;
+    padding-left: 20px; }
+  main.about section .no-pad {
+    padding: 0; }
+
 main.homepage .wrapper {
   padding: 0 50px;
   width: 1300px;

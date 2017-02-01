@@ -814,4 +814,40 @@ main.dil .opt-wrapper {
         width: 18px;
         top: 4px; }
 
-// homepage
+// about 
+
+main.about {
+	h1 {
+		text-align: center;
+	}
+	.wrapper {
+		padding: 0 50px;
+	    width: 1278px;
+	}
+	section {
+		background-image: url(../img/about-main-screen.jpg); 
+		max-width: 1280px;
+		display: block;
+		margin: 0 auto;
+		color: $h1Color;
+		font-size: 17px;
+		line-height: 1.5;
+		font-family: 'GothamProRegular', sans-serif; 
+		min-height: 800px;
+		p {
+			margin-bottom: 25px;
+		}
+		.left {
+			width: 30%;
+			float: left;
+		}
+		.right {
+			width: 70%;
+			float: right;
+			padding-left: 20px;
+		}
+		.no-pad {
+			padding: 0;
+		}
+	}
+}
