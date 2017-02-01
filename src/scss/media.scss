@@ -1,6 +1,9 @@
 @import 'includes/_var';
 
 @media screen and (max-width: 1300px){
+main.cart .wrapper {
+	padding: 0 50px;
+}	
 main.cart form .cart-wrapper {
 	width: 100%;
 }	
@@ -127,6 +130,12 @@ main.home section.about {
 }
 
 @media screen and (max-width: 1200px) {
+main.cart table tr td.name {
+	padding-right: 20px;
+}
+main.cart table tr td {
+	font-size: 15px;
+}	
 main.homepage section.chairs .desktop-man {
 	display: none;
 }	
@@ -241,6 +250,28 @@ main.homepage section.chairs .right img.desktop {
 }
 
 @media screen and (max-width: 1050px){	
+main.cart .promo form {
+	padding: 15px 0;
+}		
+main.cart table .width-10 {
+	width: 15%;
+}	
+main.cart table .width-50 {
+	width: 30%;
+}	
+main.cart table .width-8 {
+	width: 12%;
+}	
+main.cart .promo form {
+	width: 50%;
+}	
+main.cart .promo form ul li:first-child {
+	display: block;
+    margin-bottom: 20px;
+}	
+main.cart .wrapper {
+	padding: 0 30px;
+}		
 main.text .wrapper {
 	width: 100%;
 	padding: 0 20px;
@@ -440,6 +471,12 @@ width: 92%;
 }
 
 @media screen and (max-width: 991px) {
+main.cart form .cart-wrapper .of span {
+	display: block;
+}	
+main.cart form .cart-wrapper .of {
+	line-height: 1.5;
+}		
 main.text .left {	
 	ul {
 		li {
@@ -579,6 +616,23 @@ main.homepage section.video .tablet-discounts .title {
 }		
 
 @media screen and (max-width: 768px) {
+main.cart .promo form ul li input[type="submit"] {
+	padding: 0 15px;
+}
+main.cart .wrapper {
+	padding: 0 20px;
+}	
+main.cart .promo form {
+	width: 100%;
+	float: none;
+}		
+main.cart .promo table {
+	width: 100%;
+	float: none;	
+}
+main.cart .promo table {
+	max-width: 100%;
+}
 #header-form {
 	display: none;
 }		
@@ -1114,7 +1168,57 @@ main.home section.categories .category .operations li:nth-child(2) {
 	
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {	
+main.cart form .cart-wrapper .of span {
+	color: $hoverColor;
+	display: inline-block;
+}	
+main.cart form .cart-wrapper .of {
+	text-align: left;
+	width: 99%;
+}		
+main.cart form .cart-wrapper input {
+	margin-top: 7px;
+}	
+main.cart .back-ok {
+	display: none;
+}	
+
+main.cart .jq-radio {
+	margin-left: -24px;
+}	
+main.cart .form-group {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 24px;
+}	
+main.cart form .cart-wrapper label {
+	font-size: 15px;
+	line-height: 1.4;
+
+}	
+main.cart .jq-selectbox__select {
+    min-width: 280px;
+}	
+main.cart .mob-no-padding {
+	padding: 0;
+}	
+main.cart form {
+    padding: 35px 0 40px;
+}	
+main.cart form .cart-wrapper h2 {
+	font-size: 23px;
+	margin-bottom: 30px;
+}	
+h1 {
+	font-size: 30px;
+}
+main.cart table#cart-table {
+	min-width: 726px;
+}	
+main.cart .cart-table-wrapper {
+	overflow: auto;
+}
 main.text h1 {
 	font-size: 30px;
 	padding: 20px 0;
@@ -1169,6 +1273,15 @@ main.text .left h2 {
 }	
 
 @media screen and (max-width: 480px) {
+main.cart .promo form ul li {
+	margin: 0;
+}	
+main.cart .promo form ul li:nth-child(2) {
+	max-width: 50%;
+}	
+main.cart .promo form ul li:last-child {
+	float: right;
+} 	
 	main.home {
 		.years {
 			li {

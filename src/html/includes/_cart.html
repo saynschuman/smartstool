@@ -6,52 +6,54 @@
 		</a>		
 	</div>
 	<div class="wrapper">
-		<table>
-			<tr>
-				<th class="width-10">фото</th>
-				<th class="width-50">наименовани товара</th>
-				<th class="width-10">модель</th>
-				<th class="width-8">кол-во</th>
-				<th class="width-10">цена</th>
-				<th class="width-10">итого</th>
-				<th class="width-2"></th>
-				
-			</tr>
-			<tr>
-				<td class="width-10 thumb"><img src="img/good-1.jpg" alt=""></td>
-				<td class="width-50 name">
-					<a href="">Smartstool Balance (подвижное основание, 140 см - 190 см)</a>
-					<span>Цвет: Зеленый</span></td>
-				<td class="width-10 model">Balance</td>
-				<td class="width-8">
-					<div class="q">
-							<a href=""><div class="img minus"></div></a>
-							<span>1</span>	
-							<a href=""><div class="img plus"></div></a>
-					</div>	
-				</td>
-				<td class="width-10 price">29 350.00</td>
-				<td class="width-10">290 350.00</td>				
-				<td class="width-2"><div class="close"></div></td>				
-			</tr>
-			<tr>
-				<td class="width-10 thumb"><img src="img/good-2.jpg" alt=""></td>
-				<td class="width-50 name">
-					<a href="">Smartstool Balance (подвижное основание, 140 см - 190 см)</a>
-					<span>Цвет: Черный</span></td>
-				<td class="width-10 model">Balance</td>
-				<td class="width-8">
-					<div class="q">
-							<a href=""><div class="img minus"></div></a>
-							<span>2</span>	
-							<a href=""><div class="img plus"></div></a>
-					</div>	
-				</td>
-				<td class="width-10 price">29 350.00</td>
-				<td class="width-10">290 350.00</td>				
-				<td class="width-2"><div class="close"></div></td>			
-			</tr>			
-		</table>
+		<div class="cart-table-wrapper">
+			<table id="cart-table">
+				<tr>
+					<th class="width-10">фото</th>
+					<th class="width-50">наименовани товара</th>
+					<th class="width-10">модель</th>
+					<th class="width-8">кол-во</th>
+					<th class="width-10">цена</th>
+					<th class="width-10">итого</th>
+					<th class="width-2"></th>
+					
+				</tr>
+				<tr>
+					<td class="width-10 thumb"><img src="img/good-1.jpg" alt=""></td>
+					<td class="width-50 name">
+						<a href="">Smartstool Balance (подвижное основание, 140 см - 190 см)</a>
+						<span>Цвет: Зеленый</span></td>
+					<td class="width-10 model">Balance</td>
+					<td class="width-8">
+						<div class="q">
+								<a href=""><div class="img minus"></div></a>
+								<span>1</span>	
+								<a href=""><div class="img plus"></div></a>
+						</div>	
+					</td>
+					<td class="width-10 price">29 350.00</td>
+					<td class="width-10">290 350.00</td>				
+					<td class="width-2"><div class="close"></div></td>				
+				</tr>
+				<tr>
+					<td class="width-10 thumb"><img src="img/good-2.jpg" alt=""></td>
+					<td class="width-50 name">
+						<a href="">Smartstool Balance (подвижное основание, 140 см - 190 см)</a>
+						<span>Цвет: Черный</span></td>
+					<td class="width-10 model">Balance</td>
+					<td class="width-8">
+						<div class="q">
+								<a href=""><div class="img minus"></div></a>
+								<span>2</span>	
+								<a href=""><div class="img plus"></div></a>
+						</div>	
+					</td>
+					<td class="width-10 price">29 350.00</td>
+					<td class="width-10">290 350.00</td>				
+					<td class="width-2"><div class="close"></div></td>			
+				</tr>			
+			</table>
+		</div>		
 		<div class="promo clearfix">
 		<form id="promo">
 			<ul>
@@ -160,7 +162,7 @@
 			<label class="col-sm-3" for="note"></label>
 			<div class="mob-no-padding col-sm-9 clearfix">
 				<input class="col-md-6 col-sm-12" type="submit" value="Перейти к оплате">
-				<span class="of col-md-6 col-sm-12">Стоимость с учетом доставки 15 000 рублей</span>
+				<div class="of col-md-6 col-sm-12">Стоимость с учетом доставки <span>15 000 рублей</span></div>
 			</div>			
 		</div>	
 	</form>		
