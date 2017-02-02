@@ -15,3 +15,4 @@
 ##### Смарт Компания - https://saynschuman.github.io/dist/about.html
 ##### Отзывы - https://saynschuman.github.io/dist/reviews.html
 ##### Оставить отзыв - https://saynschuman.github.io/dist/leave-review.html
+##### Где купить - https://saynschuman.github.io/dist//where_buy.html
