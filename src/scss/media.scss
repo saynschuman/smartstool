@@ -512,6 +512,12 @@ width: 92%;
 }
 
 @media screen and (max-width: 991px) {
+main.reviews .review .right .stars {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-bottom: 5px;
+}	
 .from_the_shop ul li {
 	padding-left: 30px;
 }	
@@ -1220,6 +1226,50 @@ main.home section.categories .category .operations li:nth-child(2) {
 }
 
 @media screen and (max-width: 767px) {
+main.reviews .pagination li.mob_no {
+	display: none;
+}	
+main.reviews .jq-selectbox__select {
+	width: 275px;
+	min-width: 100% !important;
+}	
+main.reviews .review .right {
+	padding: 10px;
+}	
+main.reviews .review .right .answer {
+	padding: 20px;
+}	
+main.reviews .review .right .answer:before {
+	position: absolute;
+	content: '';
+	height: 18px;
+	width: 29px;
+	background-image: url(../img/dial-mob.png);
+	left: 20px;
+	top: -18px;
+}
+main.reviews .review .left,
+main.reviews .review .right {
+    width: 100%;
+    float: none;
+}	
+main.reviews .title {
+    text-align: left;
+}	
+main.reviews .title li {
+    display: block;
+    margin-bottom: 15px;
+}
+main.reviews .title li:first-child {
+    font-family: 'GothamProRegular', sans-serif;
+    font-size: 19px;
+    padding-right: 0;
+    vertical-align: top;
+    padding-top: 0;
+}	
+main.reviews .leave-review {
+	display: none;
+}	
 main.about section.smart .right .mission {
 	margin-top: -10px;
 }	

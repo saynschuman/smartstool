@@ -272,5 +272,4 @@ $( 'main.homepage section.for-all .under' ).hover(
 
  
 
-
 });	
