@@ -88,6 +88,8 @@
         padding: 0 15px; } }
 
 @media screen and (max-width: 1200px) {
+  main.where-buy section.shops img {
+    margin: 0 auto; }
   main.about section.text .left {
     float: none;
     width: 100%;
@@ -940,6 +942,29 @@
     background-size: 100%; } }
 
 @media screen and (max-width: 767px) {
+  .mob_no_pad {
+    padding: 0; }
+  main.where-buy section.shops .about-shop li img {
+    display: none; }
+  main.where-buy section.shops .title li {
+    display: inline-block;
+    padding-bottom: 8px; }
+  main.where-buy section.partners .partner {
+    padding: 15px; }
+  main.where-buy section.partners .partner-list ul li.active {
+    background-color: transparent;
+    color: #f07d28;
+    border-radius: 23px; }
+  main.where-buy section.partners h2 img {
+    display: none; }
+  main.where-buy section.partners h2 {
+    font-size: 27px; }
+  main.where-buy section.partners .partner .hours {
+    position: relative;
+    right: 0;
+    top: 0;
+    font-size: 13px;
+    margin-top: 10px; }
   main.opt form .opt-wrapper input#rec {
     width: 110px;
     float: left;

@@ -1269,6 +1269,9 @@ h1 {
   -webkit-transition: .4s;
   transition: .4s; }
 
+.no-pad {
+  padding: 0; }
+
 header {
   position: relative;
   color: #664b33;
@@ -3270,6 +3273,142 @@ main.opt form .opt-wrapper input#rec {
   float: left;
   margin-right: 15px;
   margin-bottom: 40px; }
+
+main.where-buy {
+  color: #4d3b2b; }
+  main.where-buy section.shops {
+    font-size: 15px; }
+    main.where-buy section.shops .title {
+      font-size: 25px; }
+      main.where-buy section.shops .title li {
+        display: inline-block;
+        padding-bottom: 25px; }
+        main.where-buy section.shops .title li:first-child {
+          font-family: 'GothamProRegular', sans-serif; }
+        main.where-buy section.shops .title li:last-child {
+          font-family: 'GothamProLight', sans-serif; }
+    main.where-buy section.shops img {
+      max-width: 100%;
+      height: auto;
+      display: block; }
+    main.where-buy section.shops .about-shop {
+      padding: 20px;
+      font-family: 'GothamProRegular', sans-serif; }
+      main.where-buy section.shops .about-shop li {
+        display: block;
+        padding: 20px 0;
+        padding-left: 30px;
+        position: relative; }
+        main.where-buy section.shops .about-shop li img {
+          display: inline-block;
+          float: right; }
+        main.where-buy section.shops .about-shop li b {
+          font-family: 'GothamProBold', sans-serif; }
+        main.where-buy section.shops .about-shop li:first-child:before {
+          height: 21px; }
+        main.where-buy section.shops .about-shop li:first-child span {
+          float: right; }
+        main.where-buy section.shops .about-shop li:before {
+          content: '';
+          position: absolute;
+          height: 20px;
+          width: 20px;
+          background-image: url(../img/buy_sprite.png);
+          background-position: 0 0;
+          left: -20px; }
+        main.where-buy section.shops .about-shop li:nth-child(2):before {
+          background-position: 0 -49px; }
+        main.where-buy section.shops .about-shop li:nth-child(3):before, main.where-buy section.shops .about-shop li:nth-child(4):before {
+          background-position: 0 -94px; }
+        main.where-buy section.shops .about-shop li:last-child:before {
+          background-position: 0 -137px;
+          top: 19px; }
+  main.where-buy section.partners {
+    width: 100%;
+    font-family: 'GothamProRegular', sans-serif;
+    background-color: #f6f4f2;
+    padding: 30px 0;
+    font-size: 15px; }
+    main.where-buy section.partners h2 {
+      font-size: 36px;
+      font-family: 'GothamProMedium', sans-serif;
+      margin-bottom: 6px; }
+      main.where-buy section.partners h2 img {
+        margin: 0 10px; }
+    main.where-buy section.partners .partner-list {
+      padding-left: 0; }
+      main.where-buy section.partners .partner-list ul {
+        margin: 20px 0; }
+        main.where-buy section.partners .partner-list ul li {
+          padding: 12px 0;
+          -webkit-transition: .3s;
+          transition: .3s;
+          border-radius: 23px;
+          cursor: pointer; }
+          main.where-buy section.partners .partner-list ul li.active {
+            background-color: #f07d28;
+            color: #fff;
+            border-radius: 23px; }
+      main.where-buy section.partners .partner-list .right-list ul li {
+        padding-left: 40px;
+        width: 100%;
+        max-width: 178px; }
+        main.where-buy section.partners .partner-list .right-list ul li:hover {
+          background-color: #f07d28;
+          color: #fff;
+          -webkit-transition: .3s;
+          transition: .3s;
+          cursor: pointer; }
+    main.where-buy section.partners .partner {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 13px;
+      margin-top: 20px; }
+      main.where-buy section.partners .partner img {
+        margin-bottom: 20px; }
+      main.where-buy section.partners .partner .title {
+        font-size: 21px;
+        margin-bottom: 10px; }
+      main.where-buy section.partners .partner .url a {
+        font-size: 17px;
+        color: #919d00;
+        margin-bottom: 25px;
+        -webkit-transition: .3s;
+        transition: .3s; }
+        main.where-buy section.partners .partner .url a:hover {
+          color: #f07d28;
+          -webkit-transition: .3s;
+          transition: .3s;
+          text-decoration: none; }
+      main.where-buy section.partners .partner .inf {
+        position: relative; }
+        main.where-buy section.partners .partner .inf ul {
+          margin-bottom: 15px 0; }
+          main.where-buy section.partners .partner .inf ul li {
+            margin-left: 30px;
+            position: relative;
+            padding: 10px 0; }
+            main.where-buy section.partners .partner .inf ul li:before {
+              content: '';
+              position: absolute;
+              height: 22px;
+              width: 20px;
+              background-image: url(../img/buy_sprite.png);
+              background-position: 0 0;
+              left: -30px; }
+            main.where-buy section.partners .partner .inf ul li:first-child:before {
+              background-position: 0 107px; }
+      main.where-buy section.partners .partner .hours {
+        position: absolute;
+        right: 5%;
+        top: 0;
+        font-size: 13px; }
+        main.where-buy section.partners .partner .hours b {
+          font-family: 'GothamProBold', sans-serif; }
+        main.where-buy section.partners .partner .hours li {
+          padding: 3px 0; }
+          main.where-buy section.partners .partner .hours li:before {
+            display: none; }
 
 main.homepage .wrapper {
   padding: 0 50px;
