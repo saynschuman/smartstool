@@ -1110,6 +1110,10 @@
     display: block;
     width: 50%; } }
 
+@media screen and (max-width: 600px) {
+  main.where-buy section.shops .about-shop li:first-child span {
+    display: none; } }
+
 @media screen and (max-width: 480px) {
   main.cart .promo form ul li {
     margin: 0; }
