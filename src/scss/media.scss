@@ -515,6 +515,10 @@ width: 92%;
 }
 
 @media screen and (max-width: 991px) {
+main.dealer .cities {
+    display: block;
+    margin-top: 40px;
+}	
 main.leave-review .jq-selectbox {
 	margin-bottom: 50px;
 }	
@@ -1232,6 +1236,17 @@ main.home section.categories .category .operations li:nth-child(2) {
 }
 
 @media screen and (max-width: 767px) {
+main.dealer h1 {
+	font-size: 20px;
+	padding: 23px 0;
+}
+main.dealer .cities {
+	display: none;
+}
+main.dealer .tabl .pre_table li:last-child {
+    padding-left: 0;
+    margin-top: 14px;
+}	
 .mob_no_pad {
 	padding: 0;
 }	

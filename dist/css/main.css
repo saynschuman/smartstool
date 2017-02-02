@@ -1272,6 +1272,9 @@ h1 {
 .no-pad {
   padding: 0; }
 
+.m_b {
+  margin-bottom: 40px; }
+
 header {
   position: relative;
   color: #664b33;
@@ -3443,6 +3446,151 @@ main.dealer .cities {
     border: 1px solid #efebe4;
     margin-left: -5px;
     font-size: 15px; }
+
+main.dealer .tabl .pre_table li {
+  display: inline-block; }
+  main.dealer .tabl .pre_table li:first-child {
+    font-size: 19px;
+    color: #fff;
+    font-family: 'comfortaa-bold';
+    background-color: #f07d28;
+    padding: 18px 30px;
+    border-radius: 30px; }
+  main.dealer .tabl .pre_table li:last-child {
+    font-family: 'GothamProRegular', sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    padding-left: 25px; }
+
+main.dealer .tabl .table_wrapper {
+  overflow: auto; }
+
+main.dealer .tabl table {
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  min-width: 700px; }
+  main.dealer .tabl table tr th {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'GothamProMedium', sans-serif;
+    color: #4d3b2b;
+    background-color: #f7f4f0;
+    padding: 20px; }
+    main.dealer .tabl table tr th:first-child {
+      width: 10%; }
+    main.dealer .tabl table tr th:nth-child(2) {
+      width: 50%; }
+    main.dealer .tabl table tr th:nth-child(3) {
+      width: 20%; }
+    main.dealer .tabl table tr th:last-child {
+      width: 20%; }
+  main.dealer .tabl table tr td {
+    font-size: 17px;
+    font-family: 'GothamProRegular', sans-serif;
+    color: #4d3b2b;
+    background-color: #fff;
+    padding: 10px 20px;
+    vertical-align: middle; }
+    main.dealer .tabl table tr td b {
+      font-family: 'GothamProBold', sans-serif; }
+    main.dealer .tabl table tr td:first-child {
+      width: 10%; }
+    main.dealer .tabl table tr td:nth-child(2) {
+      width: 50%; }
+    main.dealer .tabl table tr td:nth-child(3) {
+      width: 20%; }
+    main.dealer .tabl table tr td:last-child {
+      width: 20%; }
+    main.dealer .tabl table tr td .q {
+      position: relative;
+      border: 1px solid #e9e1d9;
+      border-radius: 4px;
+      padding: 10px 2px;
+      width: 80%; }
+      main.dealer .tabl table tr td .q.greenBorder {
+        border: 1px solid #a0aa27; }
+      main.dealer .tabl table tr td .q a {
+        height: 100%;
+        width: 23px;
+        display: block;
+        position: absolute;
+        top: 0; }
+        main.dealer .tabl table tr td .q a:first-child {
+          left: 0; }
+          main.dealer .tabl table tr td .q a:first-child:hover .minus {
+            background-image: url(../img/minus_hover.png); }
+        main.dealer .tabl table tr td .q a:last-child {
+          right: 0; }
+          main.dealer .tabl table tr td .q a:last-child:hover .plus {
+            background-image: url(../img/plus_hover.png); }
+      main.dealer .tabl table tr td .q .img {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        cursor: pointer;
+        display: inline-block; }
+        main.dealer .tabl table tr td .q .img.minus {
+          float: left;
+          left: 5px;
+          width: 12px;
+          height: 2px;
+          background-image: url(../img/minus.jpg); }
+        main.dealer .tabl table tr td .q .img.plus {
+          float: right;
+          right: 5px;
+          width: 12px;
+          height: 12px;
+          background-image: url(../img/plus.png);
+          background-size: 100%; }
+      main.dealer .tabl table tr td .q span {
+        width: 100%;
+        display: block;
+        text-align: center; }
+    main.dealer .tabl table tr td i {
+      position: relative;
+      padding-left: 45px; }
+      main.dealer .tabl table tr td i::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background-color: #4d3b2b;
+        border-radius: 100%;
+        top: -6px; }
+      main.dealer .tabl table tr td i.brown::before {
+        background-color: #4d3b2b; }
+      main.dealer .tabl table tr td i.cream::before {
+        background-color: #edebe5; }
+      main.dealer .tabl table tr td i.blue::before {
+        background-color: #4db6ff; }
+  main.dealer .tabl table tr.bordered {
+    border-bottom: 1px solid #efebe4; }
+
+main.dealer aside h2 {
+  font-size: 30px;
+  font-family: 'comfortaa-bold';
+  margin-bottom: 40px; }
+
+main.dealer aside .new {
+  padding: 20px;
+  border: 1px solid #efebe4;
+  border-radius: 20px;
+  margin-bottom: 20px; }
+  main.dealer aside .new .title {
+    font-size: 13px;
+    font-family: 'GothamProBold', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 5px; }
+  main.dealer aside .new p {
+    font-size: 15px;
+    font-family: 'GothamProRegular', sans-serif;
+    line-height: 1.5; }
 
 main.homepage .wrapper {
   padding: 0 50px;

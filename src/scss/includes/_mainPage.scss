@@ -1607,6 +1607,199 @@ main.dealer {
 			    font-size: 15px;
 			}
 		}
-
 	}	
+	.tabl {
+		.pre_table {
+			li {
+				display: inline-block;
+				&:first-child {
+					font-size: 19px;
+					color: #fff;
+					font-family: 'comfortaa-bold';
+					background-color: $hoverColor;
+					padding: 18px 30px;
+					border-radius: 30px;
+				}
+				&:last-child {
+					font-family: 'GothamProRegular', sans-serif; 
+					font-size: 17px;
+					font-style: italic;
+					padding-left: 25px;
+				}
+			}
+		}
+		.table_wrapper {
+			overflow: auto;
+		}		
+		table {
+			text-align: left;
+		    width: 100%;
+		    max-width: 100%;
+		    margin-top: 30px;	
+		    margin-bottom: 40px;	
+		    min-width: 700px;
+		    
+		    tr {
+		    	th {
+		    		font-size: 14px;
+		    		text-transform: uppercase;
+		    		font-family: 'GothamProMedium', sans-serif;
+		    		color: $h1Color;
+		    		background-color: #f7f4f0;
+		    		padding: 20px;
+		    		&:first-child {
+		    			width: 10%;
+		    		}
+		    		&:nth-child(2) {
+		    			width: 50%;
+		    		}
+		    		&:nth-child(3) {
+		    			width: 20%;
+		    		}
+		    		&:last-child {
+		    			width: 20%;
+		    		}
+		    	}
+		    	td {
+		    		font-size: 17px;
+		    		font-family: 'GothamProRegular', sans-serif;
+		    		color: $h1Color;
+		    		background-color: #fff;
+		    		padding:  10px 20px;
+		    		vertical-align: middle;
+		    		b {
+		    			font-family: 'GothamProBold', sans-serif;
+		    		}
+		    		&:first-child {
+		    			width: 10%;
+		    		}
+		    		&:nth-child(2) {
+		    			width: 50%;
+		    		}
+		    		&:nth-child(3) {
+		    			width: 20%;
+		    		}
+		    		&:last-child {
+		    			width: 20%;
+		    		}
+			        .q {     
+			          position: relative;
+			          border: 1px solid #e9e1d9;
+			          border-radius: 4px;
+			          padding: 10px 2px;
+			          width: 80%;
+			          &.greenBorder {
+			          	border: 1px solid #a0aa27;
+			          }
+			          a {
+			              height: 100%;
+			              width: 23px;
+			              display: block;
+			              position: absolute;
+			              top: 0;
+			              &:first-child {
+			                left: 0;
+			                &:hover {
+			                  .minus {
+			                    background-image: url(../img/minus_hover.png);
+			                  }
+			                }
+			              }
+			              &:last-child {
+			                right: 0;
+			                &:hover {
+			                  .plus {
+			                    background-image: url(../img/plus_hover.png); 
+			                  }
+			                }                
+			              }
+			            }          
+			          .img {
+			            position: absolute;
+			            top: 50%;
+			            transform: translateY(-50%);
+			            cursor: pointer;
+			            display: inline-block;
+			            &.minus {
+			              float: left;
+			              left: 5px;
+			              width: 12px;
+			              height: 2px;
+			              background-image: url(../img/minus.jpg);
+			            }
+			            &.plus {
+			              float: right;
+			              right: 5px;
+			              width: 12px;
+			              height: 12px;
+			              background-image: url(../img/plus.png); 
+			              background-size: 100%; 
+			            }
+			          }
+			          span {
+			            width: 100%;
+			            display: block;
+			            text-align: center;
+			          } 
+			        }
+			        i {
+			        	position: relative;
+			        	padding-left: 45px;
+			        	&::before {
+			        		position: absolute;
+			        		content: '';
+			        		left: 0;
+			        		width: 30px;
+			        		height: 30px;
+			        		background-color: $h1Color;
+			        		border-radius: 100%;
+			        		top: -6px;
+			        	}
+			        	&.brown {
+				        	&::before {
+				        		background-color: $h1Color;
+				        	}			        		
+			        	}
+			        	&.cream {
+				        	&::before {
+				        		background-color: $mainCream;
+				        	}			        		
+			        	}
+			        	&.blue {
+				        	&::before {
+				        		background-color: $mainBlue;
+				        	}			        		
+			        	}
+			        }
+		    	}
+		    	&.bordered {
+		    		border-bottom: 1px solid $borderColor;
+		    	}
+		    }	
+		}
+	}
+	aside {
+		h2 {
+			font-size: 30px;
+			font-family: 'comfortaa-bold';
+			margin-bottom: 40px;
+		}
+		.new {
+			padding: 20px;
+			border: 1px solid $borderColor;
+			border-radius: 20px;
+			margin-bottom: 20px;
+			.title {
+				font-size: 13px;
+				font-family: 'GothamProBold', sans-serif;
+				line-height: 1.5;
+				margin-bottom: 5px;
+			}
+			p {
+				font-size: 15px;
+				font-family: 'GothamProRegular', sans-serif;
+				line-height: 1.5;
+			}
+		}
+	}
 }
