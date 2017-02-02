@@ -1,0 +1,70 @@
+<main class="home opt leave-review">
+	<div class="wrapper">
+		<h1>Оставит отзыв</h1>
+	</div>
+	<form class="form-horizontal" action="">
+		<div class="opt-wrapper clearfix">
+		    <label class="col-sm-3" for="name"><span>*</span> Как вас зовут</label>
+		    <div class="mob-no-padding col-sm-9">
+		      <input required type="text" id="name">
+		    </div>
+			<label class="col-sm-3" for="city"><span>*</span> Ваш город</label>
+			<div class="mob-no-padding col-sm-9">
+				<input name="city" id="city" type="text"></input>
+			</div>
+			<label class="col-sm-3" for="prof">* Профессия</label>
+			<div class="mob-no-padding col-sm-9">
+				<input required class="col-sm-2" type="text" id="prof">
+			</div>
+			<label class="col-sm-3" for="email"><span>*</span> E-mail</label>
+			<div class="mob-no-padding col-sm-9">
+				<input required type="email" id="email"> <i class="publ_em">Мы не публикуем вашу почту</i>
+			</div>
+			<label class="col-sm-3" for="model">* О каком товаре вы хотите написать отзыв?</label>
+			<div class="mob-no-padding col-sm-9">
+				<select name="model" id="model" data-smart-positioning="false" >
+					<option value="">Smartstool S03B (седло со спинкой)</option>
+					<option value="">Авторский динамический стул</option>
+					<option value="">Smartstool Balance  (подвижное основание, 140 см - 190 см)</option>
+					<option value="">Smartstool BabyBalance  (подвижное основание, 110 см - 150 см)</option>
+					<option value="">Smartstool KM01 (механический, дети - средний рост)</option>
+					<option value="">Smartstool S03B (седло со спинкой)</option>
+					<option value="">Авторский динамический стул</option>
+					<option value="">Smartstool Balance  (подвижное основание, 140 см - 190 см)</option>
+					<option value="">Smartstool BabyBalance  (подвижное основание, 110 см - 150 см)</option>
+					<option value="">Smartstool KM01 (механический, дети - средний рост)</option>					
+				</select>
+			</div>
+			<label class="col-sm-3" for="photo"><span>*</span> Фото товара</label>
+			<div class="mob-no-padding col-sm-9">
+				<input data-browse="Выбрать фото на компьютере" required type="file" id="photo">
+			</div>	
+			<label class="col-sm-3" for="inst">Загрузить из инстаграм</label>
+			<div class="mob-no-padding col-sm-9">
+				<input type="url" id="inst" placeholder="Введите ссылку на фото">
+			</div>		
+			<label class="col-sm-3" for="review"><span>*</span> Текст отзыва</label>
+			<div class="mob-no-padding col-sm-9">
+				<textarea name="review" id="review"></textarea> 
+			</div>	
+			<label class="col-sm-3" for="city"><span>*</span> Ваша оценка по 5-бальной шкале</label>
+			<div class="mob-no-padding col-sm-9">
+				<ul class="stars">
+					<li class="yes"></li>
+					<li class="yes"></li>
+					<li class="yes"></li>
+					<li class="no"></li>
+					<li class="no"></li>
+				</ul>
+			</div>
+			<label class="col-sm-3" for="rec"><span>*</span> Введите символы с картинки</label>
+			<div class="mob-no-padding col-sm-9">
+				<input name="city" id="rec" type="text"></input> <img src="img/recaptcha.png" alt="">
+			</div>													
+			<label class="col-sm-3" for="note"></label>
+			<div class="mob-no-padding col-sm-9 clearfix">
+				<input class="col-md-6 col-sm-12" type="submit" value="Оставить отзыв">
+			</div>			
+		</div>	
+	</form>									
+</main>

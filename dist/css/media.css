@@ -398,6 +398,8 @@
     display: none; } }
 
 @media screen and (max-width: 991px) {
+  main.leave-review .jq-selectbox {
+    margin-bottom: 50px; }
   main.reviews .review .right .stars {
     position: relative;
     right: 0;
@@ -938,6 +940,22 @@
     background-size: 100%; } }
 
 @media screen and (max-width: 767px) {
+  main.opt form .opt-wrapper input#rec {
+    width: 110px;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 40px; }
+  main.leave-review .jq-file__browse {
+    font-size: 13px; }
+  main.leave-review .jq-file {
+    width: 280px; }
+  main.leave-review i.publ_em {
+    font-family: 'GothamProRegular', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    padding-left: 0;
+    margin-bottom: 15px;
+    display: block; }
   main.reviews .pagination li.mob_no {
     display: none; }
   main.reviews .jq-selectbox__select {

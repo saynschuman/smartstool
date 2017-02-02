@@ -14,3 +14,4 @@
 ##### Сравнение_2 - https://saynschuman.github.io/dist/compare_2.html
 ##### Смарт Компания - https://saynschuman.github.io/dist/about.html
 ##### Отзывы - https://saynschuman.github.io/dist/reviews.html
+##### Оставить отзыв - https://saynschuman.github.io/dist/leave-review.html
