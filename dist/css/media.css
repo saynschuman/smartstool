@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @media screen and (max-width: 1300px) {
+  main.stol section.reviews .wrapper {
+    width: 100%; }
   main.about .wrapper {
     width: 100%; }
   main.cart .wrapper {
@@ -88,6 +90,51 @@
         padding: 0 15px; } }
 
 @media screen and (max-width: 1200px) {
+  main.stol aside .descount .material li span {
+    font-size: 7px; }
+  main.stol .gray-block table tr td:last-child {
+    font-size: 13px; }
+  main.stol aside .descount .material li img {
+    width: 37px;
+    height: 37px;
+    padding: 3px;
+    border-radius: 100%;
+    cursor: pointer; }
+  main.stol .good .owl-dots {
+    width: 100%;
+    position: relative !important;
+    margin-bottom: 20px; }
+  main.stol .good .owl-dot {
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+    background-size: 150%;
+    background-position: center center;
+    margin: 0 10px !important;
+    display: inline-block; }
+    main.stol .good .owl-dot.active {
+      border: 2px solid #919d00; }
+    main.stol .good .owl-dot:first-child {
+      background-image: url(../img/stol-ic-1.jpg);
+      margin-left: 0 !important; }
+    main.stol .good .owl-dot:nth-child(2) {
+      background-image: url(../img/stol-ic-2.jpg); }
+    main.stol .good .owl-dot:nth-child(3) {
+      background-image: url(../img/stol-ic-3.jpg); }
+    main.stol .good .owl-dot:nth-child(4) {
+      background-image: url(../img/stol-ic-4.jpg); }
+    main.stol .good .owl-dot:last-child {
+      background-image: url(../img/stol-sedlo/th-4.jpg);
+      background-size: 100%;
+      margin-bottom: 0;
+      position: absolute;
+      top: -575px;
+      right: 0; }
+  main.stol .good .owl-dots {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 0; }
   main.where-buy section.shops img {
     margin: 0 auto; }
   main.about section.text .left {
@@ -528,6 +575,8 @@
     border-radius: 0; } }
 
 @media screen and (max-width: 768px) {
+  main.stol .good .owl-dots {
+    display: none; }
   main.compare .delete {
     display: none; }
   main.cart .promo form ul li input[type="submit"] {
