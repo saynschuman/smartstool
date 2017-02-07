@@ -18,3 +18,4 @@
 ##### Дилер - https://saynschuman.github.io/dist/dealer.html
 ##### Главная - https://saynschuman.github.io/dist/homepage.html
 ##### Стол - https://saynschuman.github.io/dist/stol.html
+##### Стол-седло - https://saynschuman.github.io/dist/stol-sedlo.html

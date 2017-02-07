@@ -3944,6 +3944,23 @@ main.stol {
           width: 100%;
           line-height: 1.3;
           cursor: pointer; }
+    main.stol aside .descount .fv li {
+      height: 25px;
+      width: 25px;
+      background: #000;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      margin-right: 16px; }
+      main.stol aside .descount .fv li:first-child {
+        background-color: #709eb4; }
+      main.stol aside .descount .fv li:nth-child(2) {
+        background-color: #f09f4e; }
+      main.stol aside .descount .fv li:nth-child(3) {
+        background-color: #553930; }
+      main.stol aside .descount .fv li:nth-child(4) {
+        background-color: #a4c44a; }
+      main.stol aside .descount .fv li:nth-child(5) {
+        background-color: #373737; }
     main.stol aside .descount .small {
       font-size: 11px;
       line-height: 1.5;
@@ -4072,6 +4089,21 @@ main.stol {
   main.stol .left-aside {
     padding: 0;
     padding-right: 10px; }
+    main.stol .left-aside table {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 10px;
+      font-size: 15px;
+      font-family: 'GothamProRegular', sans-serif; }
+      main.stol .left-aside table span {
+        margin-right: -19px; }
+      main.stol .left-aside table .p_b {
+        padding-bottom: 20px; }
+      main.stol .left-aside table .p_t {
+        padding-top: 20px; }
+      main.stol .left-aside table tr.bordered {
+        padding-top: 20px;
+        border-top: 1px solid #efebe4; }
     main.stol .left-aside .block {
       border-bottom: 1px solid #efebe4;
       padding: 20px 0;
@@ -4144,6 +4176,89 @@ main.stol {
     font-family: 'GothamProRegular', sans-serif;
     font-size: 15px;
     line-height: 1.5; }
+    main.stol .middle-content .spec-block {
+      position: absolute;
+      background-color: #f6f4f2;
+      left: -50%;
+      width: 148%;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 120px;
+      border-radius: 0 23px 23px 0; }
+      main.stol .middle-content .spec-block .bottom {
+        position: absolute;
+        bottom: 20px;
+        font-style: italic; }
+        main.stol .middle-content .spec-block .bottom:before {
+          content: '';
+          position: absolute;
+          left: -32px;
+          top: 0;
+          height: 63px;
+          width: 23px;
+          background-image: url(../img/stol-sedlo/i.jpg); }
+      main.stol .middle-content .spec-block img.skel {
+        position: absolute;
+        left: 50%;
+        right: 0;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+        width: 210px; }
+      main.stol .middle-content .spec-block .left-al {
+        float: left; }
+        main.stol .middle-content .spec-block .left-al p {
+          margin-bottom: 40px;
+          font-size: 13px; }
+      main.stol .middle-content .spec-block .right-al {
+        float: right;
+        text-align: left; }
+        main.stol .middle-content .spec-block .right-al p {
+          margin-bottom: 40px;
+          font-size: 13px;
+          position: relative;
+          z-index: 9999; }
+          main.stol .middle-content .spec-block .right-al p:nth-child(2) {
+            margin-bottom: 80px; }
+      main.stol .middle-content .spec-block:before {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100%;
+        background-color: #f6f4f2;
+        left: -100px;
+        top: 0; }
+      main.stol .middle-content .spec-block .title {
+        font-size: 27px;
+        font-family: 'comfortaa-bold';
+        margin-bottom: 20px; }
+    main.stol .middle-content img.expert {
+      float: left;
+      margin-right: 20px; }
+    main.stol .middle-content p.com_bold {
+      font-family: 'comfortaa-bold';
+      line-height: 1.6; }
+    main.stol .middle-content span.num {
+      font-family: 'GothamProBold', sans-serif; }
+    main.stol .middle-content ul {
+      margin-bottom: 20px; }
+      main.stol .middle-content ul li span.num {
+        font-family: 'GothamProBold', sans-serif;
+        position: relative; }
+    main.stol .middle-content a.more {
+      color: #919d00;
+      text-decoration: none;
+      position: relative;
+      display: block;
+      width: 141px; }
+      main.stol .middle-content a.more:after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-image: url(../img/curl-link.png); }
     main.stol .middle-content img.thumb-middle {
       width: 100%;
       display: block;
@@ -4152,6 +4267,9 @@ main.stol {
       margin-bottom: 20px; }
     main.stol .middle-content p {
       margin-bottom: 20px; }
+      main.stol .middle-content p span.more {
+        color: #979f00;
+        font-family: 'comfortaa-bold'; }
     main.stol .middle-content .thumb-inf {
       margin-bottom: 20px; }
       main.stol .middle-content .thumb-inf .video-title {

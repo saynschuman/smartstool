@@ -283,6 +283,11 @@ $( 'main.homepage section.for-all .under' ).hover(
 		$(this).prev().html(plus+1);
 	})
 
+	var s = $('.spec-block ').width();
+	$(window).on('load resize', function() {
+		$('.m_b_c').css('margin-top', s-50)
+	})
+	console.log(s);
 // preloader 
 
 $(window).on('load', function () {

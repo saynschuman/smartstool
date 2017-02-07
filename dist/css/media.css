@@ -92,6 +92,10 @@
         padding: 0 15px; } }
 
 @media screen and (max-width: 1200px) {
+  main.stol aside .descount .fv li {
+    margin-right: 4px; }
+  main.stol .good .owl-nav .owl-next {
+    right: 30px; }
   main.stol aside .descount .material li span {
     font-size: 7px; }
   main.stol .gray-block table tr td:last-child {

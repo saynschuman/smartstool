@@ -1942,6 +1942,34 @@ main.stol {
 					}
 				}
 			}
+			.fv {
+				li {
+					height: 25px;
+					width: 25px;
+					background: #000;
+					border-radius: 50%;
+					margin-bottom: 20px;
+					margin-right: 16px;
+					// &.active {
+					// 	border: 2px solid #f09f4e;
+					// }
+					&:first-child {
+						background-color: #709eb4;
+					}
+					&:nth-child(2) {
+						background-color: #f09f4e;
+					}
+					&:nth-child(3) {
+						background-color: #553930;
+					}
+					&:nth-child(4) {
+						background-color: #a4c44a;
+					}
+					&:nth-child(5) {
+						background-color: #373737;
+					}
+				}
+			}
 			.small {
 				font-size: 11px;
 				line-height: 1.5;
@@ -2099,6 +2127,31 @@ main.stol {
 	.left-aside {
 		padding: 0;
 		padding-right: 10px;
+		table {
+			width: 100%;
+			max-width: 100%;
+			margin-bottom: 10px; 
+			font-size: 15px;
+			font-family: 'GothamProRegular', sans-serif;				
+			span {
+				margin-right: -19px;
+			}
+			.p_b {
+				padding-bottom: 20px;
+			}			
+			.p_t {
+				padding-top: 20px;
+			}
+				tr {
+					&.bordered {
+						padding-top: 20px;
+						border-top: 1px solid $borderColor;
+					}
+					td {
+
+					}
+				}
+			}
 		.block {
 			border-bottom: 1px solid $borderColor;
 			padding: 20px 0;
@@ -2193,6 +2246,108 @@ main.stol {
 		font-family: 'GothamProRegular', sans-serif;
 		font-size: 15px;
 		line-height: 1.5;
+		.spec-block {
+			position: absolute;
+			background-color: #f6f4f2;
+			left: -50%;
+			width: 148%;
+			padding-right: 20px;
+			padding-top: 20px;
+			padding-bottom: 120px;
+			border-radius: 0 30px 30px 0;
+			.bottom {
+				position: absolute;
+				bottom: 20px;
+				font-style: italic;
+				&:before {
+				    content: '';
+				    position: absolute;
+				    left: -32px;
+				    top: 0;
+				    height: 63px;
+				    width: 23px;
+				    background-image: url(../img/stol-sedlo/i.jpg);
+				}
+			}
+			img.skel {
+				position: absolute;
+				left: 50%;
+				right: 0;
+				transform: translateX(-50%);
+				width: 210px;
+			}
+			.left-al {
+				float: left;
+				p {
+					margin-bottom: 40px;
+					font-size: 13px;
+				}
+			}
+			.right-al {
+				float: right;
+				text-align: left;
+				p {
+					margin-bottom: 40px;
+					font-size: 13px;
+					position: relative;
+					z-index: 9999;
+					&:nth-child(2) {
+						margin-bottom: 80px;
+					}
+				}				
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				width: 100px;
+				height: 100%;
+				background-color: #f6f4f2;
+				left: -100px;
+				top: 0;
+
+			}
+			.title {
+				font-size: 27px;
+				font-family: 'comfortaa-bold';
+				margin-bottom: 20px;
+			}
+		}
+		img.expert {
+			float: left;
+			margin-right: 20px;
+		}
+		p.com_bold {
+			font-family: 'comfortaa-bold';
+			line-height: 1.6;
+		}
+		span.num {
+			font-family: 'GothamProBold', sans-serif;
+		}		
+		ul {
+			margin-bottom: 20px;
+			li {
+				span.num {
+					font-family: 'GothamProBold', sans-serif;
+					position: relative;					
+				}
+			}
+		}
+		a.more {
+			color: $mainGreen;
+			text-decoration: none;
+			position: relative;
+			display: block;
+			width: 141px;
+			&:after {
+				    position: absolute;
+				    content: '';
+				    bottom: 0;
+				    left: 0;
+				    height: 3px;
+				    width: 100%;
+				    background-image: url(../img/curl-link.png);
+				}			
+		}
 		img.thumb-middle {
 			width: 100%;
 			display: block;
@@ -2202,6 +2357,11 @@ main.stol {
 		}
 		p {
 			margin-bottom: 20px;
+			span.more {
+				color: #979f00;
+				font-family: 'comfortaa-bold';
+
+			}
 		}
 		.thumb-inf {
 			margin-bottom: 20px;
