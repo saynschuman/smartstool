@@ -290,10 +290,10 @@ $( 'main.homepage section.for-all .under' ).hover(
 	console.log(s);
 // preloader 
 
-$(window).on('load', function () {
-    var $preloader = $('.preloader-wrapper'),
-        $spinner   = $preloader.find('.cssload-loader');
-    $spinner.fadeOut();
-    $preloader.delay(350).fadeOut('slow');
+	$(window).on('load', function () {
+	    var $preloader = $('.preloader-wrapper'),
+	        $spinner   = $preloader.find('.cssload-loader');
+	    $spinner.fadeOut();
+	    $preloader.delay(350).fadeOut('slow');
+	});
 });
-});	
