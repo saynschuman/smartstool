@@ -2,6 +2,9 @@
 
 @media screen and (max-width: 1300px){
 main.stol section.reviews .wrapper {
+    padding: 0;
+}	
+main.stol section.reviews .wrapper {
 	width: 100%;
 }	
 main.about .wrapper {
@@ -577,6 +580,31 @@ width: 92%;
 }
 
 @media screen and (max-width: 991px) {
+main.stol section.reviews .read {
+	position: relative;
+	top: -9px;
+}	
+main.stol button.buy {
+	max-width: 256px;
+}
+main.stol section.reviews a.leave {	
+    float: left;
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #ff8201;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 40px;
+    font-family: 'comfortaa-bold';
+    transition: .3s;
+    display: block;
+    margin: 0 auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 230px;
+    position: relative;
+}
 main.dealer .cities {
     display: block;
     margin-top: 40px;
@@ -742,6 +770,9 @@ main.homepage section.video .tablet-discounts .title {
 }		
 
 @media screen and (max-width: 768px) {
+main.stol .middle-nav-stol li {
+	display: block;
+}	
 main.stol .good .owl-dots {
 	display: none;
 }	
